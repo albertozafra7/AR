@@ -1,0 +1,8 @@
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_description
+
+Name: hector_quadrotor_description
+Description: Description of hector_quadrotor_description
+Version: 0.3.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

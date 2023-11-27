@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/CMakeLists.txt:153 (target_link_libraries):
+  Cannot specify link libraries for target
+  "helloWorld/opt/ros/noetic/lib/libroscpp.so" which is not built by this
+  project.
+
+

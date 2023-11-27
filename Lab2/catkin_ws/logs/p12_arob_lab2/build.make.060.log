@@ -1,0 +1,7 @@
+[35m[1mScanning dependencies of target followTargets[0m
+[ 25%] Built target robot_location
+[ 50%] Built target teleop_twist_keyboard
+[ 75%] Built target lowcontrol
+[ 87%] [32mBuilding CXX object CMakeFiles/followTargets.dir/src/followTargets.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/devel/.private/p12_arob_lab2/lib/p12_arob_lab2/followTargets[0m
+[100%] Built target followTargets

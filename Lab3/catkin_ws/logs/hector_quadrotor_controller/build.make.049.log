@@ -1,0 +1,5 @@
+[  0%] Built target hector_uav_msgs_generate_messages_cpp
+[ 33%] Built target hector_quadrotor_controller
+[ 55%] Built target hector_quadrotor_twist_controller
+[ 77%] Built target hector_quadrotor_motor_controller
+[100%] Built target hector_quadrotor_pose_controller

@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/msg/_index.js

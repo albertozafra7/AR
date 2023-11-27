@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target p12_llc_local_planner_lib[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/p12_llc_local_planner_lib.dir/src/llc_local_planner.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab4/catkin_ws/devel/.private/p12_arob_lab4/lib/libp12_llc_local_planner_lib.so[0m
+[100%] Built target p12_llc_local_planner_lib

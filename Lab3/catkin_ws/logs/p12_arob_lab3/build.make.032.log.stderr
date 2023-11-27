@@ -1,0 +1,21 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:23:31:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   23 |  std::vector<double> prev_pos([01;31m[K3[m[K,0);
+      |                               [01;31m[K^[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:23:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:[m[K In member function ‘[01m[Kvoid FollowTargetsClass::UpdateGoal(const Odometry&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:121:3:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kstd::vector<double> FollowTargetsClass::prev_pos(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  121 |   [01;31m[Kprev_pos[m[K = current_pos;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:[m[K In member function ‘[01m[Kbool FollowTargetsClass::isMoving(std::vector<double>)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:139:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kstd::vector<double> FollowTargetsClass::prev_pos(int)[m[K’
+  139 |    if(euclidean_dist(current_pos,[01;31m[Kprev_pos[m[K)  < 0.2)
+      |                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:23:22:[m[K [01;36m[Knote: [m[Kdeclared here
+   23 |  std::vector<double> [01;36m[Kprev_pos[m[K(3,0);
+      |                      [01;36m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:144:2:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  144 |  [01;35m[K}[m[K
+      |  [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/followTargets3D.dir/build.make:63: CMakeFiles/followTargets3D.dir/src/followTargets3D.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1704: CMakeFiles/followTargets3D.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
