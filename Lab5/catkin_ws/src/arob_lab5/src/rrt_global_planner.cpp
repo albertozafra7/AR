@@ -27,6 +27,34 @@ std::vector<double>normalize(const std::vector<int> vect){
 }
 
 
+void RRTPlanner::printMarker(std::vector<int> pose, int id){
+    visualization_msgs::Marker marker;
+    marker.type = visualization_msgs::Marker::SPHERE;
+
+    marker.header.frame_id = "base_link";
+    marker.header.stamp = ros::Time();
+    marker.ns = "rrt_planner";
+    marker.id = id;
+    marker.type = visualization_msgs::Marker::SPHERE;
+    marker.action = visualization_msgs::Marker::ADD;
+    marker.pose.position.x = pose[0];
+    marker.pose.position.y = pose[1];
+    marker.pose.position.z = 1;
+    marker.pose.orientation.x = 0.0;
+    marker.pose.orientation.y = 0.0;
+    marker.pose.orientation.z = 0.0;
+    marker.pose.orientation.w = 1.0;
+    marker.scale.x = 0.1;
+    marker.scale.y = 0.1;
+    marker.scale.z = 0.1;
+    marker.color.a = 1.0; // Don't forget to set the alpha!
+    marker.color.r = 0.0;
+    marker.color.g = 1.0;
+    marker.color.b = 0.0;
+
+    vis_pub.publish(marker);
+}
+
 RRTPlanner::RRTPlanner() : costmap_ros_(NULL), initialized_(false),
                             max_samples_(0.0){}
 
@@ -40,6 +68,7 @@ void RRTPlanner::initialize(std::string name, costmap_2d::Costmap2DROS* costmap_
         ros::NodeHandle nh("~/" + name);
         ros::NodeHandle nh_local("~/local_costmap/");
         ros::NodeHandle nh_global("~/global_costmap/");
+        vis_pub = nh.advertise<visualization_msgs::Marker>("/rrt_marker", 0);
 
         nh.param("maxsamples", max_samples_, 0.0);
 
@@ -119,14 +148,24 @@ bool RRTPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geometr
 std::vector<int> RRTPlanner::SampleFree(){
     // Get the new random location
     std::vector<int> xrand{rand(),rand()};
-    unsigned int xrand_mx, xrand_my;
-
+    double x, y;
+    int xrand_mx, xrand_my;
+    costmap_->worldToMapEnforceBounds(xrand[0], xrand[1], xrand_mx, xrand_my);
+    costmap_->mapToWorld(xrand_mx,xrand_my,x,y);
+    xrand[0] = static_cast<int>(x);
+    xrand[1] = static_cast<int>(y);
+    
     // While the computed random location is not in a free space and if the world coordinates are not within the map
-    while(costmap_->getCost(xrand[0], xrand[1]) == costmap_2d::FREE_SPACE && !costmap_->worldToMap(xrand[0], xrand[1], xrand_mx, xrand_my)){
+    while(costmap_->getCost(xrand_mx, xrand_my) != costmap_2d::FREE_SPACE){
         // We compute new random locations
         xrand[0] = rand();
         xrand[1] = rand();
+        costmap_->worldToMapEnforceBounds(xrand[0], xrand[1], xrand_mx, xrand_my);
+        costmap_->mapToWorld(xrand_mx,xrand_my,x,y);
+        xrand[0] = static_cast<int>(x);
+        xrand[1] = static_cast<int>(y);
     }
+
     return xrand; 
 }
 
@@ -177,6 +216,8 @@ std::vector<int> RRTPlanner::InputNSteer(const std::vector<int> xnear, const std
 
 bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int> goal, 
                             std::vector<std::vector<int>>& sol){
+    
+
     bool finished = false;
 
     //Initialize random number generator
@@ -192,23 +233,30 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
     while((distance(closest_node->getNode(),goal) > min_distanceToGoal) && n_samples <= max_samples_) {
         // Xrand = SampleFree
         std::vector<int> xrand = SampleFree();
+        //std::cout << "Sample Free Obtained" << std::endl;
         
         // Xnear = Nearest(G=(V,E),xrand)
         TreeNode* xnear = Nearest(xrand, itr_node);
+        //std::cout << "Nearest Obtained" << std::endl;
 
         // u = input(xnear,xrand)
         // xnew = steer(xnear,u)
         std::vector<int> xnew = InputNSteer(xnear->getNode(),xrand);
+        //std::cout << "InputNSteer done" << std::endl;
 
         // if ObstacleFree(xnear,xnew)
         if(obstacleFree(xnear->getNode()[0],xnear->getNode()[1],xnew[0],xnew[1]))
             // V = V union xnew
             // E = E union {(xnear,xnew)}
-            xnear->appendChild(new TreeNode(xnew));
+            xnear->appendChild(new TreeNode(xnew));    
+
+        printMarker(xnew,n_samples);
 
         closest_node = Nearest(goal,itr_node);
         sol = closest_node->returnSolution();
+        n_samples++;
     }
+    std::cout << "Computation finished" << std::endl;
     
 
     if(n_samples <= max_samples_)

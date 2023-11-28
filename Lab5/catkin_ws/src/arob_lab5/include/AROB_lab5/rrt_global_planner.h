@@ -43,6 +43,10 @@ private:
 
     double min_distanceToGoal;
 
+    // ----- Custom variables -----
+    ros::Publisher vis_pub;
+
+
     // functions to compute the plan
     bool obstacleFree(const unsigned int x0, const unsigned int y0, const unsigned int x1, const unsigned int y1);
     bool computeRRT(const std::vector<int> start, const std::vector<int> goal, 
@@ -54,6 +58,7 @@ private:
     TreeNode* Nearest(std::vector<int> xrand, TreeNode* itr_node);
     std::vector<int> GetConstrainedPoint(const std::vector<int> x1, const std::vector<int> x2, const double dist_to_x1);
     std::vector<int> InputNSteer(const std::vector<int> xnear, const std::vector<int> xrand);
+    void printMarker(std::vector<int> pose, int id);
 };
 
 };
