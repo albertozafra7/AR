@@ -180,6 +180,8 @@ bool RRTPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geometr
 		return false;
 	}
     
+    ROS_INFO("COMPUTING NEW PLAN");
+
     plan.clear();
     costmap_ = costmap_ros_->getCostmap();  // Update information from costmap
     
@@ -269,8 +271,8 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
         std::vector<int> xrand = SampleFree();
         
         // Xnear = Nearest(G=(V,E),xrand)
-        TreeNode* random_node = new TreeNode(xrand);
-        TreeNode* xnear = random_node -> neast(itr_node);
+        TreeNode* xrand_node = new TreeNode(xrand);
+        TreeNode* xnear = xrand_node -> neast(itr_node);
         //std::cout << "Nearest Obtained" << std::endl;
 
         // u = input(xnear,xrand)

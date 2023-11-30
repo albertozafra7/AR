@@ -1,5 +1,5 @@
 Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/.private/arob_lab5/share/arob_lab5/cmake/arob_lab5Config.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/share/arob_lab5/cmake/arob_lab5Config.cmake)
 Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/.private/arob_lab5/share/arob_lab5/cmake/arob_lab5Config-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/share/arob_lab5/cmake/arob_lab5Config-version.cmake)
 Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/.private/arob_lab5/lib/librrt_global_planner_lib.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/lib/librrt_global_planner_lib.so)
-Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/.private/arob_lab5/lib/libllc_local_planner_lib.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/lib/libllc_local_planner_lib.so)
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/lib/libllc_local_planner_lib.so
 Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/.private/arob_lab5/lib/pkgconfig/arob_lab5.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/devel/lib/pkgconfig/arob_lab5.pc)
