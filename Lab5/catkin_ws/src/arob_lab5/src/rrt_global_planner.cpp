@@ -27,32 +27,94 @@ std::vector<double>normalize(const std::vector<int> vect){
 }
 
 
-void RRTPlanner::printMarker(std::vector<int> pose, int id){
+void RRTPlanner::printMarker(std::vector<double> pose, int id){
     visualization_msgs::Marker marker;
-    marker.type = visualization_msgs::Marker::SPHERE;
 
-    marker.header.frame_id = "base_link";
-    marker.header.stamp = ros::Time();
+    marker.header.frame_id = "map";
+    marker.header.stamp = ros::Time::now();
     marker.ns = "rrt_planner";
     marker.id = id;
-    marker.type = visualization_msgs::Marker::SPHERE;
     marker.action = visualization_msgs::Marker::ADD;
+    marker.type = visualization_msgs::Marker::SPHERE;
+    
     marker.pose.position.x = pose[0];
     marker.pose.position.y = pose[1];
-    marker.pose.position.z = 1;
+    marker.pose.position.z = 0.0;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
     marker.pose.orientation.z = 0.0;
     marker.pose.orientation.w = 1.0;
-    marker.scale.x = 0.1;
-    marker.scale.y = 0.1;
+    marker.scale.x = 0.2;
+    marker.scale.y = 0.2;
     marker.scale.z = 0.1;
     marker.color.a = 1.0; // Don't forget to set the alpha!
     marker.color.r = 0.0;
     marker.color.g = 1.0;
     marker.color.b = 0.0;
 
+    original_markers.push_back(marker);
+
     vis_pub.publish(marker);
+}
+
+void RRTPlanner::deleteMarker(visualization_msgs::Marker original_marker){
+    visualization_msgs::Marker marker;
+
+    marker.header.frame_id = "map";
+    marker.header.stamp = original_marker.header.stamp;
+    marker.ns = "rrt_planner";
+    marker.id = original_marker.id;
+    marker.action = visualization_msgs::Marker::DELETEALL; // It should not work in noetic
+
+    vis_pub.publish(marker);
+}
+
+void RRTPlanner::deleteMarkers(){
+    int id = 0;
+    for (auto marker = original_markers.rbegin(); marker != original_markers.rend(); marker++){
+        deleteMarker(*marker);
+        id++;
+    }
+}
+
+void RRTPlanner::printPlan(const std::vector<geometry_msgs::PoseStamped> plan, const geometry_msgs::PoseStamped& start){
+
+    visualization_msgs::Marker line_strip;
+    line_strip.header.frame_id = global_frame_id_;
+    line_strip.header.stamp = ros::Time::now();
+    line_strip.ns = "points_and_lines";
+    line_strip.action = visualization_msgs::Marker::ADD;
+    line_strip.pose.orientation.w = 1.0;
+
+    line_strip.id = 1;
+
+    line_strip.type = visualization_msgs::Marker::LINE_STRIP;
+
+    // LINE_STRIP/LINE_LIST markers use only the x component of scale, for the line width
+    line_strip.scale.x = 0.1;
+
+    // Line strip is blue
+    line_strip.color.b = 1.0;
+    line_strip.color.a = 1.0;
+    
+
+    int id = 0;
+    for (auto point = plan.rbegin(); point != plan.rend(); point++){
+        line_strip.points.push_back(point->pose.position);
+        printMarker(std::vector<double>{point->pose.position.x,point->pose.position.y},id);
+        id++;
+
+    }
+
+    //Add start
+    geometry_msgs::Point p_start;
+    p_start.z = 0.0;
+    p_start.x = start.pose.position.x;
+    p_start.y = start.pose.position.y;
+    line_strip.points.push_back(p_start);
+    printMarker(std::vector<double>{p_start.x,p_start.y},id+1);
+
+    vis_pub.publish(line_strip);
 }
 
 RRTPlanner::RRTPlanner() : costmap_ros_(NULL), initialized_(false),
@@ -133,10 +195,14 @@ bool RRTPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geometr
     std::vector<int> point_goal{(int)goal_mx,(int)goal_my};    
   	std::vector<std::vector<int>> solRRT;
     bool computed = computeRRT(point_start, point_goal, solRRT);
-    if (computed){        
+    if (computed){   
+        // delete previous markers 
+        deleteMarkers();   
+        // get new plan 
         getPlan(solRRT, plan);
         // add goal
         plan.push_back(goal);
+        printPlan(plan,start);
     }else{
         ROS_WARN("No plan computed");
     }
@@ -147,26 +213,15 @@ bool RRTPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geometr
 
 std::vector<int> RRTPlanner::SampleFree(){
     // Get the new random location
-    std::vector<int> xrand{rand(),rand()};
-    double x, y;
-    int xrand_mx, xrand_my;
-    costmap_->worldToMapEnforceBounds(xrand[0], xrand[1], xrand_mx, xrand_my);
-    costmap_->mapToWorld(xrand_mx,xrand_my,x,y);
-    xrand[0] = static_cast<int>(x);
-    xrand[1] = static_cast<int>(y);
-    
-    // While the computed random location is not in a free space and if the world coordinates are not within the map
-    while(costmap_->getCost(xrand_mx, xrand_my) != costmap_2d::FREE_SPACE){
-        // We compute new random locations
-        xrand[0] = rand();
-        xrand[1] = rand();
-        costmap_->worldToMapEnforceBounds(xrand[0], xrand[1], xrand_mx, xrand_my);
-        costmap_->mapToWorld(xrand_mx,xrand_my,x,y);
-        xrand[0] = static_cast<int>(x);
-        xrand[1] = static_cast<int>(y);
-    }
+    std::vector<int> xrand{static_cast<int>(rand() % costmap_->getSizeInCellsX()),static_cast<int>(rand() % costmap_->getSizeInCellsY())};
 
-    return xrand; 
+    // While the computed random location is not in a free space and if the world coordinates are not within the map
+    while(costmap_->getCost(xrand[0], xrand[1]) != costmap_2d::FREE_SPACE){
+        // We compute new random locations
+        xrand[0] = static_cast<int>(std::rand() % costmap_->getSizeInCellsX());
+        xrand[1] = static_cast<int>(rand() % costmap_->getSizeInCellsY());
+    }
+    return xrand;
 }
 
 // Get the closest node in the tree to the new location with the euclidean distance
@@ -208,8 +263,8 @@ std::vector<int> RRTPlanner::GetConstrainedPoint(const std::vector<int> x1, cons
 std::vector<int> RRTPlanner::InputNSteer(const std::vector<int> xnear, const std::vector<int> xrand){
     // In this case the only constraint is the maximum distance reachable from xnear
     std::vector<int> xnew = xrand;
-    if(distance(xnear,xrand) > max_dist_)
-        xnew = GetConstrainedPoint(xnear, xrand, max_dist_);
+    if(distance(xnear,xrand) > max_dist_/resolution_)
+        xnew = GetConstrainedPoint(xnear, xrand, max_dist_/resolution_);
 
     return xnew;
 }
@@ -230,7 +285,7 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
     double n_samples = 0;
 
     // while goal not reachable
-    while((distance(closest_node->getNode(),goal) > min_distanceToGoal) && n_samples <= max_samples_) {
+    while((distance(closest_node->getNode(),goal) > min_distanceToGoal/resolution_) && n_samples <= max_samples_) {
         // Xrand = SampleFree
         std::vector<int> xrand = SampleFree();
         //std::cout << "Sample Free Obtained" << std::endl;
@@ -245,26 +300,29 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
         //std::cout << "InputNSteer done" << std::endl;
 
         // if ObstacleFree(xnear,xnew)
-        if(obstacleFree(xnear->getNode()[0],xnear->getNode()[1],xnew[0],xnew[1]))
+        if(obstacleFree(xnear->getNode()[0],xnear->getNode()[1],xnew[0],xnew[1])){
             // V = V union xnew
             // E = E union {(xnear,xnew)}
             xnear->appendChild(new TreeNode(xnew));    
+            closest_node = Nearest(goal,itr_node);
 
-        printMarker(xnew,n_samples);
-
-        closest_node = Nearest(goal,itr_node);
-        sol = closest_node->returnSolution();
+            // Debug
+            /*std::vector<double> xnew_w = {0,0};
+            costmap_->mapToWorld(xnew[0],xnew[1],xnew_w[0],xnew_w[1]);
+            printMarker(xnew_w,n_samples);
+            std::cout << "Current distance to goal = " << distance(closest_node->getNode(),goal) << std::endl;*/
+        }
         n_samples++;
     }
     std::cout << "Computation finished" << std::endl;
     
 
-    if(n_samples <= max_samples_)
+    if(n_samples <= max_samples_){
         finished = true;
-
+        sol = closest_node->returnSolution();
+    }
     // Return G
     // implement RRT here!
-
 
     itr_node->~TreeNode();
 

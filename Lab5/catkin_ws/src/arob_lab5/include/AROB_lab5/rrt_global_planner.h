@@ -45,6 +45,8 @@ private:
 
     // ----- Custom variables -----
     ros::Publisher vis_pub;
+    std::vector<visualization_msgs::Marker> original_markers;
+
 
 
     // functions to compute the plan
@@ -58,7 +60,11 @@ private:
     TreeNode* Nearest(std::vector<int> xrand, TreeNode* itr_node);
     std::vector<int> GetConstrainedPoint(const std::vector<int> x1, const std::vector<int> x2, const double dist_to_x1);
     std::vector<int> InputNSteer(const std::vector<int> xnear, const std::vector<int> xrand);
-    void printMarker(std::vector<int> pose, int id);
+    void printMarker(std::vector<double> pose, int id);
+    void printPlan(const std::vector<geometry_msgs::PoseStamped> plan, const geometry_msgs::PoseStamped& start);
+    void deleteMarkers();
+    void deleteMarker(visualization_msgs::Marker original_marker);
+
 };
 
 };
