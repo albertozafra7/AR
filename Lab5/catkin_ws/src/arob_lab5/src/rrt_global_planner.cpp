@@ -224,29 +224,6 @@ std::vector<int> RRTPlanner::SampleFree(){
     return xrand;
 }
 
-// Get the closest node in the tree to the new location with the euclidean distance
-TreeNode* RRTPlanner::Nearest(const std::vector<int> xrand, TreeNode* itr_node){
-    double min_distance = distance(xrand,itr_node->getNode());
-    double child_distance = 0.0f;
-    TreeNode* xnear = itr_node;   // The node that we will return
-
-    if(itr_node->hasChildren()){
-        for(int i = 0; i < itr_node->childrenNumber(); i++){
-            child_distance = distance(xrand,itr_node->getChild(i)->getNode());
-            if(child_distance < min_distance){
-                min_distance = child_distance;
-                xnear = itr_node->getChild(i);
-            }
-            // If the child has children also we run the method recursivelly
-            if(itr_node->getChild(i)->hasChildren())
-                xnear = Nearest(xrand, itr_node->getChild(i));
-                
-        }
-
-    }
-    return xnear; 
-}
-
 // Obtain a point between x1 and x2 at a fixed distance to x1
 std::vector<int> RRTPlanner::GetConstrainedPoint(const std::vector<int> x1, const std::vector<int> x2, const double dist_to_x1){
     //std::vector<int> dir_vect = {x2[0]-x1[0],x2[1]-x1[1]};  // director vector between x1 and x2
@@ -284,14 +261,16 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
 
     double n_samples = 0;
 
+    std::vector<std::vector<int>> V;
+
     // while goal not reachable
     while((distance(closest_node->getNode(),goal) > min_distanceToGoal/resolution_) && n_samples <= max_samples_) {
         // Xrand = SampleFree
         std::vector<int> xrand = SampleFree();
-        //std::cout << "Sample Free Obtained" << std::endl;
         
         // Xnear = Nearest(G=(V,E),xrand)
-        TreeNode* xnear = Nearest(xrand, itr_node);
+        TreeNode* random_node = new TreeNode(xrand);
+        TreeNode* xnear = random_node -> neast(itr_node);
         //std::cout << "Nearest Obtained" << std::endl;
 
         // u = input(xnear,xrand)
@@ -299,18 +278,16 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
         std::vector<int> xnew = InputNSteer(xnear->getNode(),xrand);
         //std::cout << "InputNSteer done" << std::endl;
 
-        // if ObstacleFree(xnear,xnew)
-        if(obstacleFree(xnear->getNode()[0],xnear->getNode()[1],xnew[0],xnew[1])){
+        // if ObstacleFree(xnear,xnew)                                           && V does not contains xnew
+        if(obstacleFree(xnear->getNode()[0],xnear->getNode()[1],xnew[0],xnew[1]) && std::find(V.begin(), V.end(), xnew) == V.end()){
             // V = V union xnew
+            V.push_back(xnew);
             // E = E union {(xnear,xnew)}
-            xnear->appendChild(new TreeNode(xnew));    
-            closest_node = Nearest(goal,itr_node);
+            TreeNode* xnew_node = new TreeNode(xnew);
+            xnear->appendChild(xnew_node);
+            //closest_node = Nearest(goal,itr_node);
+            closest_node = xnew_node;
 
-            // Debug
-            /*std::vector<double> xnew_w = {0,0};
-            costmap_->mapToWorld(xnew[0],xnew[1],xnew_w[0],xnew_w[1]);
-            printMarker(xnew_w,n_samples);
-            std::cout << "Current distance to goal = " << distance(closest_node->getNode(),goal) << std::endl;*/
         }
         n_samples++;
     }
@@ -322,7 +299,6 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
         sol = closest_node->returnSolution();
     }
     // Return G
-    // implement RRT here!
 
     itr_node->~TreeNode();
 
