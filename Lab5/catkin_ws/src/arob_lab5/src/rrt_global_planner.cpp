@@ -220,7 +220,7 @@ std::vector<int> RRTPlanner::SampleFree(){
     // While the computed random location is not in a free space and if the world coordinates are not within the map
     while(costmap_->getCost(xrand[0], xrand[1]) != costmap_2d::FREE_SPACE){
         // We compute new random locations
-        xrand[0] = static_cast<int>(std::rand() % costmap_->getSizeInCellsX());
+        xrand[0] = static_cast<int>(rand() % costmap_->getSizeInCellsX());
         xrand[1] = static_cast<int>(rand() % costmap_->getSizeInCellsY());
     }
     return xrand;
@@ -259,14 +259,23 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
         
     // Initialize the tree with the starting point in map coordinates
     TreeNode *itr_node = new TreeNode(start); 
-    TreeNode *closest_node = itr_node;
+
+    // If our goal is next to the starting pose do nothing
+    if(distance(start,goal) < max_dist_/resolution_ && obstacleFree(start[0], start[1], goal[0], goal[1])){
+        sol = itr_node->returnSolution();
+        std::cout << "Goal already reachable from the starting pose" << std::endl;
+        return true;
+    }
+
+    // Else initialize everything
+    std::vector<int> closest_node = itr_node->getNode();
 
     double n_samples = 0;
 
     std::vector<std::vector<int>> V;
 
     // while goal not reachable
-    while((distance(closest_node->getNode(),goal) > min_distanceToGoal/resolution_) && n_samples <= max_samples_) {
+    while(/*(distance(closest_node,goal) > min_distanceToGoal/resolution_) &&*/ n_samples < max_samples_ /*&& !finished*/) {
         // Xrand = SampleFree
         std::vector<int> xrand = SampleFree();
         
@@ -288,18 +297,22 @@ bool RRTPlanner::computeRRT(const std::vector<int> start, const std::vector<int>
             TreeNode* xnew_node = new TreeNode(xnew);
             xnear->appendChild(xnew_node);
             //closest_node = Nearest(goal,itr_node);
-            closest_node = xnew_node;
+            closest_node = xnew;
+            
+            // If we can go directly from the last node to the goal
+            if(obstacleFree(xnew[0], xnew[1], goal[0], goal[1]) && distance(xnew,goal) <= max_dist_/resolution_){
+                sol = xnew_node->returnSolution();
+                finished = true;
+                break; // We finish the while
+            }
 
         }
+
         n_samples++;
     }
     std::cout << "Computation finished" << std::endl;
     
 
-    if(n_samples <= max_samples_){
-        finished = true;
-        sol = closest_node->returnSolution();
-    }
     // Return G
 
     itr_node->~TreeNode();
