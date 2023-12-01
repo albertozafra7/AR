@@ -35,9 +35,14 @@ class drone_race {
     ros::Publisher pub_traj_markers_;
     ros::Publisher pub_traj_vectors_;
     ros::Publisher pub_gate_markers_;
+    
 
     //Id markers
     int id_marker = 0;
+
+    // Custom properties
+    ros::Publisher pub_drone_vel_;   // Drone velocity publisher
+    std::vector<geometry_msgs::Twist> drone_vel_list;   // List of velocities to send to the drone
 
     public:
 
@@ -50,6 +55,9 @@ class drone_race {
             nh_.advertise<visualization_msgs::MarkerArray>("trajectory_vectors", 0);
         pub_gate_markers_ =
             nh_.advertise<visualization_msgs::MarkerArray>("gate_markers", 0);
+            
+        // Create publisher for gazebo
+        pub_drone_vel_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
 	}
 
     ~drone_race() {
@@ -164,11 +172,44 @@ class drone_race {
 
         // Definition of the trajectory beginning, end and intermediate constraints
         mav_trajectory_generation::Vertex::Vector vertices;
-        // INCLUDE YOUR CODE HERE
+        mav_trajectory_generation::Vertex start_vertex(dimension), end_vertex(dimension);
+        std::vector<mav_trajectory_generation::Vertex> middle_vertices;
+        
+        // Start config
+        start_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
+        vertices.push_back(start_vertex);
+
+        // Creation of the intermediate points
+        for(int i = 0; i < gates.size(); i++){
+            middle_vertices.push_back(mav_trajectory_generation::Vertex(dimension));
+            // Position constraints
+            middle_vertices[i].addConstraint(mav_trajectory_generation::derivative_order::POSITION, Eigen::Vector3d(gates[i].position.x,gates[i].position.y,gates[i].position.z));
+            // Velocity constraints TODO
+
+            // Add to vertices 
+            vertices.push_back(middle_vertices[i]);
+        }
+
+        // End config
+        end_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
+        vertices.push_back(end_vertex);
+
 
         // Provide the time constraints on the vertices
-        std::vector<double> segment_times;
-        // INCLUDE YOUR CODE HERE
+        //Automatic time computation
+        std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
+        const double v_max = 2.0;
+        const double a_max = 2.0;
+        segment_times = estimateSegmentTimes(vertices, v_max, a_max);
+        cout << "Segment times = " << segment_times.size() << endl;
+        for (int i=0; i< segment_times.size() ; i++) {
+            cout << "Time " << i << " = " << segment_times[i] << endl;
+        }
+        //Manual time computation
+        /*segment_times.clear();
+        segment_times.push_back(3.5); // This is the time required to go from vertex 0 to vertex 1
+        segment_times.push_back(2.5); // This is the time required to go from vertex 1 to vertex 2*/
+        
         
         // Solve the optimization problem
         const int N = 10; //Degree of the polynomial, even number at least two times the highest derivative
@@ -199,12 +240,15 @@ class drone_race {
         //AROB visualization
         draw_trajectory_markers();
 
-        // Generate list of commands to publish to the drone
-        // INCLUDE YOUR CODE HERE
+        // Generate list of commands to publish to the drone 
+        // We send a command to the drone every 100ms (take in mind)
+        for(int i = 0; i < states.size(); i++)
+
     }
 
     void send_command() {
         // INCLUDE YOUR CODE TO PUBLISH THE COMMANDS TO THE DRONE
+        // Sending position goals (easier but bad option in pratice) or velocity commands ()
     }
 
     private: 
@@ -443,8 +487,8 @@ int main(int argc, char** argv) {
     }
     race.drawGates();
 
-    race.generate_trajectory_example();
-    //race.generate_trajectory();
+    //race.generate_trajectory_example();
+    race.generate_trajectory();
 
     while (ros::ok())
     {
