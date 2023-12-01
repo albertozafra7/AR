@@ -43,6 +43,7 @@ class drone_race {
     // Custom properties
     ros::Publisher pub_drone_vel_;   // Drone velocity publisher
     std::vector<geometry_msgs::Twist> drone_vel_list;   // List of velocities to send to the drone
+    int global_it = 0;
 
     public:
 
@@ -58,9 +59,18 @@ class drone_race {
             
         // Create publisher for gazebo
         pub_drone_vel_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
+        global_it = 0;
 	}
 
     ~drone_race() {
+    }
+
+    void resetGlobalIt(){
+        global_it = 0;
+    }
+
+    void incrementGlobalIt(){
+        global_it++;
     }
 
     int readGates(string file) {
@@ -242,13 +252,26 @@ class drone_race {
 
         // Generate list of commands to publish to the drone 
         // We send a command to the drone every 100ms (take in mind)
-        for(int i = 0; i < states.size(); i++)
+        for(int i = 0; i < states.size(); i++){
+            geometry_msgs::Twist temp_vel;
+
+            temp_vel.linear.x = states[i].velocity_W[0];
+            temp_vel.linear.y = states[i].velocity_W[1];
+            temp_vel.linear.z = states[i].velocity_W[2];
+
+            drone_vel_list.push_back(temp_vel);
+        }
+
+        send_command();
+        
 
     }
 
     void send_command() {
         // INCLUDE YOUR CODE TO PUBLISH THE COMMANDS TO THE DRONE
         // Sending position goals (easier but bad option in pratice) or velocity commands ()
+        
+        //TODO
     }
 
     private: 
@@ -480,10 +503,15 @@ int main(int argc, char** argv) {
     }
     race.readGates(filegates);
 
+    // reset the global it
+    race.resetGlobalIt();
+    
     ros::Rate loop_rate(10);
     for (int i = 0; i < 10; i++) {
         ros::spinOnce();  // process a few messages in the background - causes the uavPoseCallback to happen
         loop_rate.sleep();
+
+        race.incrementGlobalIt();
     }
     race.drawGates();
 
