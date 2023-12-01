@@ -100,13 +100,13 @@ class drone_race {
         // Definition of the trajectory beginning, end and intermediate constraints
         mav_trajectory_generation::Vertex::Vector vertices;
         mav_trajectory_generation::Vertex start(dimension), middle(dimension), end(dimension);
-        start.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
+        start.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);   // We set all the derivatives to 0
         vertices.push_back(start);
 
         //Position constraint
-        middle.addConstraint(mav_trajectory_generation::derivative_order::POSITION, Eigen::Vector3d(1,2,3));
+        middle.addConstraint(mav_trajectory_generation::derivative_order::POSITION, Eigen::Vector3d(1,2,3)); // We can specify specific values to the  derivatives (position)
         //Velocity constraint (optional)
-        middle.addConstraint(mav_trajectory_generation::derivative_order::VELOCITY, Eigen::Vector3d(1,0,0));
+        middle.addConstraint(mav_trajectory_generation::derivative_order::VELOCITY, Eigen::Vector3d(1,0,0)); //specify the velcity in this point to be (1, 0, 0)
         vertices.push_back(middle);
 
         end.makeStartOrEnd(Eigen::Vector3d(2,1,5), derivative_to_optimize);
@@ -114,7 +114,7 @@ class drone_race {
         
         // Provide the time constraints on the vertices
         //Automatic time computation
-        std::vector<double> segment_times;
+        std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
         const double v_max = 2.0;
         const double a_max = 2.0;
         segment_times = estimateSegmentTimes(vertices, v_max, a_max);
@@ -134,15 +134,16 @@ class drone_race {
         opt.solveLinear();
 
         //Obtain the trajectory
-        opt.getTrajectory(&trajectory);
+        opt.getTrajectory(&trajectory); // Here we get the optimized trajectory (the function that determines how to pass through the gates)
         //Sample the trajectory (to obtain positions, velocities, etc.)
         mav_msgs::EigenTrajectoryPoint::Vector states;
         double sampling_interval = 0.01; //How much time between intermediate points
+        // We define a sampling interval and we get the vector with the intermediate positions/velocities/accel... at specific times
         bool success = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
         // Example to access the data
         cout << "Trajectory time = " << trajectory.getMaxTime() << endl;
         cout << "Number of states = " << states.size() << endl;
-        cout << "Position (world frame) " << 3 << " X = " << states[2].position_W[0] << endl;
+        cout << "Position (world frame) " << 3 << " X = " << states[2].position_W[0] << endl;   // X position after 20ms (2*sampling_interval)
         cout << "Velocity (world frame) " << 3 << " X = " << states[2].velocity_W[0] << endl;
 
         // Default Visualization
@@ -294,9 +295,9 @@ class drone_race {
                 marker_aux.scale.x = 0.03;
                 marker_aux.scale.y = 0.03;
                 marker_aux.scale.z = 0.03;
-                marker_aux.color.r = 0.0f;
-                marker_aux.color.g = 0.0f;
-                marker_aux.color.b = 1.0f;
+                marker_aux.color.r = 0.925490196f;
+                marker_aux.color.g = 0.039215686f;
+                marker_aux.color.b = 0.509803922f;
                 marker_aux.color.a = 1.0;
                 marker_aux.lifetime = ros::Duration();
                 markers.markers.push_back(marker_aux);
@@ -334,9 +335,9 @@ class drone_race {
             marker_left.type = visualization_msgs::Marker::SPHERE;
             marker_left.action = visualization_msgs::Marker::ADD;
             marker_left.ns = "corner_left";
-            marker_left.scale.x = 0.2;
-            marker_left.scale.y = 0.2;
-            marker_left.scale.z = 0.2;
+            marker_left.scale.x = 0.25;
+            marker_left.scale.y = 0.25;
+            marker_left.scale.z = 0.25;
             marker_left.color.a = 1.0;
             marker_left.color.r = 1.0;
             marker_left.color.g = 1.0;
