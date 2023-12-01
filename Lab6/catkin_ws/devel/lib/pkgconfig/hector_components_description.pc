@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_components_description/lib/pkgconfig/hector_components_description.pc
