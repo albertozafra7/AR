@@ -1,0 +1,7 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:[m[K In member function ‘[01m[Kstd::vector<int> rrt_planner::RRTPlanner::SampleFree()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:154:82:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst unsigned char[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’ to binary ‘[01m[Koperator<<[m[K’
+  154 |     std::cout << costmap_->getCost(xrand[0], xrand[1]) == [01;31m[Kcostmap_2d::FREE_SPACE << std::endl[m[K;
+      |                                                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rrt_global_planner_lib.dir/build.make:63: CMakeFiles/rrt_global_planner_lib.dir/src/rrt_global_planner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/rrt_global_planner_lib.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

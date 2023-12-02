@@ -1,0 +1,10 @@
+[ 50%] Built target robot_location
+[35m[1mScanning dependencies of target followTargets3D[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/followTargets3D.dir/src/followTargets3D.cpp.o[0m
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/p12_arob_lab3/src/followTargets3D.cpp:185:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile_id[m[K’ was not declared in this scope
+  185 |   [01;31m[Kfile_id[m[K = stoi(argv[1]);
+      |   [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/followTargets3D.dir/build.make:63: CMakeFiles/followTargets3D.dir/src/followTargets3D.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1704: CMakeFiles/followTargets3D.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

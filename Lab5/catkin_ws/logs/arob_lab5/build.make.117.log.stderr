@@ -1,0 +1,10 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:[m[K In member function ‘[01m[Kbool rrt_planner::RRTPlanner::computeRRT(std::vector<int>, std::vector<int>, std::vector<std::vector<int> >&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:298:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KTreeNode* xnear[m[K’
+  298 |         TreeNode* [01;31m[Kxnear[m[K = Nearest(xrand, itr_node);
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:295:19:[m[K [01;36m[Knote: [m[K‘[01m[KTreeNode* xnear[m[K’ previously declared here
+  295 |         TreeNode *[01;36m[Kxnear[m[K = random_node -> neast(itr_node);
+      |                   [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/rrt_global_planner_lib.dir/build.make:63: CMakeFiles/rrt_global_planner_lib.dir/src/rrt_global_planner.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/rrt_global_planner_lib.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

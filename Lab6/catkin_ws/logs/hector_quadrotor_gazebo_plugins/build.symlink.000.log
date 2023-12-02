@@ -1,0 +1,7 @@
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_gazebo_plugins/cmake/hector_quadrotor_gazebo_pluginsConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_gazebo_plugins/cmake/hector_quadrotor_gazebo_pluginsConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_gazebo_quadrotor_simple_controller2.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_gazebo_quadrotor_propulsion.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_gazebo_quadrotor_aerodynamics.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_gazebo_ros_baro2.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_gazebo_plugins.pc

@@ -1,0 +1,7 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/helloWorld.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/helloWorld.cpp:6:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kfunctions[m[K’ was not declared in this scope
+    6 |  [01;31m[Kfunctions[m[K
+      |  [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/helloWorld.dir/build.make:63: CMakeFiles/helloWorld.dir/src/helloWorld.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/helloWorld.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

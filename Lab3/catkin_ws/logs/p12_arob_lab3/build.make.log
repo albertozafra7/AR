@@ -1,0 +1,5 @@
+[ 50%] Built target robot_location
+[35m[1mScanning dependencies of target followTargets3D[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/followTargets3D.dir/src/followTargets3D.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/lib/p12_arob_lab3/followTargets3D[0m
+[100%] Built target followTargets3D
