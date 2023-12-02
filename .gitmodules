@@ -1,0 +1,39 @@
+[submodule "Lab1/catkin_ws/src/teleop_twist_keyboard_cpp"]
+	path = Lab1/catkin_ws/src/teleop_twist_keyboard_cpp
+	url = https://github.com/methylDragon/teleop_twist_keyboard_cpp.git
+[submodule "Lab3/catkin_ws/src/geographic_info"]
+	path = Lab3/catkin_ws/src/geographic_info
+	url = https://github.com/ros-geographic-info/geographic_info.git
+[submodule "Lab3/catkin_ws/src/hector_quadrotor_noetic"]
+	path = Lab3/catkin_ws/src/hector_quadrotor_noetic
+	url = https://github.com/RAFALAMAO/hector_quadrotor_noetic.git
+[submodule "Lab3/catkin_ws/src/unique_identifier"]
+	path = Lab3/catkin_ws/src/unique_identifier
+	url = https://github.com/ros-geographic-info/unique_identifier.git
+[submodule "Lab6/catkin_ws/src/geographic_info"]
+	path = Lab6/catkin_ws/src/geographic_info
+	url = https://github.com/ros-geographic-info/geographic_info.git
+[submodule "Lab6/catkin_ws/src/traj_gen/catkin_simple"]
+	path = Lab6/catkin_ws/src/traj_gen/catkin_simple
+	url = https://github.com/catkin/catkin_simple.git
+[submodule "Lab6/catkin_ws/src/traj_gen/eigen_catkin"]
+	path = Lab6/catkin_ws/src/traj_gen/eigen_catkin
+	url = https://github.com/ethz-asl/eigen_catkin.git
+[submodule "Lab6/catkin_ws/src/traj_gen/eigen_checks"]
+	path = Lab6/catkin_ws/src/traj_gen/eigen_checks
+	url = https://github.com/ethz-asl/eigen_checks.git
+[submodule "Lab6/catkin_ws/src/traj_gen/glog_catkin"]
+	path = Lab6/catkin_ws/src/traj_gen/glog_catkin
+	url = https://github.com/ethz-asl/glog_catkin.git
+[submodule "Lab6/catkin_ws/src/traj_gen/mav_comm"]
+	path = Lab6/catkin_ws/src/traj_gen/mav_comm
+	url = https://github.com/ethz-asl/mav_comm.git
+[submodule "Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation"]
+	path = Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation
+	url = https://github.com/ethz-asl/mav_trajectory_generation.git
+[submodule "Lab6/catkin_ws/src/traj_gen/nlopt"]
+	path = Lab6/catkin_ws/src/traj_gen/nlopt
+	url = https://github.com/ethz-asl/nlopt.git
+[submodule "Lab6/catkin_ws/src/unique_identifier"]
+	path = Lab6/catkin_ws/src/unique_identifier
+	url = https://github.com/ros-geographic-info/unique_identifier.git

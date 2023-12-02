@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/share/nlopt/cmake/nloptConfig.cmake

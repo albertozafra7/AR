@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/VelocityZCommand.lisp

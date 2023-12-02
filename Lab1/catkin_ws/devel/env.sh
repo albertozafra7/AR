@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/catkin_tools_prebuild/env.sh

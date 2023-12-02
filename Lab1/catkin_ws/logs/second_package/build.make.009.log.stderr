@@ -1,0 +1,14 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/Response.cpp:[m[K In function ‘[01m[Kvoid chatterCallback(const ConstPtr&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/Response.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kchatter_pub[m[K’ was not declared in this scope
+   35 |     [01;31m[Kchatter_pub[m[K.publish(response_msg);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/Response.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/Response.cpp:91:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kros::NodeHandle n[m[K’
+   91 |   ros::NodeHandle [01;31m[Kn[m[K;
+      |                   [01;31m[K^[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/src/Response.cpp:63:19:[m[K [01;36m[Knote: [m[K‘[01m[Kros::NodeHandle n[m[K’ previously declared here
+   63 |   ros::NodeHandle [01;36m[Kn[m[K;
+      |                   [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/Response.dir/build.make:63: CMakeFiles/Response.dir/src/Response.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:728: CMakeFiles/Response.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,5 @@
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_pose_estimation_core/cmake/hector_pose_estimation_coreConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_pose_estimation_core/cmake/hector_pose_estimation_coreConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_pose_estimation.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_pose_estimation_core.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_pose_estimation/matrix_config.h

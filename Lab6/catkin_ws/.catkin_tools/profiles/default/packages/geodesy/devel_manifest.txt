@@ -1,0 +1,7 @@
+geographic_info/geodesy
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/cmake.lock /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/share/geodesy/cmake/geodesyConfig.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/geodesy/cmake/geodesyConfig.cmake
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/share/geodesy/cmake/geodesyConfig-version.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/geodesy/cmake/geodesyConfig-version.cmake
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/lib/libgeoconv.so /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libgeoconv.so
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/lib/pkgconfig/geodesy.pc /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/geodesy.pc
+/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy/lib/python3/dist-packages/geodesy/__init__.py /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/geodesy/__init__.py
