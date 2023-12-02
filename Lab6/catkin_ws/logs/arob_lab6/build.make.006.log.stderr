@@ -1,8 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/arob_lab6/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::draw_gate_markers(geometry_msgs::Pose)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/arob_lab6/src/drone_race.cpp:390:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker[m[K’ was not declared in this scope; did you mean ‘[01m[Kid_marker[m[K’?
-  390 |             [01;31m[Kmarker[m[K.pose.position.x = position(0);
-      |             [01;31m[K^~~~~~[m[K
-      |             [32m[Kid_marker[m[K
-make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/drone_race.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

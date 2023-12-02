@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/devel/.private/p12_arob_lab2/share/p12_arob_lab2/cmake/p12_arob_lab2Config.cmake

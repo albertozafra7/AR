@@ -1,4 +1,0 @@
-[  0%] Built target hector_uav_msgs_generate_messages_cpp
-[ 33%] Built target hector_quadrotor_pose_estimation_node
-[ 66%] Built target hector_quadrotor_pose_estimation
-[100%] Built target hector_quadrotor_pose_estimation_nodelet

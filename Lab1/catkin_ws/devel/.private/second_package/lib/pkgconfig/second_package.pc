@@ -1,8 +1,0 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/second_package
-
-Name: second_package
-Description: Description of second_package
-Version: 0.0.0
-Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/src/second_package/include
-Libs: -L${prefix}/lib -lsecond_package
-Requires: 

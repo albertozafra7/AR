@@ -1,8 +1,0 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_gazebo_thermal_camera
-
-Name: hector_gazebo_thermal_camera
-Description: Description of hector_gazebo_thermal_camera
-Version: 0.5.1
-Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/include
-Libs: -L${prefix}/lib 
-Requires: gazebo_plugins

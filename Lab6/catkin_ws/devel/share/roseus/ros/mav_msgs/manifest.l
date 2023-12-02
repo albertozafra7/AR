@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/share/roseus/ros/mav_msgs/manifest.l

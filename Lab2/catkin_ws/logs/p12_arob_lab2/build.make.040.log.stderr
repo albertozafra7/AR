@@ -1,7 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/src/p12_arob_lab2/src/followTargets.cpp:[m[K In member function ‘[01m[Kvoid FollowTargetsClass::loadTargetsFromFile(const string&)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/src/p12_arob_lab2/src/followTargets.cpp:38:4:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
-   38 |    [01;31m[Kbreak[m[K;
-      |    [01;31m[K^~~~~[m[K
-make[2]: *** [CMakeFiles/followTargets.dir/build.make:63: CMakeFiles/followTargets.dir/src/followTargets.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:925: CMakeFiles/followTargets.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

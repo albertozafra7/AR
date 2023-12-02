@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/Altimeter.l

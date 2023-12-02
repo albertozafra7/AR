@@ -1,8 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:[m[K In member function ‘[01m[Kvoid rrt_planner::RRTPlanner::getPlan(std::vector<std::vector<int> >, std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&, const PoseStamped&, const PoseStamped&)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab5/catkin_ws/src/arob_lab5/src/rrt_global_planner.cpp:424:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvis_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kvis_pub[m[K’?
-  424 |     [01;31m[Kvis_pub_[m[K.publish(line_strip);
-      |     [01;31m[K^~~~~~~~[m[K
-      |     [32m[Kvis_pub[m[K
-make[2]: *** [CMakeFiles/rrt_global_planner_lib.dir/build.make:63: CMakeFiles/rrt_global_planner_lib.dir/src/rrt_global_planner.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/rrt_global_planner_lib.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

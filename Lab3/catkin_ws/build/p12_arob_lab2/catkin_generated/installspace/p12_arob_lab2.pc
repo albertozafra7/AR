@@ -1,8 +1,0 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/install
-
-Name: p12_arob_lab2
-Description: Description of p12_arob_lab2
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lp12_arob_lab2
-Requires: 

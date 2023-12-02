@@ -1,8 +1,0 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks
-
-Name: eigen_checks
-Description: Description of eigen_checks
-Version: 0.0.1
-Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks/include
-Libs: -L${prefix}/lib -leigen_checks
-Requires: 

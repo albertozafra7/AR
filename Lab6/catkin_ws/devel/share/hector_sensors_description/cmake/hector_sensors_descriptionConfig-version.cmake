@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_sensors_description/share/hector_sensors_description/cmake/hector_sensors_descriptionConfig-version.cmake

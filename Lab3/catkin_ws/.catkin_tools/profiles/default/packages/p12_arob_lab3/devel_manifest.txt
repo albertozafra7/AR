@@ -1,7 +1,0 @@
-p12_arob_lab3
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/cmake.lock /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/./cmake.lock
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/share/p12_arob_lab3/cmake/p12_arob_lab3Config.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/share/p12_arob_lab3/cmake/p12_arob_lab3Config.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/share/p12_arob_lab3/cmake/p12_arob_lab3Config-version.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/share/p12_arob_lab3/cmake/p12_arob_lab3Config-version.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/lib/pkgconfig/p12_arob_lab3.pc /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/lib/pkgconfig/p12_arob_lab3.pc
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/lib/p12_arob_lab3/followTargets3D /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/lib/p12_arob_lab3/followTargets3D
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/p12_arob_lab3/lib/p12_arob_lab3/robot_location /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/lib/p12_arob_lab3/robot_location
