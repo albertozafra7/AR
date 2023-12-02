@@ -1,5 +1,0 @@
-<launch>
-	<node name="world_simulate" pkg="stage_ros" type="stageros" output="screen" args="$(find first_package)/world/simple.world"/>
-	<node name="keyboard_funct" pkg="teleop_twist_keyboard_cpp" type="teleop_twist_keyboard" output="screen"/>
-</launch>
-	

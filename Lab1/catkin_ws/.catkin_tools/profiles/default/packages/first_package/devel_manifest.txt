@@ -1,5 +1,0 @@
-first_package
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/first_package/cmake.lock /home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/./cmake.lock
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/first_package/share/first_package/cmake/first_packageConfig.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/share/first_package/cmake/first_packageConfig.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/first_package/share/first_package/cmake/first_packageConfig-version.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/share/first_package/cmake/first_packageConfig-version.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/first_package/lib/pkgconfig/first_package.pc /home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/lib/pkgconfig/first_package.pc

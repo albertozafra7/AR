@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/ros_package_template/share/ros_package_template/cmake/ros_package_templateConfig-version.cmake

@@ -1,7 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/src/p12_arob_lab2/src/followTargets.cpp:[m[K In constructor ‘[01m[KFollowTargetsClass::FollowTargetsClass()[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/Lab2/catkin_ws/src/p12_arob_lab2/src/followTargets.cpp:30:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kros::package[m[K’ has not been declared
-   30 |   std::string packagePath = ros::[01;31m[Kpackage[m[K::getPath("p12_arob_lab2");
-      |                                  [01;31m[K^~~~~~~[m[K
-make[2]: *** [CMakeFiles/followTargets.dir/build.make:63: CMakeFiles/followTargets.dir/src/followTargets.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:925: CMakeFiles/followTargets.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

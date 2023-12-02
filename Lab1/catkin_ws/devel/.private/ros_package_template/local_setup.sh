@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-# generated from catkin/cmake/template/local_setup.sh.in
-
-# since this file is sourced either use the provided _CATKIN_SETUP_DIR
-# or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab1/catkin_ws/devel/.private/ros_package_template}
-CATKIN_SETUP_UTIL_ARGS="--extend --local"
-. "$_CATKIN_SETUP_DIR/setup.sh"
-unset CATKIN_SETUP_UTIL_ARGS

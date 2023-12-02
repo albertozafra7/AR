@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_pose_estimation_core/share/hector_pose_estimation_core/cmake/hector_pose_estimation_coreConfig.cmake

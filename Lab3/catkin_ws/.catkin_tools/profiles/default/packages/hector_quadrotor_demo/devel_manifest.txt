@@ -1,5 +1,0 @@
-hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_demo
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_demo/cmake.lock /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/./cmake.lock
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_demo/share/hector_quadrotor_demo/cmake/hector_quadrotor_demoConfig-version.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/share/hector_quadrotor_demo/cmake/hector_quadrotor_demoConfig-version.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_demo/share/hector_quadrotor_demo/cmake/hector_quadrotor_demoConfig.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/share/hector_quadrotor_demo/cmake/hector_quadrotor_demoConfig.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_demo/lib/pkgconfig/hector_quadrotor_demo.pc /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_demo.pc

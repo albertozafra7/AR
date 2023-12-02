@@ -1,6 +1,0 @@
-traj_gen/catkin_simple
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/cmake.lock /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/share/catkin_simple/cmake/catkin_simpleConfig-version.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/catkin_simple/cmake/catkin_simpleConfig-version.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/share/catkin_simple/cmake/catkin_simple-extras.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/catkin_simple/cmake/catkin_simple-extras.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/share/catkin_simple/cmake/catkin_simpleConfig.cmake /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/catkin_simple/cmake/catkin_simpleConfig.cmake
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/lib/pkgconfig/catkin_simple.pc /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/catkin_simple.pc
