@@ -58,7 +58,7 @@ class drone_race {
             nh_.advertise<visualization_msgs::MarkerArray>("gate_markers", 0);
             
         // Create publisher for gazebo
-        pub_drone_vel_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
+        pub_drone_vel_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1, true);
         global_it = 0;
 	}
 
@@ -185,6 +185,9 @@ class drone_race {
         mav_trajectory_generation::Vertex start_vertex(dimension), end_vertex(dimension);
         std::vector<mav_trajectory_generation::Vertex> middle_vertices;
         
+        Eigen::Matrix<double, 3, 1> local_vel_constraint(2.3, 0.0, 0.0);
+        
+
         // Start config
         start_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
         vertices.push_back(start_vertex);
@@ -193,9 +196,11 @@ class drone_race {
         for(int i = 0; i < gates.size(); i++){
             middle_vertices.push_back(mav_trajectory_generation::Vertex(dimension));
             // Position constraints
+            //std::cout << gates[i].position << std::endl;
             middle_vertices[i].addConstraint(mav_trajectory_generation::derivative_order::POSITION, Eigen::Vector3d(gates[i].position.x,gates[i].position.y,gates[i].position.z));
-            // Velocity constraints TODO
-
+            // Velocity constraints
+            Eigen::Matrix<double, 3, 1> global_vel_constraint = quat_to_R_matrix(gates[i].orientation) * local_vel_constraint;
+            middle_vertices[i].addConstraint(mav_trajectory_generation::derivative_order::VELOCITY, Eigen::Vector3d(global_vel_constraint(0),global_vel_constraint(1),global_vel_constraint(2)));
             // Add to vertices 
             vertices.push_back(middle_vertices[i]);
         }
@@ -208,8 +213,8 @@ class drone_race {
         // Provide the time constraints on the vertices
         //Automatic time computation
         std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
-        const double v_max = 2.0;
-        const double a_max = 2.0;
+        const double v_max = 4.5;
+        const double a_max = 8.5;
         segment_times = estimateSegmentTimes(vertices, v_max, a_max);
         cout << "Segment times = " << segment_times.size() << endl;
         for (int i=0; i< segment_times.size() ; i++) {
@@ -237,8 +242,8 @@ class drone_race {
         // Example to access the data
         cout << "Trajectory time = " << trajectory.getMaxTime() << endl;
         cout << "Number of states = " << states.size() << endl;
-        cout << "Position (world frame) " << 3 << " X = " << states[2].position_W[0] << endl;
-        cout << "Velocity (world frame) " << 3 << " X = " << states[2].velocity_W[0] << endl;
+        //cout << "Position (world frame) " << 3 << " X = " << states[0].position_W[0] << endl;
+        //cout << "Velocity (world frame) " << 3 << " X = " << states[0].velocity_W[0] << endl;
         
         // Default Visualization
         visualization_msgs::MarkerArray markers;
@@ -259,6 +264,10 @@ class drone_race {
             temp_vel.linear.y = states[i].velocity_W[1];
             temp_vel.linear.z = states[i].velocity_W[2];
 
+            temp_vel.angular.x = states[i].angular_velocity_W[0];
+            temp_vel.angular.y = states[i].angular_velocity_W[1];
+            temp_vel.angular.z = states[i].angular_velocity_W[2];
+
             drone_vel_list.push_back(temp_vel);
         }
 
@@ -268,10 +277,13 @@ class drone_race {
     }
 
     void send_command() {
-        // INCLUDE YOUR CODE TO PUBLISH THE COMMANDS TO THE DRONE
         // Sending position goals (easier but bad option in pratice) or velocity commands ()
-        
-        //TODO
+        // Publish each velocity command in the list
+        for (const auto& vel_command : drone_vel_list) {
+            //std::cout << vel_command << std::endl;
+            pub_drone_vel_.publish(vel_command);
+            ros::Duration(0.1).sleep(); 
+        }
     }
 
     private: 
