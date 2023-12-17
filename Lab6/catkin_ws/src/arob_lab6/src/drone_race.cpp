@@ -214,7 +214,7 @@ class drone_race {
         //Automatic time computation
         std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
         const double v_max = 4.5;
-        const double a_max = 8.5;
+        const double a_max = 8.65;
         segment_times = estimateSegmentTimes(vertices, v_max, a_max);
         cout << "Segment times = " << segment_times.size() << endl;
         for (int i=0; i< segment_times.size() ; i++) {
