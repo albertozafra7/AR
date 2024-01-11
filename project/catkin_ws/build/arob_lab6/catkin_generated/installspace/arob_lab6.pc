@@ -1,0 +1,8 @@
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/install
+
+Name: arob_lab6
+Description: Description of arob_lab6
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs geometry_msgs

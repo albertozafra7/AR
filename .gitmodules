@@ -37,3 +37,6 @@
 [submodule "Lab6/catkin_ws/src/unique_identifier"]
 	path = Lab6/catkin_ws/src/unique_identifier
 	url = https://github.com/ros-geographic-info/unique_identifier.git
+[submodule "project/catkin_ws/src/geographic_info"]
+	path = project/catkin_ws/src/geographic_info
+	url = https://github.com/ros-geographic-info/geographic_info.git
