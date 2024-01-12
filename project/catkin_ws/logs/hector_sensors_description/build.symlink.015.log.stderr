@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_sensors_description/share/hector_sensors_description/cmake/hector_sensors_descriptionConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_sensors_description/cmake/hector_sensors_descriptionConfig.cmake
+Warning: Source hash: 5dee4bd3c7bf16b63b33a85c4dfa8ece
+Warning: Dest hash: 19223f8a084f1c59ad3c27be9c96c739
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_sensors_description/lib/pkgconfig/hector_sensors_description.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_sensors_description.pc
+Warning: Source hash: 737f27b0df8f1480e2c8b333b875926a
+Warning: Dest hash: 0094ec424b2172f71a90f4751bdc7b51

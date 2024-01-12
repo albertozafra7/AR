@@ -1,0 +1,9 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller_gazebo/share/hector_quadrotor_controller_gazebo/cmake/hector_quadrotor_controller_gazeboConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_controller_gazebo/cmake/hector_quadrotor_controller_gazeboConfig.cmake
+Warning: Source hash: c3eb39d011750972f44a3d2c21859e3b
+Warning: Dest hash: 80c1e078ac0ad808bc7e5fa1c15b5e29
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller_gazebo/lib/libhector_quadrotor_controller_gazebo.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_controller_gazebo.so
+Warning: Source hash: bfb20758f49dad8f3ee77a69293720ed
+Warning: Dest hash: 3e48a553b3192a931b29e57db6923e22
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller_gazebo/lib/pkgconfig/hector_quadrotor_controller_gazebo.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_controller_gazebo.pc
+Warning: Source hash: b86609199d0ec2361c957076b9bc0daa
+Warning: Dest hash: af615668e591690a1cb59669d1922a71

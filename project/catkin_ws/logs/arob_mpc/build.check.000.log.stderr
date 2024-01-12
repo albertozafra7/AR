@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/CMakeLists.txt:5 (add_message_files):
+  Unknown CMake command "add_message_files".
+
+
+make: *** [Makefile:1178: cmake_check_build_system] Error 1

@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/share/mav_system_msgs/cmake/mav_system_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_system_msgs/cmake/mav_system_msgs-msg-extras.cmake
+Warning: Source hash: 2c3ba3ddec26834ebb75d969b1a39ad1
+Warning: Dest hash: 99d8044f12254ac9df8a0161f6731a12
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/share/mav_system_msgs/cmake/mav_system_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_system_msgs/cmake/mav_system_msgsConfig.cmake
+Warning: Source hash: 2d1a9822280178ac8868cba239961add
+Warning: Dest hash: b61bad12e697fbe521720754affd49ee
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/share/mav_system_msgs/cmake/mav_system_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_system_msgs/cmake/mav_system_msgs-msg-paths.cmake
+Warning: Source hash: 81bc9fcb531102757da09f4a3b9862e7
+Warning: Dest hash: b147e7739d6f6c5c8274836b0577484d
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/lib/pkgconfig/mav_system_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/mav_system_msgs.pc
+Warning: Source hash: 0aab3e2653c3987fd8c340bc1d55e37f
+Warning: Dest hash: 20a93d418b3ca985a629e96f6821ef43

@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake
+Warning: Source hash: 49f4999ebd7a0ce196600ad974c83591
+Warning: Dest hash: 9fe786a6d1720e601a6ad1fb51e95fd3
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake
+Warning: Source hash: 9b4b23d4dedcccd8adad208a6153c9bf
+Warning: Dest hash: a2cf4dd970590a6bdd7fccce4b5d3b8c
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake
+Warning: Source hash: 9cc80e4a60bfe0ee2b52c70fdd783b49
+Warning: Dest hash: 5a2f945c028cff0e592f0cfe014e351f
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/lib/pkgconfig/hector_uav_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_uav_msgs.pc
+Warning: Source hash: 9194175a34e57f46dbdfe47f8beafb38
+Warning: Dest hash: a092dbb177a2a0edc1c8d2246e1535e1

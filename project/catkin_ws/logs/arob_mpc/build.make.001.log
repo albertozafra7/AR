@@ -1,0 +1,73 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target mav_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target mav_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target mav_planning_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target mav_planning_msgs_generate_messages_cpp
+[  0%] Built target mav_planning_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target mav_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target mav_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target mav_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target visualization_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target mav_planning_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target mav_planning_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target mpc_custom[0m
+[35m[1mScanning dependencies of target drone_race[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/drone_race.dir/src/drone_race.cpp.o[0m
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:24:10:[m[K [01;31m[Kfatal error: [m[Karob_mpc/vector_poses.h: No such file or directory
+   24 | #include [01;31m[K"arob_mpc/vector_poses.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/drone_race.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:28:10:[m[K [01;31m[Kfatal error: [m[Karob_mpc/vector_poses.h: No such file or directory
+   28 | #include [01;31m[K"arob_mpc/vector_poses.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1682: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

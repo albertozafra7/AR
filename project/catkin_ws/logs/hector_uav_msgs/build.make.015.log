@@ -1,0 +1,32 @@
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_Supply
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_ThrustCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_Compass
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_YawrateCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_VelocityZCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_ServoCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_HeightCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_MotorStatus
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_Altimeter
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_RawImu
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_MotorCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_VelocityXYCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_HeadingCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_AttitudeCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_RC
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_MotorPWM
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_PositionXYCommand
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_RawMagnetic
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_ControllerState
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_RawRC
+[  0%] Built target _hector_uav_msgs_generate_messages_check_deps_RuddersCommand
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[ 19%] Built target hector_uav_msgs_generate_messages_nodejs
+[ 39%] Built target hector_uav_msgs_generate_messages_eus
+[ 60%] Built target hector_uav_msgs_generate_messages_py
+[ 80%] Built target hector_uav_msgs_generate_messages_cpp
+[100%] Built target hector_uav_msgs_generate_messages_lisp
+[100%] Built target hector_uav_msgs_generate_messages

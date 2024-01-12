@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake
+Warning: Source hash: 1b9fd9eb7be82bf13ff8b6104f290039
+Warning: Dest hash: 06b3b78c4298769fc48732e81dbbadc6
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake
+Warning: Source hash: 7d244ec6bbb5491bd73427ae4c663c93
+Warning: Dest hash: f8788eec5efc383d9a2044f890a8bf85
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake
+Warning: Source hash: f47f959b52288a44c636db185ddeee6e
+Warning: Dest hash: 540ca034a6f6ddcf1d65fa851a93656e
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/lib/pkgconfig/mav_state_machine_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/mav_state_machine_msgs.pc
+Warning: Source hash: b7af75808856bfbef2bc4e6bbc9820e6
+Warning: Dest hash: 9e87b7047772dc923db22b75f758ae6c

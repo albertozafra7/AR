@@ -21,6 +21,8 @@
 #include <mav_trajectory_generation/trajectory_sampling.h>
 #include <ros/package.h>
 
+#include "arob_mpc/vector_poses.h"
+
 using namespace std;
 
 class drone_race {
@@ -42,7 +44,9 @@ class drone_race {
 
     // Custom properties
     ros::Publisher pub_drone_vel_;   // Drone velocity publisher
+    ros::Publisher pub_drone_pos_;
     std::vector<geometry_msgs::Twist> drone_vel_list;   // List of velocities to send to the drone
+    std::vector<geometry_msgs::PoseStamped> drone_pose_list; // List of poses to send to the mpc
     int global_it = 0;
 
     public:
@@ -59,6 +63,7 @@ class drone_race {
             
         // Create publisher for gazebo
         pub_drone_vel_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1, true);
+        pub_drone_pos_ = nh_.advertise<arob_mpc::vector_poses>("goal_pos", 1, true);
         global_it = 0;
 	}
 
@@ -258,6 +263,7 @@ class drone_race {
         // Generate list of commands to publish to the drone 
         // We send a command to the drone every 100ms (take in mind)
         for(int i = 0; i < states.size(); i++){
+            // Velocity push_back
             geometry_msgs::Twist temp_vel;
 
             temp_vel.linear.x = states[i].velocity_W[0];
@@ -269,9 +275,28 @@ class drone_race {
             temp_vel.angular.z = states[i].angular_velocity_W[2];
 
             drone_vel_list.push_back(temp_vel);
+
+
+            // Position push_back
+            geometry_msgs::PoseStamped temp_pos;
+
+            temp_pos.pose.position.x = states[i].position_W[0];
+            temp_pos.pose.position.y = states[i].position_W[1];
+            temp_pos.pose.position.z = states[i].position_W[2];
+
+
+            temp_pos.pose.orientation.x = states[i].orientation_W_B.x();
+            temp_pos.pose.orientation.y = states[i].orientation_W_B.y();
+            temp_pos.pose.orientation.z = states[i].orientation_W_B.z();
+            temp_pos.pose.orientation.w = states[i].orientation_W_B.w();
+
+            drone_pose_list.push_back(temp_pos);
+
         }
 
-        send_command();
+        //send_command();
+
+        send_goals(10);
         
 
     }
@@ -283,6 +308,22 @@ class drone_race {
             //std::cout << vel_command << std::endl;
             pub_drone_vel_.publish(vel_command);
             ros::Duration(0.1).sleep(); 
+        }
+    }
+
+    void send_goals(int lookahead) {
+        // Sending position goals (easier but bad option in pratice) or velocity commands ()
+        // Publish each position command in the list with a prediction lookahead
+        arob_mpc::vector_poses lookahead_poses;
+        for (int i = 0; i < drone_pose_list.size(); ++i) {
+            std::vector<geometry_msgs::PoseStamped> temp_poses;
+            for (int j = 0; j < min(lookahead, static_cast<int>(drone_pose_list.size()-i)); ++j)
+                temp_poses.push_back(drone_pose_list[i+j]);
+            //std::cout << vel_command << std::endl;
+            lookahead_poses.poses = temp_poses;
+            pub_drone_pos_.publish(lookahead_poses);
+            ros::Duration(0.1).sleep(); 
+            temp_poses.clear();
         }
     }
 
@@ -505,7 +546,7 @@ int main(int argc, char** argv) {
     // Load the gates
     drone_race race;
     string filegates;
-    std::string packagePath = ros::package::getPath("arob_lab6");
+    std::string packagePath = ros::package::getPath("arob_mpc");
     filegates.assign(packagePath+"/src/");
     if (argc>1){
         filegates.append(argv[argc-1]);
