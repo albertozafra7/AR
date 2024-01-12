@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/Interfaces
+
+Name: IPOPT
+Description: Interior Point Optimizer
+URL: https://projects.coin-or.org/Ipopt
+Version: 3.12.7
+Libs: ${libdir}/libipopt.la /usr/local/lib/libcoinlapack.a /usr/local/lib/libcoinblas.a -lgfortran  -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -lgfortran -lm -lquadmath /usr/local/lib/libcoinblas.a -lgfortran  -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -lgfortran -lm -lquadmath -lm  -ldl
+Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/Interfaces -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/Common -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/LinAlg -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/Algorithm -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/contrib/CGPenalty -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/contrib/LinearSolverLoader -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7/Ipopt/src/Common
+Requires: 

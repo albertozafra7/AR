@@ -1,4 +1,4 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_demo
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_demo
 
 Name: hector_quadrotor_demo
 Description: Description of hector_quadrotor_demo

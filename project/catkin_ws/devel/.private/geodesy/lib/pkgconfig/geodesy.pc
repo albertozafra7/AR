@@ -1,8 +1,8 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geodesy
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geodesy
 
 Name: geodesy
 Description: Description of geodesy
 Version: 0.5.6
-Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/geographic_info/geodesy/include
+Cflags: -I/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/geographic_info/geodesy/include
 Libs: -L${prefix}/lib -lgeoconv
 Requires: geographic_msgs geometry_msgs sensor_msgs tf unique_id uuid_msgs
