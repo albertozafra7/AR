@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
 geometry_msgs/Wrench.h
 -
 boost/range/iterator_range.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_aerodynamics.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_aerodynamics.h
 geometry_msgs/Quaternion.h
 -
 geometry_msgs/Twist.h
@@ -26,13 +26,13 @@ ros/node_handle.h
 boost/thread/mutex.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
 limits
 -
 cmath
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/quadrotor_aerodynamics.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/quadrotor_aerodynamics.cpp
 hector_quadrotor_model/quadrotor_aerodynamics.h
 -
 hector_quadrotor_model/helpers.h
@@ -46,7 +46,7 @@ boost/array.hpp
 Eigen/Geometry
 -
 matlab_helpers.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h
 string

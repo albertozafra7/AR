@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_visualization/lib/libmav_visualization.pdb"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_visualization/lib/libmav_visualization.so"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib/libmav_visualization.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib/libmav_visualization.so"
   "CMakeFiles/mav_visualization.dir/src/hexacopter_marker.cpp.o"
   "CMakeFiles/mav_visualization.dir/src/leica_marker.cpp.o"
   "CMakeFiles/mav_visualization.dir/src/marker_group.cpp.o"

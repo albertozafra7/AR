@@ -126,7 +126,7 @@ map
 list
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/include/hector_quadrotor_controller/quadrotor_hardware_gazebo.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/include/hector_quadrotor_controller/quadrotor_hardware_gazebo.h
 gazebo_ros_control/robot_hw_sim.h
 -
 hector_quadrotor_controller/quadrotor_interface.h
@@ -144,7 +144,7 @@ ros/callback_queue.h
 ignition/math.hh
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/src/quadrotor_hardware_gazebo.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/src/quadrotor_hardware_gazebo.cpp
 hector_quadrotor_controller/quadrotor_hardware_gazebo.h
 -
 geometry_msgs/WrenchStamped.h

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js"
   "CMakeFiles/uuid_msgs_generate_messages_nodejs"
 )
 

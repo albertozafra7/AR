@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libdiffdrive_plugin_multi_wheel.pdb"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libdiffdrive_plugin_multi_wheel.so"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libdiffdrive_plugin_multi_wheel.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libdiffdrive_plugin_multi_wheel.so"
   "CMakeFiles/diffdrive_plugin_multi_wheel.dir/src/diffdrive_plugin_multi_wheel.cpp.o"
 )
 

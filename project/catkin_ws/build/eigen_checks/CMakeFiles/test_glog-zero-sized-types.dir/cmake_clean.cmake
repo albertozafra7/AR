@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types.pdb"
   "CMakeFiles/test_glog-zero-sized-types.dir/test/test_glog-zero-sized-types.cc.o"
 )
 

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/hexacopter_marker.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/hexacopter_marker.h
 mav_visualization/marker_group.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/mav_visualization/marker_group.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/mav_visualization/marker_group.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/marker_group.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/marker_group.h
 ros/ros.h
 -
 visualization_msgs/MarkerArray.h
@@ -24,9 +24,9 @@ string
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/src/hexacopter_publisher.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/src/hexacopter_publisher.cpp
 mav_visualization/hexacopter_marker.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/src/mav_visualization/hexacopter_marker.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/src/mav_visualization/hexacopter_marker.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

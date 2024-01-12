@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog_zero"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog_zero.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog_zero"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog_zero.pdb"
   "CMakeFiles/test_glog_zero.dir/test/test_glog-zero.cc.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_system_msgs/include/mav_system_msgs/CpuInfo.h"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_system_msgs/include/mav_system_msgs/ProcessInfo.h"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/include/mav_system_msgs/CpuInfo.h"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_system_msgs/include/mav_system_msgs/ProcessInfo.h"
   "CMakeFiles/mav_system_msgs_generate_messages_cpp"
 )
 

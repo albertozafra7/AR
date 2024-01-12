@@ -1,4 +1,4 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_catkin
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_catkin
 
 Name: eigen_catkin
 Description: Description of eigen_catkin

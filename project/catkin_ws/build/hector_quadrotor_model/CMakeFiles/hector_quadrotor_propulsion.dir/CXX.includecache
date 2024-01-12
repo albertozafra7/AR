@@ -78,13 +78,13 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
 geometry_msgs/Wrench.h
 -
 boost/range/iterator_range.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_propulsion.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_propulsion.h
 hector_uav_msgs/Supply.h
 -
 hector_uav_msgs/MotorStatus.h
@@ -110,13 +110,13 @@ boost/thread/mutex.hpp
 boost/thread/condition.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
 limits
 -
 cmath
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/quadrotor_propulsion.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/quadrotor_propulsion.cpp
 hector_quadrotor_model/quadrotor_propulsion.h
 -
 hector_quadrotor_model/helpers.h
@@ -128,7 +128,7 @@ ros/callback_queue.h
 boost/array.hpp
 -
 matlab_helpers.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/src/matlab_helpers.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

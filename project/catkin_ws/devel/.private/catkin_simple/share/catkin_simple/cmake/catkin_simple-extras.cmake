@@ -8,7 +8,7 @@ set(_CATKIN_SIMPLE_EXTRAS_INCLUDED_ TRUE)
 include(CMakeParseArguments)
 
 # cmake dir in develspace
-set(catkin_simple_CMAKE_DIR "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple/cmake")
+set(catkin_simple_CMAKE_DIR "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple/cmake")
 
 macro(catkin_simple)
   # Arguments

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks
 
 # Include any dependencies generated for this target.
 include CMakeFiles/eigen_checks.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/eigen_checks.dir/progress.make
 include CMakeFiles/eigen_checks.dir/flags.make
 
 CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o: CMakeFiles/eigen_checks.dir/flags.make
-CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o -c /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc
+CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o -c /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc
 
 CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc > CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc > CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.i
 
 CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc -o CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks/src/eigen-checks.cc -o CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.s
 
 # Object files for target eigen_checks
 eigen_checks_OBJECTS = \
@@ -77,15 +77,15 @@ eigen_checks_OBJECTS = \
 # External object files for target eigen_checks
 eigen_checks_EXTERNAL_OBJECTS =
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/build.make
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib/libglog.so
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so"
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/src/eigen-checks.cc.o
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/build.make
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib/libglog.so
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so: CMakeFiles/eigen_checks.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/eigen_checks.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/eigen_checks.dir/build: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so
+CMakeFiles/eigen_checks.dir/build: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so
 
 .PHONY : CMakeFiles/eigen_checks.dir/build
 
@@ -94,6 +94,6 @@ CMakeFiles/eigen_checks.dir/clean:
 .PHONY : CMakeFiles/eigen_checks.dir/clean
 
 CMakeFiles/eigen_checks.dir/depend:
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/eigen_checks/CMakeFiles/eigen_checks.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks/CMakeFiles/eigen_checks.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/eigen_checks.dir/depend
 

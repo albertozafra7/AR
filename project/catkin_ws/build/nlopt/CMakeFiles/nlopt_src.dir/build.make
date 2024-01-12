@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/nlopt
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/nlopt
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt
 
 # Utility rule file for nlopt_src.
 
@@ -64,53 +64,53 @@ CMakeFiles/nlopt_src-complete: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-pa
 CMakeFiles/nlopt_src-complete: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure
 CMakeFiles/nlopt_src-complete: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-build
 CMakeFiles/nlopt_src-complete: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'nlopt_src'"
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles
-	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles/nlopt_src-complete
-	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'nlopt_src'"
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles
+	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles/nlopt_src-complete
+	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-done
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-install: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing install step for 'nlopt_src'"
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/make_install_nlopt.sh
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing install step for 'nlopt_src'"
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/make_install_nlopt.sh
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-install
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'nlopt_src'"
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src
-	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp
-	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'nlopt_src'"
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/tmp
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src
+	/usr/bin/cmake -E make_directory /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp
+	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-mkdir
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-download: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step for 'nlopt_src'"
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src && wget https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step for 'nlopt_src'"
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src && wget https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-download
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-update: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'nlopt_src'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'nlopt_src'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-update
+	/usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-update
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-patch: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Performing patch step for 'nlopt_src'"
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src && tar -xzf ../nlopt-2.4.2.tar.gz && rm -rf ../nlopt_src-build/nlopt-2.4.2 && mv nlopt-2.4.2 ../nlopt_src-build/
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Performing patch step for 'nlopt_src'"
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src && tar -xzf ../nlopt-2.4.2.tar.gz && rm -rf ../nlopt_src-build/nlopt-2.4.2 && mv nlopt-2.4.2 ../nlopt_src-build/
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-patch
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure: nlopt_src-prefix/tmp/nlopt_src-cfgcmd.txt
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-update
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'nlopt_src'"
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && nlopt-2.4.2/configure --with-cxx --without-matlab --with-pic --prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/install
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'nlopt_src'"
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && nlopt-2.4.2/configure --with-cxx --without-matlab --with-pic --prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/install
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure
 
 nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-build: nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'nlopt_src'"
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && make
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'nlopt_src'"
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && make
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build && /usr/bin/cmake -E touch /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-stamp/nlopt_src-build
 
 nlopt_src: CMakeFiles/nlopt_src
 nlopt_src: CMakeFiles/nlopt_src-complete
@@ -135,6 +135,6 @@ CMakeFiles/nlopt_src.dir/clean:
 .PHONY : CMakeFiles/nlopt_src.dir/clean
 
 CMakeFiles/nlopt_src.dir/depend:
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/nlopt/CMakeFiles/nlopt_src.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/CMakeFiles/nlopt_src.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nlopt_src.dir/depend
 

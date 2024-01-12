@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_servo_plugin.pdb"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_servo_plugin.so"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_servo_plugin.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_servo_plugin.so"
   "CMakeFiles/hector_servo_plugin.dir/src/servo_plugin.cpp.o"
 )
 

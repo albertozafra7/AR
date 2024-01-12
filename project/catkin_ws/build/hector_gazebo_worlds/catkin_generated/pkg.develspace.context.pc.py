@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "hector_gazebo_worlds"
-PROJECT_SPACE_DIR = "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_worlds"
+PROJECT_SPACE_DIR = "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_worlds"
 PROJECT_VERSION = "0.5.1"

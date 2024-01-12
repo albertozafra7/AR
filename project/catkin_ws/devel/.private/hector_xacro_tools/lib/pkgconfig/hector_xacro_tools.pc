@@ -1,4 +1,4 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_xacro_tools
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_xacro_tools
 
 Name: hector_xacro_tools
 Description: Description of hector_xacro_tools

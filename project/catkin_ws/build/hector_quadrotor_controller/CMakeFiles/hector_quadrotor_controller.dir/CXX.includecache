@@ -96,7 +96,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/handles.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/handles.h
 geometry_msgs/Pose.h
 -
 geometry_msgs/Twist.h
@@ -116,11 +116,11 @@ hector_uav_msgs/YawrateCommand.h
 hector_uav_msgs/ThrustCommand.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/pid.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/pid.h
 ros/node_handle.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/quadrotor_interface.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/quadrotor_interface.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 hector_quadrotor_controller/handles.h
@@ -130,13 +130,13 @@ map
 list
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/src/pid.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/src/pid.cpp
 hector_quadrotor_controller/pid.h
 -
 limits
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/src/quadrotor_interface.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/src/quadrotor_interface.cpp
 hector_quadrotor_controller/quadrotor_interface.h
 -
 cmath

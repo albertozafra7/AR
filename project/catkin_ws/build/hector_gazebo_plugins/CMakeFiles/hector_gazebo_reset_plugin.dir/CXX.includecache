@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/reset_plugin.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/reset_plugin.h
 gazebo/common/Plugin.hh
 -
 ros/ros.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/src/reset_plugin.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/src/reset_plugin.cpp
 hector_gazebo_plugins/reset_plugin.h
 -
 gazebo/common/Events.hh

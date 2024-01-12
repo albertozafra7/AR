@@ -64,7 +64,7 @@ gazebo/common/Event.hh
 gazebo/common/Events.hh
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/hector_quadrotor_gazebo_plugins/gazebo_ros_baro.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/hector_quadrotor_gazebo_plugins/gazebo_ros_baro.h
 gazebo/common/Plugin.hh
 -
 ros/ros.h
@@ -80,7 +80,7 @@ hector_gazebo_plugins/update_timer.h
 dynamic_reconfigure/server.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/src/gazebo_ros_baro.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/src/gazebo_ros_baro.cpp
 hector_quadrotor_gazebo_plugins/gazebo_ros_baro.h
 -
 gazebo/common/Events.hh

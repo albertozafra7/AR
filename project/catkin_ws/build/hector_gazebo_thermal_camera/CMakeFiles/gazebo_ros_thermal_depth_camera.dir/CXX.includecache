@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/include/hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/include/hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
 gazebo_plugins/gazebo_ros_camera_utils.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
 hector_gazebo_thermal_camera/gazebo_ros_thermal_camera.h
 -
 gazebo/sensors/Sensor.hh
@@ -22,9 +22,9 @@ sensor_msgs/image_encodings.h
 gazebo/gazebo_config.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_depth_camera_plugin.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_depth_camera_plugin.cpp
 gazebo_ros_thermal_camera.cpp
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera/src/gazebo_ros_thermal_camera.cpp
 gazebo/plugins/DepthCameraPlugin.hh
 -
 

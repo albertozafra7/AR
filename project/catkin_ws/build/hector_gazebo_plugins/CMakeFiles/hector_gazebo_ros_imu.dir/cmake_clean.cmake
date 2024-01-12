@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_gazebo_ros_imu.pdb"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_gazebo_ros_imu.so"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_gazebo_ros_imu.pdb"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/lib/libhector_gazebo_ros_imu.so"
   "CMakeFiles/hector_gazebo_ros_imu.dir/src/gazebo_ros_imu.cpp.o"
 )
 

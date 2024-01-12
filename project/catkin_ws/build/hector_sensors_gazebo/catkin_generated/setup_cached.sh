@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_sensors_gazebo:$CMAKE_PREFIX_PATH"
-export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_sensors_gazebo'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_sensors_gazebo/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_sensors_gazebo:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_sensors_gazebo:$CMAKE_PREFIX_PATH"
+export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_sensors_gazebo'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_sensors_gazebo/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_sensors_gazebo:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_sensors_gazebo:$ROS_PACKAGE_PATH"

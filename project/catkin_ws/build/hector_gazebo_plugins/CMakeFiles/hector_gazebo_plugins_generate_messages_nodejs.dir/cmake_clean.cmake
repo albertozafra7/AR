@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_plugins/share/gennodejs/ros/hector_gazebo_plugins/srv/SetBias.js"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_plugins/share/gennodejs/ros/hector_gazebo_plugins/srv/SetBias.js"
   "CMakeFiles/hector_gazebo_plugins_generate_messages_nodejs"
 )
 

@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera:$CMAKE_PREFIX_PATH"
-export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_gazebo_thermal_camera'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_gazebo_thermal_camera'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_thermal_camera:$ROS_PACKAGE_PATH"

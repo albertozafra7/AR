@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

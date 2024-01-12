@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple/CMakeFiles /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple/CMakeFiles /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -2,7 +2,7 @@
 DEVELSPACE = 'TRUE' == 'TRUE'
 INSTALLSPACE = 'FALSE' == 'TRUE'
 
-CATKIN_DEVEL_PREFIX = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple'
+CATKIN_DEVEL_PREFIX = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/catkin_simple'
 
 CATKIN_GLOBAL_BIN_DESTINATION = 'bin'
 CATKIN_GLOBAL_ETC_DESTINATION = 'etc'
@@ -20,14 +20,14 @@ CATKIN_PACKAGE_LIBEXEC_DESTINATION = 'lib/catkin_simple'
 CATKIN_PACKAGE_PYTHON_DESTINATION = 'lib/python3/dist-packages/catkin_simple'
 CATKIN_PACKAGE_SHARE_DESTINATION = 'share/catkin_simple'
 
-CMAKE_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple'
-CMAKE_CURRENT_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple'
-CMAKE_CURRENT_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple'
-CMAKE_INSTALL_PREFIX = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/install'
-CMAKE_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple'
+CMAKE_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple'
+CMAKE_CURRENT_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple'
+CMAKE_CURRENT_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple'
+CMAKE_INSTALL_PREFIX = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/install'
+CMAKE_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple'
 
-PKG_CMAKE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/catkin_simple/share/catkin_simple/cmake'
+PKG_CMAKE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/catkin_simple/share/catkin_simple/cmake'
 
 PROJECT_NAME = 'catkin_simple'
-PROJECT_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/catkin_simple'
-PROJECT_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/catkin_simple'
+PROJECT_BINARY_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/catkin_simple'
+PROJECT_SOURCE_DIR = '/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/catkin_simple'

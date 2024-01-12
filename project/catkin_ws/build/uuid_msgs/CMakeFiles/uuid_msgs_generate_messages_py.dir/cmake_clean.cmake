@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/__init__.py"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/__init__.py"
   "CMakeFiles/uuid_msgs_generate_messages_py"
 )
 

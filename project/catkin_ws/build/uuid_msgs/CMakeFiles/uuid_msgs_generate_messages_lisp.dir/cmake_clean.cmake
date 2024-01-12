@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp"
   "CMakeFiles/uuid_msgs_generate_messages_lisp"
 )
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/gazebo_ros_force_based_move.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/gazebo_ros_force_based_move.h
 boost/bind.hpp
 -
 boost/thread.hpp
@@ -36,7 +36,7 @@ tf/transform_broadcaster.h
 tf/transform_listener.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/src/gazebo_ros_force_based_move.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/src/gazebo_ros_force_based_move.cpp
 hector_gazebo_plugins/gazebo_ros_force_based_move.h
 -
 

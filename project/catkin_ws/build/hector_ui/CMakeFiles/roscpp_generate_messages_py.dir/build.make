@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_ui
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_ui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_ui
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui
 
 # Utility rule file for roscpp_generate_messages_py.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 CMakeFiles/roscpp_generate_messages_py.dir/depend:
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_ui && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/hector_ui/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/depend
 

@@ -1,0 +1,1 @@
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mpc_local_planner_msgs/lib/python3/dist-packages/mpc_local_planner_msgs/msg/_StateFeedback.py

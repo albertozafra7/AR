@@ -67,3 +67,6 @@
 [submodule "project/catkin_ws/src/traj_gen/nlopt"]
 	path = project/catkin_ws/src/traj_gen/nlopt
 	url = https://github.com/ethz-asl/nlopt.git
+[submodule "project/catkin_ws/src/mpc_local_planner"]
+	path = project/catkin_ws/src/mpc_local_planner
+	url = https://github.com/rst-tu-dortmund/mpc_local_planner.git

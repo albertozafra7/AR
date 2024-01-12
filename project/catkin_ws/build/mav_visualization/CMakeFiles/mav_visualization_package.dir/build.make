@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization
+CMAKE_SOURCE_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/mav_visualization
+CMAKE_BINARY_DIR = /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_visualization
 
 # Utility rule file for mav_visualization_package.
 
@@ -67,6 +67,6 @@ CMakeFiles/mav_visualization_package.dir/clean:
 .PHONY : CMakeFiles/mav_visualization_package.dir/clean
 
 CMakeFiles/mav_visualization_package.dir/depend:
-	cd /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/mav_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/build/mav_visualization/CMakeFiles/mav_visualization_package.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_visualization && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_visualization /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_visualization/CMakeFiles/mav_visualization_package.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mav_visualization_package.dir/depend
 

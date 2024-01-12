@@ -1,4 +1,4 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_sensors_description
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_sensors_description
 
 Name: hector_sensors_description
 Description: Description of hector_sensors_description
