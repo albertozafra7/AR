@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/share/mav_trajectory_generation/cmake/mav_trajectory_generationConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_trajectory_generation/cmake/mav_trajectory_generationConfig.cmake
+Warning: Source hash: fe0f82b0f1eaf4712181562a17a450a0
+Warning: Dest hash: bc7b218688906d8f8599cdd229397437
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib/libmav_trajectory_generation.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libmav_trajectory_generation.so
+Warning: Source hash: 8af245c93e14bfeff896264227b03178
+Warning: Dest hash: 1df741bc910cb8d23d1bc63952e7f9a2
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib/pkgconfig/mav_trajectory_generation.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/mav_trajectory_generation.pc
+Warning: Source hash: 264c6aae2f199d9eeb835d553ac56dc6
+Warning: Dest hash: 93b824302169a3c4c7854c738ec4c84c
+Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib/mav_trajectory_generation/polynomial_timing_evaluation to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/mav_trajectory_generation/polynomial_timing_evaluation
+Warning: Source hash: 07181571eb5795bc3ef010a777e54e42
+Warning: Dest hash: 240121c5bd905bd0879b1c69a7da323e

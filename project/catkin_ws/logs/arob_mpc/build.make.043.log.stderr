@@ -1,0 +1,17 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:196:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KFG_eval::FG_eval()[m[K’
+  196 |         FG_eval [01;31m[Kfg_eval[m[K;
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:12:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KFG_eval::FG_eval(std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >)[m[K’
+   12 |     [01;36m[KFG_eval[m[K(std::vector<geometry_msgs::PoseStamped> Traj_in) : Traj_ref(Traj_in) {}
+      |     [01;36m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:12:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:6:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KFG_eval::FG_eval(const FG_eval&)[m[K’
+    6 | class [01;36m[KFG_eval[m[K {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:6:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:6:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KFG_eval::FG_eval(FG_eval&&)[m[K’
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:6:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

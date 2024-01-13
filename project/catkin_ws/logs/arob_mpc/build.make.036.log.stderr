@@ -1,0 +1,16 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::pose_update(const Odometry&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:64:71:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   64 |         current_pose.pose.orientation.x = msg.pose.pose.orientation.x([01;31m[K)[m[K;
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:65:71:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   65 |         current_pose.pose.orientation.y = msg.pose.pose.orientation.y([01;31m[K)[m[K;
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:66:71:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   66 |         current_pose.pose.orientation.z = msg.pose.pose.orientation.z([01;31m[K)[m[K;
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:67:71:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   67 |         current_pose.pose.orientation.w = msg.pose.pose.orientation.w([01;31m[K)[m[K;
+      |                                                                       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

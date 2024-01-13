@@ -113,6 +113,8 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "bit": "cpp",
-        "qr": "cpp"
+        "qr": "cpp",
+        "alignedvector3": "cpp",
+        "forward_list": "cpp"
     }
 }

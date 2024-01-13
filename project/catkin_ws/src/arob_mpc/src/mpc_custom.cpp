@@ -2,85 +2,21 @@
 
 using namespace std;
 
-
-class mpc_custom {
-	ros::NodeHandle nh_;
-	ros::Publisher velocity_pub_;
-	ros::Subscriber position_sub_;
-	ros::Subscriber goal_sub_;
-
-	std::vector<geometry_msgs::PoseStamped> Traj_ref;  // Line to follow
-    int lookahead; // lookahead (aka size of the traj_goal)
+// +++++++++++++++++++++++++++ MPC (IPOPT OPTIMIZATION) +++++++++++++++++++++++++++
+class FG_eval {
 
 public:
-	mpc_custom() {
+    // Fitted polynomial coefficients
+    std::vector<geometry_msgs::PoseStamped> Traj_ref;  // Line to follow
 
-		// Subscribe to the /base_pose_groun_truth topic
-		//position_sub_ = nh_.subscribe("/base_pose_ground_truth", 1, &mpc_custom::positionCb, this);
-		// Subscribe to the /goal_pos topic that give us the trajectory to follow with a lookahead
-		goal_sub_ = nh_.subscribe("goal_pos", 1, &mpc_custom::goal_update, this);
-		// Sets as publisher to the velocity topic
-		velocity_pub_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
+    FG_eval(std::vector<geometry_msgs::PoseStamped> Traj_in) : Traj_ref(Traj_in) {}
 
-
-		// kalpha - krho > 0
-		// kalpha = 0.25; // the values of these parameters should be obtained by you
-		// krho = 0.2; // krho > 0
-		// kbeta = -0.001; // kbeta < 0
-	}
-
-	~mpc_custom() {
-	}
-
-    void goal_update(const arob_mpc::vector_poses& msg){
-
-        ROS_INFO("The Custom MPC has received a new trajectory, with a lookahead of %ld to follow", msg.poses.size());
-
-        Traj_ref = msg.poses;
-
-        // std::cout << "Printing received point :" << std::endl;
-
-        // print_vector(msg.poses);
-
-        // std::cout << "Printing overwritten vector :" << std::endl;
-
-        // print_vector(Traj_goal);
-
+    void operator()(ADvector& fg, const ADvector& vars) {
 
     }
 
-
-    void position_update(const nav_msgs::Odometry& msg){
-
-        // Get the positions
-		float px = msg.pose.pose.position.x;
-		float py = msg.pose.pose.position.y;
-		float pz = msg.pose.pose.position.z;
-        
-
-        // Get the errors
-
-        // Call the mpc method
-
-        // Publish the new velocities obtained from the mpc
-
-    }
-
-    
-    void mpc(){
-
-
-        // place to return solution
-        // CppAD::ipopt::solve_result<Dvector> solution;
-        // CppAD::ipopt::solve
-        // Get the errors and stablish the constraints
-
-        // call ipopt to solve optimize the mpc
-
-        // return the velocities
-    }
-
-    AD<double> costfunction(const ADvector& statesNactions){
+        // We compute the costfunction J(sk,uk,duk) that we have to optimize with mpc
+    AD<double> cost_function(const ADvector& statesNactions){
         ROS_INFO("Calculating the costfunction");
 
         // Remember J(sk,uk,duk) = for(i=1;i<N)(w_error * error²) + for(j=0;j < N-1)(w_action * action_increment²) 
@@ -149,6 +85,22 @@ public:
         return cost_funct;
     }
 
+
+    // We predict the future states based on the system model
+    void states_prediction(ADvector& statesNactions){
+        // Remember that the system model is the following:
+            // px_k+1 = px_k + timestep * vx_k
+            // py_k+1 = py_k + timestep * vy_k
+            // pz_k+1 = pz_k + timestep * vz_k
+            // roll_k+1 = roll_k + timestep * wx_k
+            // pitch_k+1 = pitch_k + timestep * wy_k
+            // yaw_k+1 = yaw_k + timestep * wz_k
+
+            // Same for velocities
+
+    }
+
+
     AD<double> euclidean_distance(const AD<double> origin_x, const AD<double> origin_y, const AD<double> origin_z, geometry_msgs::Point dest){
         return euclidean_distance(ADToPoint(origin_x,origin_y,origin_z),dest);
     }
@@ -167,67 +119,128 @@ public:
         return position;
     }
 
-    // void print_vector(std::vector<geometry_msgs::PoseStamped> vector){
-    //     for(int i = 0; i < vector.size(); ++i){
-    //         std::cout << "Printing pose " << i << std::endl;
-    //         print_pose(vector[i].pose.position);
-    //     }
-    // }
+};
 
-    // void print_pose(geometry_msgs::Point pose){
-    //     std::cout << "\t" << "(" << pose.x << ", " << pose.y << ", " << pose.z << ")" << std::endl;
-    // }
+// +++++++++++++++++++++++++++ MPC (ROS MANAGEMENT) +++++++++++++++++++++++++++
 
-	/*void positionCb(const nav_msgs::Odometry& msg) {
+class mpc_custom {
+	ros::NodeHandle nh_;
+	ros::Publisher velocity_pub_;
+	ros::Subscriber position_sub_;
+	ros::Subscriber goal_sub_;
 
-		float ex = Goal.pose.position.x - msg.pose.pose.position.x;
-		float ey = Goal.pose.position.y - msg.pose.pose.position.y;
-		float rho = sqrt(ex*ex+ey*ey);
-		float alpha = atan2(ey,ex) - tf::getYaw(msg.pose.pose.orientation);
-		if (alpha < -M_PI) alpha = 2*M_PI - abs(alpha);
-		if (alpha > M_PI) alpha = -2*M_PI + alpha;
-		float beta = - alpha - tf::getYaw(msg.pose.pose.orientation);
-		if (beta < -M_PI) beta = 2*M_PI - abs(beta);
-		if (beta > M_PI) beta = -2*M_PI + beta;
-		
-		//std::cout << "Goal: " << Goal.pose.position << endl;
-		//std::cout << "Robot: " << msg.pose.pose.position << endl;
-		
-		//std::cout << "ex: "<< ex << " ";
-		//std::cout << "ey: "<< ey << " ";
+	std::vector<geometry_msgs::PoseStamped> Traj_ref;  // Line to follow
+    //int lookahead; // lookahead (aka size of the traj_goal)
 
-		//std::cout << "Rho: "<< rho << " ";
-		//std::cout << "Alpha: "<< alpha << " ";
-		//std::cout << "Beta: "<< beta << endl;
+    geometry_msgs::PoseStamped current_pose; // Current pose of the quadrotor
 
-		//std::cout << "X: "<< msg.pose.pose.position.x << " ";
-		//std::cout << "Y: "<< msg.pose.pose.position.y << " ";
-		//std::cout << "Th: "<< tf::getYaw(msg.pose.pose.orientation) << endl;
+public:
+	mpc_custom() {
 
-		geometry_msgs::Twist input; //to send the velocities
-		
-		if(std::abs(ex) + std::abs(ey) > 0.2){
-			input.linear.x = krho*rho;
-			input.linear.x = (input.linear.x >= 1.0) ? 0.95 : input.linear.x;
-			//input.linear.y = ey*krho*rho;
-		
-			//input.angular.x = kalpha*alpha + kbeta*beta;
-			input.angular.z = kalpha*alpha + kbeta*beta;
-		} else {
-			input.linear.x = 0.0;
-			//input.linear.y = ey*krho*rho;
-		
-			//input.angular.x = kalpha*alpha + kbeta*beta;
-			input.angular.z = 0.0;
-		}
-		//std::cout << "v: " << input << endl;
-		
+		// Subscribe to the /base_pose_groun_truth topic
+		position_sub_ = nh_.subscribe("/base_pose_ground_truth", 1, &mpc_custom::pose_update, this);
+		// Subscribe to the /goal_pos topic that give us the trajectory to follow with a lookahead
+		goal_sub_ = nh_.subscribe("goal_pos", 1, &mpc_custom::goal_update, this);
+		// Sets as publisher to the velocity topic
+		velocity_pub_ = nh_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
+	}
 
-		//here you have to implement the controller
-		velocity_pub_.publish(input);
-	}*/
+	~mpc_custom() {
+	}
 
-	
+    void goal_update(const arob_mpc::vector_poses& msg){
+
+        ROS_INFO("The Custom MPC has received a new trajectory, with a lookahead of %ld to follow", msg.poses.size());
+
+        // Update the poses
+        Traj_ref = msg.poses;
+
+        // std::cout << "Printing received point :" << std::endl;
+
+        // print_vector(msg.poses);
+
+        // std::cout << "Printing overwritten vector :" << std::endl;
+
+        // print_vector(Traj_goal);
+
+        // Get the errors
+
+        // Call the mpc method
+
+        // Publish the new velocities obtained from the mpc
+
+
+    }
+
+
+    // Update the pose based on the odometry
+    void pose_update(const nav_msgs::Odometry& msg){
+
+        // Get the positions
+		current_pose.pose.position.x = msg.pose.pose.position.x;
+		current_pose.pose.position.y = msg.pose.pose.position.y;
+		current_pose.pose.position.z = msg.pose.pose.position.z;
+
+        current_pose.pose.orientation.x = msg.pose.pose.orientation.x;
+        current_pose.pose.orientation.y = msg.pose.pose.orientation.y;
+        current_pose.pose.orientation.z = msg.pose.pose.orientation.z;
+        current_pose.pose.orientation.w = msg.pose.pose.orientation.w;
+    }
+
+    
+    void mpc(){
+
+        // object that computes objective and constraints
+        FG_eval fg_eval(Traj_ref);
+
+        // options
+        std::string options;
+        // turn off any printing
+        options += "Integer print_level  0\n";
+        options += "String  sb           yes\n";
+        // maximum number of iterations
+        options += "Integer max_iter     10\n";
+        // approximate accuracy in first order necessary conditions;
+        // see Mathematical Programming, Volume 106, Number 1,
+        // Pages 25-57, Equation (6)
+        options += "Numeric tol          1e-6\n";
+        // derivative testing
+        options += "String  derivative_test            second-order\n";
+        // maximum amount of random pertubation; e.g.,
+        // when evaluation finite diff
+        options += "Numeric point_perturbation_radius  0.\n";
+
+        // place to return solution
+        CppAD::ipopt::solve_result<Dvector> solution;
+
+        // solve the problem
+        // CppAD::ipopt::solve<Dvector, FG_eval>(
+        //     options,
+        //     x,
+        //     x_lowerbound,
+        //     x_upperbound,
+        //     g_lowerbound,
+        //     g_upperbound,
+        //     fg_eval,
+        //     solution);
+        //
+        // Check some of the solution values
+        //
+
+        bool ok = true;
+        auto cost = solution.obj_value;
+        ok &= solution.status == CppAD::ipopt::solve_result<Dvector>::success;
+
+        if (ok) {
+            std::cout << "OK! Cost:" << cost << std::endl;
+        } else {
+            std::cout << "SOMETHING IS WRONG!" << cost << std::endl;
+        }
+        // place to return solution
+
+
+        // return the velocities
+    }
 };
 
 int main(int argc, char** argv) {
