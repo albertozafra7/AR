@@ -32,9 +32,12 @@
 
 #include "arob_mpc/vector_poses.h"
 
+using CppAD::AD;
 
 
+// Type of variables used for storing the optimization values
 typedef CPPAD_TESTVECTOR(double) Dvector;
+typedef CPPAD_TESTVECTOR(AD<double>) ADvector;
 
 const int N = 10; // How many states we "lookahead" in the future we will use
 const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp

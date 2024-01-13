@@ -1,0 +1,14 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:83:5:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[KCppAD::AD[m[K’ without an argument list
+   83 |     [01;31m[KAD[m[K costfunction(const ADvector& statesNactions){
+      |     [01;31m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:83:5:[m[K [01;36m[Knote: [m[Kclass template argument deduction is only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+In file included from [01m[K/usr/include/cppad/base_require.hpp:156[m[K,
+                 from [01m[K/usr/include/cppad/cppad.hpp:22[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:24[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+[01m[K/usr/include/cppad/local/declare_ad.hpp:52:33:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class Base> class CppAD::AD[m[K’ declared here
+   52 |     template <class Base> class [01;36m[KAD[m[K;
+      |                                 [01;36m[K^~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

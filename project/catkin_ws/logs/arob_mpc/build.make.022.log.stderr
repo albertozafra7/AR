@@ -1,0 +1,6 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:6:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kmpc_custom::mpc_custom[m[K’ names the constructor, not the type
+    6 | [01;31m[Kmpc_custom[m[K::mpc_custom {
+      | [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

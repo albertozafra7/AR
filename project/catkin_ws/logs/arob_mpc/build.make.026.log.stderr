@@ -1,0 +1,37 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[KCppAD::AD<double> mpc_custom::euclidean_distance(geometry_msgs::Point, geometry_msgs::Point)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:116:16:[m[K [01;31m[Kerror: [m[K‘[01m[Ksqr[m[K’ was not declared in this scope; did you mean ‘[01m[KKDL::sqr[m[K’?
+  116 |         return [01;31m[Ksqr[m[K(pow(dest.x - origin.x,2) + pow(dest.y - origin.y,2) + pow(dest.z - origin.z,2))
+      |                [01;31m[K^~~[m[K
+      |                [32m[KKDL::sqr[m[K
+In file included from [01m[K/usr/include/kdl/frames.hpp:129[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:9[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+[01m[K/usr/include/kdl/utilities/utility.h:249:15:[m[K [01;36m[Knote: [m[K‘[01m[KKDL::sqr[m[K’ declared here
+  249 | inline double [01;36m[Ksqr[m[K(double arg) { return arg*arg;}
+      |               [01;36m[K^~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:116:99:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  116 |         return sqr(pow(dest.x - origin.x,2) + pow(dest.y - origin.y,2) + pow(dest.z - origin.z,2))
+      |                                                                                                   [01;31m[K^[m[K
+      |                                                                                                   [32m[K;[m[K
+  117 |     [32m[K}[m[K
+      |     [32m[K~[m[K                                                                                              
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kgeometry_msgs::Point mpc_custom::get_pose(CppAD::AD<double>, CppAD::AD<double>, CppAD::AD<double>)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:121:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  121 |         position.x = [01;31m[Kx[m[K;
+      |                      [01;31m[K^[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kconst CppAD::AD<double>[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:122:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  122 |         position.y = [01;31m[Ky[m[K;
+      |                      [01;31m[K^[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kconst CppAD::AD<double>[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:123:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst CppAD::AD<double>[m[K’ to ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+  123 |         position.z = [01;31m[Kz[m[K;
+      |                      [01;31m[K^[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kconst CppAD::AD<double>[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
