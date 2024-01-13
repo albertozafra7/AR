@@ -1,31 +1,4 @@
-#include <ros/ros.h>
-#include <geometry_msgs/Twist.h>
-#include <nav_msgs/Odometry.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <visualization_msgs/MarkerArray.h>
-#include <tf/transform_broadcaster.h>
-
-#include <iostream>
-#include <sstream>
-#include <stdio.h> 
-#include <math.h>
-#include <fstream>
-
-#include <eigen3/Eigen/Core>
-#include <eigen3/Eigen/Geometry>
-#include <eigen3/Eigen/QR>
-
-#include <cppad/cppad.hpp>
-#include <cppad/ipopt/solve.hpp>
-
-#include <mav_trajectory_generation_ros/ros_visualization.h>
-#include <mav_trajectory_generation_ros/ros_conversions.h>
-#include <mav_trajectory_generation/polynomial_optimization_linear.h>
-#include <mav_trajectory_generation/trajectory_sampling.h>
-#include <ros/package.h>
-
-#include "arob_mpc/vector_poses.h"
+#include "arob_mpc/mpc_custom.h"
 
 using namespace std;
 
@@ -39,7 +12,6 @@ class mpc_custom {
 	std::vector<geometry_msgs::PoseStamped> Traj_goal;  // Line to follow
     int lookahead; // lookahead (aka size of the traj_goal)
 
-	float krho, kalpha, kbeta;
 public:
 	mpc_custom() {
 
@@ -52,9 +24,9 @@ public:
 
 
 		// kalpha - krho > 0
-		kalpha = 0.25; // the values of these parameters should be obtained by you
-		krho = 0.2; // krho > 0
-		kbeta = -0.001; // kbeta < 0
+		// kalpha = 0.25; // the values of these parameters should be obtained by you
+		// krho = 0.2; // krho > 0
+		// kbeta = -0.001; // kbeta < 0
 	}
 
 	~mpc_custom() {
@@ -81,6 +53,10 @@ public:
     void position_update(const nav_msgs::Odometry& msg){
 
         // Get the positions
+		float px = msg.pose.pose.position.x;
+		float py = msg.pose.pose.position.y;
+		float pz = msg.pose.pose.position.z;
+        
 
         // Get the errors
 
@@ -93,6 +69,10 @@ public:
     
     void mpc(){
 
+
+        // place to return solution
+        // CppAD::ipopt::solve_result<Dvector> solution;
+        // CppAD::ipopt::solve
         // Get the errors and stablish the constraints
 
         // call ipopt to solve optimize the mpc
@@ -100,17 +80,16 @@ public:
         // return the velocities
     }
 
-    void print_vector(std::vector<geometry_msgs::PoseStamped> vector){
-        for(int i = 0; i < vector.size(); ++i){
-            std::cout << "Printing pose " << i << std::endl;
-            print_pose(vector[i].pose.position);
-        }
-    }
+    // void print_vector(std::vector<geometry_msgs::PoseStamped> vector){
+    //     for(int i = 0; i < vector.size(); ++i){
+    //         std::cout << "Printing pose " << i << std::endl;
+    //         print_pose(vector[i].pose.position);
+    //     }
+    // }
 
-    void print_pose(geometry_msgs::Point pose){
-        std::cout << "\t" << "(" << pose.x << ", " << pose.y << ", " << pose.z << ")" << std::endl;
-    }
-
+    // void print_pose(geometry_msgs::Point pose){
+    //     std::cout << "\t" << "(" << pose.x << ", " << pose.y << ", " << pose.z << ")" << std::endl;
+    // }
 
 	/*void positionCb(const nav_msgs::Odometry& msg) {
 

@@ -340,7 +340,7 @@ ros/message_operations.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h
 ros/ros.h
 -
 geometry_msgs/Twist.h
@@ -365,6 +365,8 @@ math.h
 -
 fstream
 -
+vector
+-
 eigen3/Eigen/Core
 -
 eigen3/Eigen/Geometry
@@ -386,7 +388,11 @@ mav_trajectory_generation/trajectory_sampling.h
 ros/package.h
 -
 arob_mpc/vector_poses.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/arob_mpc/vector_poses.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/arob_mpc/vector_poses.h
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp
+arob_mpc/mpc_custom.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/arob_mpc/mpc_custom.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

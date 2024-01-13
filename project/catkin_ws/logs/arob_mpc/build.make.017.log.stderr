@@ -1,0 +1,25 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In constructor ‘[01m[Kmpc_custom::mpc_custom()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:27:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kkalpha[m[K’ was not declared in this scope; did you mean ‘[01m[Kisalpha[m[K’?
+   27 |   [01;31m[Kkalpha[m[K = 0.25; // the values of these parameters should be obtained by you
+      |   [01;31m[K^~~~~~[m[K
+      |   [32m[Kisalpha[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kkrho[m[K’ was not declared in this scope
+   28 |   [01;31m[Kkrho[m[K = 0.2; // krho > 0
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kkbeta[m[K’ was not declared in this scope
+   29 |   [01;31m[Kkbeta[m[K = -0.001; // kbeta < 0
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:75:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   75 |         CppAD::ipopt::solve
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+......
+   81 |     [32m[K}[m[K
+      |     [32m[K~[m[K                       
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:81:5:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+   81 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

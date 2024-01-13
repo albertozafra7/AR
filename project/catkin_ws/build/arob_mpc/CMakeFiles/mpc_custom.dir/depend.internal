@@ -28,6 +28,7 @@ CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o
  /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation_ros/include/mav_trajectory_generation_ros/ros_visualization.h
  /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/marker_group.h
  /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/include/arob_mpc/vector_poses.h
+ /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h
  /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp
  /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/geometry_msgs/PointStamped.h

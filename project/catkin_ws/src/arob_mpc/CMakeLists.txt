@@ -18,10 +18,11 @@ generate_messages(
 
 catkin_package(
   CATKIN_DEPENDS roscpp std_msgs geometry_msgs
+  INCLUDE_DIRS include
 )
 
 include_directories(
- ${catkin_INCLUDE_DIRS}
+ include ${catkin_INCLUDE_DIRS}
 )
 
 add_executable(drone_race src/drone_race.cpp)
@@ -30,4 +31,12 @@ target_link_libraries(drone_race ${catkin_LIBRARIES} Eigen3::Eigen)
 
 add_executable(mpc_custom src/mpc_custom.cpp)
 add_dependencies(mpc_custom ${catkin_EXPORTED_TARGETS})
-target_link_libraries(mpc_custom ${catkin_LIBRARIES} Eigen3::Eigen)
+target_link_libraries(mpc_custom ipopt ${catkin_LIBRARIES} Eigen3::Eigen)
+
+
+install(TARGETS
+    #list of nodes
+    mpc_custom
+    
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
