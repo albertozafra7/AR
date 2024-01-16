@@ -1,18 +1,4 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/unique_id/share/unique_id/cmake/unique_idConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/unique_id/cmake/unique_idConfig.cmake
-Warning: Source hash: 10d45be2acae61d29ba535159a18d8a7
-Warning: Dest hash: 1dcc7e6e6955c66a2dbf92654a91c67d
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/unique_id/lib/pkgconfig/unique_id.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/unique_id.pc
-Warning: Source hash: 2fd74cab34dd2ba1d23bcd325e19cb1f
-Warning: Dest hash: 378661302940522f2a9d9bc7c91b3782
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/unique_id/lib/python3/dist-packages/unique_id/__init__.py to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/unique_id/__init__.py
-Warning: Source hash: 26096fd6e9938241b31e5c1864fa0e99
-Warning: Dest hash: 30467e2ebd845ce81bd0282e4eda9398
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/unique_id/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/unique_id/share/unique_id/cmake/unique_idConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/unique_id/cmake/unique_idConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/unique_id/share/unique_id/cmake/unique_idConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/unique_id/cmake/unique_idConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/unique_id/lib/pkgconfig/unique_id.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/unique_id.pc)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/unique_id/lib/python3/dist-packages/unique_id/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/unique_id/__init__.py)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/unique_id/cmake/unique_idConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/unique_id/cmake/unique_idConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/unique_id.pc
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/unique_id/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/unique_id/cmake/unique_idConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/unique_id/cmake/unique_idConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/unique_id.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/unique_id/__init__.py

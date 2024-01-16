@@ -1,289 +1,138 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake
-Warning: Source hash: 49f4999ebd7a0ce196600ad974c83591
-Warning: Dest hash: 9fe786a6d1720e601a6ad1fb51e95fd3
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake
-Warning: Source hash: 9b4b23d4dedcccd8adad208a6153c9bf
-Warning: Dest hash: a2cf4dd970590a6bdd7fccce4b5d3b8c
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake
-Warning: Source hash: 9cc80e4a60bfe0ee2b52c70fdd783b49
-Warning: Dest hash: 5a2f945c028cff0e592f0cfe014e351f
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/lib/pkgconfig/hector_uav_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_uav_msgs.pc
-Warning: Source hash: 9194175a34e57f46dbdfe47f8beafb38
-Warning: Dest hash: a092dbb177a2a0edc1c8d2246e1535e1
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgsConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/manifest.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/manifest.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/RawImu.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawImu.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/PositionXYCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/PositionXYCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/RuddersCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RuddersCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/RawMagnetic.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawMagnetic.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/ServoCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ServoCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/HeightCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeightCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/HeadingCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeadingCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/RawRC.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawRC.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/YawrateCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/YawrateCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/MotorCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/Altimeter.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Altimeter.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/Supply.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Supply.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/ControllerState.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ControllerState.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/VelocityXYCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityXYCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/MotorStatus.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorStatus.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/AttitudeCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/AttitudeCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/Compass.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Compass.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/ThrustCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ThrustCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/VelocityZCommand.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityZCommand.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/RC.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RC.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/roseus/ros/hector_uav_msgs/msg/MotorPWM.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorPWM.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/ThrustCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ThrustCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/HeadingCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeadingCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/MotorStatus.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorStatus.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/Altimeter.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Altimeter.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/VelocityXYCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityXYCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/RawMagnetic.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawMagnetic.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/YawrateCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/YawrateCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/RawImu.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawImu.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/ControllerState.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ControllerState.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/MotorCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/RuddersCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RuddersCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/HeightCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeightCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/MotorPWM.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorPWM.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/RawRC.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawRC.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/Compass.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Compass.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/Supply.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Supply.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/VelocityZCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityZCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/ServoCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ServoCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/RC.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RC.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/PositionXYCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/PositionXYCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/gennodejs/ros/hector_uav_msgs/msg/AttitudeCommand.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/AttitudeCommand.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/ThrustCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ThrustCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/HeightCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeightCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/AttitudeCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/AttitudeCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/RawImu.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawImu.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/MotorPWM.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorPWM.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_Compass.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Compass.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_YawrateCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_YawrateCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_ThrustCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ThrustCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawMagnetic.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawMagnetic.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/RawRC.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawRC.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeadingCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeadingCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/RuddersCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RuddersCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/YawrateCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/YawrateCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/hector_uav_msgs-msg.asd, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/hector_uav_msgs-msg.asd)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/RawMagnetic.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawMagnetic.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/PositionXYCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/PositionXYCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_RC.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RC.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorStatus.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorStatus.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_AttitudeCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_AttitudeCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/ServoCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ServoCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_RuddersCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RuddersCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/MotorStatus.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorStatus.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/VelocityXYCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityXYCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/ControllerState.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ControllerState.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/VelocityZCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityZCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawImu.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawImu.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityXYCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityXYCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/HeadingCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeadingCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_ServoCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ServoCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_ControllerState.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ControllerState.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_PositionXYCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_PositionXYCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/Compass.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Compass.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorPWM.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorPWM.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawRC.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawRC.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/RC.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RC.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_Altimeter.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Altimeter.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityZCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityZCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/Supply.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Supply.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/Altimeter.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Altimeter.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeightCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeightCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/_package_Supply.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Supply.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/share/common-lisp/ros/hector_uav_msgs/msg/MotorCommand.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorCommand.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/pkgconfig/hector_uav_msgs.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_uav_msgs.pc)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_RawRC.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawRC.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_ThrustCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ThrustCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_YawrateCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_YawrateCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityZCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityZCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_RawImu.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawImu.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorStatus.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorStatus.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_RuddersCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RuddersCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_RawMagnetic.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawMagnetic.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_PositionXYCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_PositionXYCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_AttitudeCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_AttitudeCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_Altimeter.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Altimeter.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorPWM.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorPWM.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_HeightCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeightCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_ControllerState.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ControllerState.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_Compass.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Compass.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_HeadingCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeadingCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_RC.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RC.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_ServoCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ServoCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityXYCommand.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityXYCommand.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/lib/python3/dist-packages/hector_uav_msgs/msg/_Supply.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Supply.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/PositionXYCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/PositionXYCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/Supply.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Supply.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/AttitudeCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/AttitudeCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/Altimeter.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Altimeter.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/RC.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RC.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/YawrateCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/YawrateCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ThrustCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ThrustCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ServoCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ServoCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/VelocityXYCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/VelocityXYCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/VelocityZCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/VelocityZCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/HeadingCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/HeadingCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/Compass.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Compass.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/RawMagnetic.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawMagnetic.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ControllerState.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ControllerState.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/RawImu.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawImu.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorStatus.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/HeightCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/HeightCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorPWM.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorPWM.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/RuddersCommand.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RuddersCommand.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/RawRC.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawRC.h)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/manifest.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawImu.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/PositionXYCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RuddersCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawMagnetic.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ServoCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeightCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeadingCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawRC.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/YawrateCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Altimeter.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Supply.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ControllerState.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityXYCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorStatus.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/AttitudeCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Compass.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ThrustCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityZCommand.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RC.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorPWM.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ThrustCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeadingCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorStatus.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Altimeter.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityXYCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawMagnetic.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/YawrateCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawImu.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ControllerState.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RuddersCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeightCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorPWM.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawRC.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Compass.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Supply.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityZCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ServoCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RC.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/PositionXYCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/AttitudeCommand.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ThrustCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeightCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/AttitudeCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawImu.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorPWM.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Compass.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_YawrateCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ThrustCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawMagnetic.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawRC.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeadingCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RuddersCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/YawrateCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/hector_uav_msgs-msg.asd
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawMagnetic.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/PositionXYCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RC.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorStatus.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_AttitudeCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ServoCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RuddersCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorStatus.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityXYCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ControllerState.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityZCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawImu.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityXYCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeadingCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ServoCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ControllerState.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_PositionXYCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Compass.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorPWM.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawRC.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RC.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Altimeter.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityZCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Supply.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Altimeter.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeightCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Supply.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorCommand.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_uav_msgs.pc
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawRC.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ThrustCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_YawrateCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityZCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawImu.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorStatus.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RuddersCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawMagnetic.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_PositionXYCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_AttitudeCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Altimeter.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorPWM.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeightCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ControllerState.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Compass.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeadingCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RC.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ServoCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityXYCommand.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Supply.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/PositionXYCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Supply.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/AttitudeCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Altimeter.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RC.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/YawrateCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ThrustCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ServoCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/VelocityXYCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/VelocityZCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/HeadingCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/Compass.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawMagnetic.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/ControllerState.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawImu.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorStatus.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/HeightCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorPWM.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/MotorCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RuddersCommand.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/hector_uav_msgs/RawRC.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-paths.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgs-msg-extras.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_uav_msgs/cmake/hector_uav_msgsConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/manifest.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawImu.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/PositionXYCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RuddersCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawMagnetic.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ServoCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeightCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/HeadingCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RawRC.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/YawrateCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Altimeter.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Supply.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ControllerState.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityXYCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorStatus.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/AttitudeCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/Compass.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/ThrustCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/VelocityZCommand.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/RC.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/hector_uav_msgs/msg/MotorPWM.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ThrustCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeadingCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorStatus.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Altimeter.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityXYCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawMagnetic.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/YawrateCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawImu.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ControllerState.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RuddersCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/HeightCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/MotorPWM.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RawRC.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Compass.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/Supply.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/VelocityZCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/ServoCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/RC.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/PositionXYCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/hector_uav_msgs/msg/AttitudeCommand.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ThrustCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeightCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/AttitudeCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawImu.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorPWM.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Compass.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_YawrateCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ThrustCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawMagnetic.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawRC.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeadingCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RuddersCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/YawrateCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/hector_uav_msgs-msg.asd
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RawMagnetic.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/PositionXYCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RC.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorStatus.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_AttitudeCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ServoCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RuddersCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorStatus.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityXYCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/ControllerState.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/VelocityZCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawImu.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityXYCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/HeadingCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ServoCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_ControllerState.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_PositionXYCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Compass.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_MotorPWM.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_RawRC.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/RC.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Altimeter.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_VelocityZCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Supply.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/Altimeter.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_HeightCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/_package_Supply.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/hector_uav_msgs/msg/MotorCommand.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_uav_msgs.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawRC.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ThrustCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_YawrateCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityZCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawImu.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorStatus.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RuddersCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RawMagnetic.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_PositionXYCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_AttitudeCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Altimeter.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_MotorPWM.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeightCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ControllerState.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Compass.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_HeadingCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_RC.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_ServoCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_VelocityXYCommand.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/hector_uav_msgs/msg/_Supply.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/PositionXYCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/Supply.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/AttitudeCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/Altimeter.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/RC.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/YawrateCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/ThrustCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/ServoCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/VelocityXYCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/VelocityZCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/HeadingCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/Compass.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/RawMagnetic.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/ControllerState.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/RawImu.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/MotorStatus.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/HeightCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/MotorPWM.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/MotorCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/RuddersCommand.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/hector_uav_msgs/RawRC.h

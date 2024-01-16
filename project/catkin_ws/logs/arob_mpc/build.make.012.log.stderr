@@ -1,8 +1,7 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Karob_mpc/mpc_custom.h: No such file or directory
-    1 | #include [01;31m[K"arob_mpc/mpc_custom.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:297:61:[m[K [01;31m[Kerror: [m[Kcannot resolve overloaded function ‘[01m[Kx[m[K’ based on conversion to type ‘[01m[Kgeometry_msgs::Vector3_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  297 |             temp_accel.angular.x = states[i].acceleration_W.[01;31m[Kx[m[K;
+      |                                                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:347: CMakeFiles/drone_race.dir/all] Error 2
 make: *** [Makefile:141: all] Error 2

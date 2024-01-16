@@ -1,13 +1,3 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_xacro_tools/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake
-Warning: Source hash: aabada0f6b41de3b3b4d85768ed84160
-Warning: Dest hash: 87ac7cec908a067ecfe554f23a80091c
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_xacro_tools/lib/pkgconfig/hector_xacro_tools.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_xacro_tools.pc
-Warning: Source hash: 124b589d4e70c792be72e0007fc1b5e6
-Warning: Dest hash: 34df402d1f4810c8a68775d293efdfcd
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_xacro_tools/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_xacro_tools/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_xacro_tools/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_xacro_tools/lib/pkgconfig/hector_xacro_tools.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_xacro_tools.pc)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_xacro_tools.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_xacro_tools/cmake/hector_xacro_toolsConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_xacro_tools.pc

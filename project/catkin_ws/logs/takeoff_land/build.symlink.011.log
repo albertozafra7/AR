@@ -1,13 +1,3 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/takeoff_land/share/takeoff_land/cmake/takeoff_landConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig.cmake
-Warning: Source hash: d35f84f5cb780a7eed6ad77dfab5fb8f
-Warning: Dest hash: f3b3115e00c69c77baa901fba3229e4e
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/takeoff_land/lib/pkgconfig/takeoff_land.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/takeoff_land.pc
-Warning: Source hash: aabb45d487768dd8e35cd95d4a1adcaa
-Warning: Dest hash: 0a056ef4e5da57aeecae572ec8140b0a
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/takeoff_land/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/takeoff_land/share/takeoff_land/cmake/takeoff_landConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/takeoff_land/share/takeoff_land/cmake/takeoff_landConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/takeoff_land/lib/pkgconfig/takeoff_land.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/takeoff_land.pc)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/takeoff_land.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/takeoff_land/cmake/takeoff_landConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/takeoff_land.pc

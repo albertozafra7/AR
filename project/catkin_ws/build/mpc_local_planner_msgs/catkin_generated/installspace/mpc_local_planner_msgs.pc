@@ -1,8 +1,0 @@
-prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/install
-
-Name: mpc_local_planner_msgs
-Description: Description of mpc_local_planner_msgs
-Version: 0.0.3
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs message_runtime

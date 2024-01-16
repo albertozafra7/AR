@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mpc_local_planner_msgs/share/gennodejs/ros/mpc_local_planner_msgs/msg/_index.js

@@ -1,73 +1,30 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake
-Warning: Source hash: 1b9fd9eb7be82bf13ff8b6104f290039
-Warning: Dest hash: 06b3b78c4298769fc48732e81dbbadc6
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake
-Warning: Source hash: 7d244ec6bbb5491bd73427ae4c663c93
-Warning: Dest hash: f8788eec5efc383d9a2044f890a8bf85
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake
-Warning: Source hash: f47f959b52288a44c636db185ddeee6e
-Warning: Dest hash: 540ca034a6f6ddcf1d65fa851a93656e
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_state_machine_msgs/lib/pkgconfig/mav_state_machine_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/mav_state_machine_msgs.pc
-Warning: Source hash: b7af75808856bfbef2bc4e6bbc9820e6
-Warning: Dest hash: 9e87b7047772dc923db22b75f758ae6c
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/roseus/ros/mav_state_machine_msgs/manifest.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/manifest.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/roseus/ros/mav_state_machine_msgs/msg/StartStopTask.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/msg/StartStopTask.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/roseus/ros/mav_state_machine_msgs/srv/RunTaskService.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/srv/RunTaskService.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/msg/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/srv/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/msg/mav_state_machine_msgs-msg.asd, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/mav_state_machine_msgs-msg.asd)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/msg/_package.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/msg/_package_StartStopTask.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package_StartStopTask.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/msg/StartStopTask.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/StartStopTask.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/srv/_package.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/srv/RunTaskService.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/RunTaskService.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/srv/mav_state_machine_msgs-srv.asd, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/mav_state_machine_msgs-srv.asd)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/share/common-lisp/ros/mav_state_machine_msgs/srv/_package_RunTaskService.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package_RunTaskService.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/pkgconfig/mav_state_machine_msgs.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/mav_state_machine_msgs.pc)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/include/mav_state_machine_msgs/RunTaskServiceRequest.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceRequest.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/include/mav_state_machine_msgs/StartStopTask.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/StartStopTask.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/include/mav_state_machine_msgs/RunTaskService.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskService.h)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_state_machine_msgs/include/mav_state_machine_msgs/RunTaskServiceResponse.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceResponse.h)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/manifest.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/msg/StartStopTask.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/srv/RunTaskService.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/mav_state_machine_msgs-msg.asd
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package_StartStopTask.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/StartStopTask.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/RunTaskService.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/mav_state_machine_msgs-srv.asd
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package_RunTaskService.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/mav_state_machine_msgs.pc
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceRequest.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/StartStopTask.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskService.h
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceResponse.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-extras.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgs-msg-paths.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_state_machine_msgs/cmake/mav_state_machine_msgsConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/manifest.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/msg/StartStopTask.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/mav_state_machine_msgs/srv/RunTaskService.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/mav_state_machine_msgs-msg.asd
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/_package_StartStopTask.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/msg/StartStopTask.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/RunTaskService.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/mav_state_machine_msgs-srv.asd
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/mav_state_machine_msgs/srv/_package_RunTaskService.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/mav_state_machine_msgs.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceRequest.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/mav_state_machine_msgs/StartStopTask.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskService.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/mav_state_machine_msgs/RunTaskServiceResponse.h

@@ -1,8 +1,8 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmpc_custom.h: No such file or directory
-    1 | #include [01;31m[K"mpc_custom.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_states(int)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_states[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_states[m[K’?
+  367 |             [01;31m[Ktemp_states[m[K.clear();
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[Ksend_states[m[K
+make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:347: CMakeFiles/drone_race.dir/all] Error 2
 make: *** [Makefile:141: all] Error 2

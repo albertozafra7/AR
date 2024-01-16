@@ -1,18 +1,18 @@
---2024-01-12 10:59:03--  https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
-Resolving github.com (github.com)... 140.82.121.4
-Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+--2024-01-16 01:41:58--  https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz [following]
---2024-01-12 10:59:04--  https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+--2024-01-16 01:41:59--  https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8002::154, 2606:50c0:8003::154, 2606:50c0:8000::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8002::154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2361992 (2,3M) [application/octet-stream]
 Saving to: ‘nlopt-2.4.2.tar.gz’
 
-nlopt-2.4.2.tar.gz    0%[                    ]       0  --.-KB/s               nlopt-2.4.2.tar.gz    2%[                    ]  56,00K   254KB/s               nlopt-2.4.2.tar.gz    5%[>                   ] 120,00K   276KB/s               nlopt-2.4.2.tar.gz    9%[>                   ] 216,00K   337KB/s               nlopt-2.4.2.tar.gz   14%[=>                  ] 328,00K   382KB/s               nlopt-2.4.2.tar.gz   14%[=>                  ] 344,00K   321KB/s               nlopt-2.4.2.tar.gz   19%[==>                 ] 440,00K   346KB/s               nlopt-2.4.2.tar.gz   20%[===>                ] 472,00K   289KB/s               nlopt-2.4.2.tar.gz   25%[====>               ] 595,00K   320KB/s               nlopt-2.4.2.tar.gz   29%[====>               ] 691,00K   335KB/s               nlopt-2.4.2.tar.gz   34%[=====>              ] 787,00K   340KB/s               nlopt-2.4.2.tar.gz   38%[======>             ] 883,00K   298KB/s               nlopt-2.4.2.tar.gz   43%[=======>            ]   1011K   314KB/s    eta 4s     nlopt-2.4.2.tar.gz   46%[========>           ]   1,05M   314KB/s    eta 4s     nlopt-2.4.2.tar.gz   49%[========>           ]   1,11M   314KB/s    eta 4s     nlopt-2.4.2.tar.gz   51%[=========>          ]   1,17M   311KB/s    eta 4s     nlopt-2.4.2.tar.gz   54%[=========>          ]   1,23M   286KB/s    eta 4s     nlopt-2.4.2.tar.gz   57%[==========>         ]   1,29M   285KB/s    eta 4s     nlopt-2.4.2.tar.gz   60%[===========>        ]   1,37M   293KB/s    eta 4s     nlopt-2.4.2.tar.gz   66%[============>       ]   1,49M   299KB/s    eta 4s     nlopt-2.4.2.tar.gz   71%[=============>      ]   1,60M   299KB/s    eta 4s     nlopt-2.4.2.tar.gz   72%[=============>      ]   1,63M   270KB/s    eta 2s     nlopt-2.4.2.tar.gz   74%[=============>      ]   1,68M   262KB/s    eta 2s     nlopt-2.4.2.tar.gz   77%[==============>     ]   1,74M   255KB/s    eta 2s     nlopt-2.4.2.tar.gz   80%[===============>    ]   1,80M   266KB/s    eta 2s     nlopt-2.4.2.tar.gz   81%[===============>    ]   1,83M   242KB/s    eta 2s     nlopt-2.4.2.tar.gz   88%[================>   ]   1,99M   256KB/s    eta 2s     nlopt-2.4.2.tar.gz   90%[=================>  ]   2,03M   246KB/s    eta 2s     nlopt-2.4.2.tar.gz   93%[=================>  ]   2,11M   253KB/s    eta 2s     nlopt-2.4.2.tar.gz   96%[==================> ]   2,18M   252KB/s    eta 2s     nlopt-2.4.2.tar.gz   99%[==================> ]   2,23M   221KB/s    eta 0s     nlopt-2.4.2.tar.gz  100%[===================>]   2,25M   225KB/s    in 8,8s    
+nlopt-2.4.2.tar.gz    0%[                    ]       0  --.-KB/s               nlopt-2.4.2.tar.gz   54%[=========>          ]   1,22M  6,08MB/s               nlopt-2.4.2.tar.gz  100%[===================>]   2,25M  5,84MB/s    in 0,4s    
 
-2024-01-12 10:59:14 (262 KB/s) - ‘nlopt-2.4.2.tar.gz’ saved [2361992/2361992]
+2024-01-16 01:42:00 (5,84 MB/s) - ‘nlopt-2.4.2.tar.gz’ saved [2361992/2361992]
 
 configure: WARNING: Python and Guile wrappers require --enable-shared; disabling
 configure: WARNING: can't find mkoctfile: won't be able to compile GNU Octave plugin

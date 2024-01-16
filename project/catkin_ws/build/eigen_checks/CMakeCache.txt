@@ -398,7 +398,7 @@ eigen_catkin_DIR:PATH=/home/albertozafra7/Desktop/Universidad/Master/AR/project/
 eigen_checks_BINARY_DIR:STATIC=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/eigen_checks
 
 //Dependencies for the target
-eigen_checks_LIB_DEPENDS:STATIC=general;/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib/libglog.so;
+eigen_checks_LIB_DEPENDS:STATIC=general;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib/libglog.so;
 
 //Value Computed by CMake
 eigen_checks_SOURCE_DIR:STATIC=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks
@@ -454,9 +454,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
-
-//Path to a library.
-lib:FILEPATH=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib/libglog.so
 
 
 ########################

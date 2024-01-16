@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
 #include <nav_msgs/Odometry.h>
+#include <geometry_msgs/Accel.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <visualization_msgs/MarkerArray.h>
@@ -47,6 +48,7 @@ class drone_race {
     ros::Publisher pub_drone_pos_;
     std::vector<geometry_msgs::Twist> drone_vel_list;   // List of velocities to send to the drone
     std::vector<geometry_msgs::PoseStamped> drone_pose_list; // List of poses to send to the mpc
+    std::vector<geometry_msgs::Accel> drone_accel_list; // List of accelerations
     int global_it = 0;
 
     public:
@@ -292,11 +294,27 @@ class drone_race {
 
             drone_pose_list.push_back(temp_pos);
 
+
+            // Acceleration push_back
+            geometry_msgs::Accel temp_accel;
+
+            temp_accel.linear.x = states[i].acceleration_W.x();
+            temp_accel.linear.y = states[i].acceleration_W.y();
+            temp_accel.linear.z = states[i].acceleration_W.z();
+
+            temp_accel.angular.x = states[i].angular_acceleration_W.x();
+            temp_accel.angular.y = states[i].angular_acceleration_W.y();
+            temp_accel.angular.z = states[i].angular_acceleration_W.z();
+
+            drone_accel_list.push_back(temp_accel);
+
         }
 
         //send_command();
 
-        send_goals(10);
+        //send_goals(10);
+
+        send_states(10);
         
 
     }
@@ -324,6 +342,31 @@ class drone_race {
             pub_drone_pos_.publish(lookahead_poses);
             ros::Duration(0.1).sleep(); 
             temp_poses.clear();
+        }
+    }
+
+    void send_states(int lookahead) {
+        // Sending position goals (easier but bad option in pratice) or velocity commands ()
+        // Publish each position command in the list with a prediction lookahead
+        arob_mpc::vector_poses lookahead_states;
+        for (int i = 0; i < drone_pose_list.size(); ++i) {
+            std::vector<geometry_msgs::PoseStamped> temp_poses;
+            std::vector<geometry_msgs::Twist> temp_velocities;
+            std::vector<geometry_msgs::Accel> temp_accels;
+            for (int j = 0; j < min(lookahead, static_cast<int>(drone_pose_list.size()-i)); ++j){
+                temp_poses.push_back(drone_pose_list[i+j]);
+                temp_velocities.push_back(drone_vel_list[i+j]);
+                temp_accels.push_back(drone_accel_list[i+j]);          
+            }
+            //std::cout << vel_command << std::endl;
+            lookahead_states.poses = temp_poses;
+            lookahead_states.velocities = temp_velocities;
+            lookahead_states.accelerations = temp_accels;
+            pub_drone_pos_.publish(lookahead_states);
+            ros::Duration(0.1).sleep(); 
+            temp_poses.clear();
+            temp_velocities.clear();
+            temp_accels.clear();
         }
     }
 

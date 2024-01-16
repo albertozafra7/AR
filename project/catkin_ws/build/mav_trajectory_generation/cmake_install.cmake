@@ -140,7 +140,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmav_trajectory_generation.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmav_trajectory_generation.so"
-         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/lib:"
+         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmav_trajectory_generation.so")
@@ -163,7 +163,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mav_trajectory_generation/polynomial_timing_evaluation")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mav_trajectory_generation/polynomial_timing_evaluation"
-         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:"
+         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mav_trajectory_generation/polynomial_timing_evaluation")

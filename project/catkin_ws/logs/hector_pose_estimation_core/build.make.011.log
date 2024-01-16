@@ -1,10 +1,10 @@
 [35m[1mScanning dependencies of target hector_pose_estimation[0m
 [  4%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/pose_estimation.cpp.o[0m
-[  9%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/parameters.cpp.o[0m
-[ 13%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/global_reference.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/global_reference.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/parameters.cpp.o[0m
 [ 18%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/types.cpp.o[0m
-[ 22%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/filter.cpp.o[0m
-[ 27%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/state.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/state.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/filter.cpp.o[0m
 [ 31%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/filter/ekf.cpp.o[0m
 [ 36%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/system.cpp.o[0m
 [ 40%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation.dir/src/system/generic_quaternion_system_model.cpp.o[0m

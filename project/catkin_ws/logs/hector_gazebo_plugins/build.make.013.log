@@ -11,12 +11,12 @@
 [ 37%] Built target hector_servo_plugin
 [ 44%] Built target hector_gazebo_reset_plugin
 [ 51%] Built target hector_gazebo_ros_sonar
-[ 59%] Built target hector_gazebo_ros_gps
-[ 62%] Built target hector_gazebo_plugins_generate_messages_cpp
-[ 70%] Built target hector_gazebo_ros_magnetic
-[ 74%] Built target hector_gazebo_plugins_generate_messages_nodejs
-[ 81%] Built target hector_gazebo_plugins_generate_messages_eus
-[ 88%] Built target hector_gazebo_plugins_generate_messages_py
+[ 59%] Built target hector_gazebo_ros_magnetic
+[ 66%] Built target hector_gazebo_ros_gps
+[ 70%] Built target hector_gazebo_plugins_generate_messages_cpp
+[ 77%] Built target hector_gazebo_plugins_generate_messages_eus
+[ 85%] Built target hector_gazebo_plugins_generate_messages_py
+[ 88%] Built target hector_gazebo_plugins_generate_messages_nodejs
 [ 92%] Built target hector_gazebo_plugins_generate_messages_lisp
 [100%] Built target hector_gazebo_ros_imu
 [100%] Built target hector_gazebo_plugins_generate_messages

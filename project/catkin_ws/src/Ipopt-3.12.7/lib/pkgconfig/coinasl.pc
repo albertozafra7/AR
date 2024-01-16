@@ -1,0 +1,11 @@
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/coin/ThirdParty
+
+Name: ASL
+Description: AMPL Solver Library
+URL: https://projects.coin-or.org/BuildTools
+Version: 1.3.6
+Libs: -L${libdir} -lcoinasl -lm -ldl 
+Cflags: -I${includedir}

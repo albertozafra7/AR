@@ -18,11 +18,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/geographic_info/geodesy/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geographic_msgs/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/unique_identifier/unique_id/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/geographic_msgs/include"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/include"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/unique_identifier/unique_id/include"
   "/usr/src/googletest/googletest/include"
   "/usr/src/googletest/googletest"
   )

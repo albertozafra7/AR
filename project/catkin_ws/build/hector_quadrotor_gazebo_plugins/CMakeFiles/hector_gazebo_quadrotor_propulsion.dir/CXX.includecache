@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorPWM.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorPWM.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
 string
 -
 vector
@@ -60,7 +60,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/Supply.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/Supply.h
 string
 -
 vector
@@ -78,7 +78,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/update_timer.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_gazebo/hector_gazebo_plugins/include/hector_gazebo_plugins/update_timer.h
 sdf/sdf.hh
 -
 gazebo/physics/World.hh
@@ -88,38 +88,6 @@ gazebo/physics/PhysicsEngine.hh
 gazebo/common/Event.hh
 -
 gazebo/common/Events.hh
--
-
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
-geometry_msgs/Wrench.h
--
-boost/range/iterator_range.hpp
--
-
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_propulsion.h
-hector_uav_msgs/Supply.h
--
-hector_uav_msgs/MotorStatus.h
--
-hector_uav_msgs/MotorCommand.h
--
-hector_uav_msgs/MotorPWM.h
--
-geometry_msgs/Twist.h
--
-geometry_msgs/Wrench.h
--
-ros/forwards.h
--
-ros/node_handle.h
--
-ros/time.h
--
-queue
--
-boost/thread/mutex.hpp
--
-boost/thread/condition.hpp
 -
 
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/hector_quadrotor_gazebo_plugins/gazebo_quadrotor_propulsion.h
@@ -156,6 +124,38 @@ rosgraph_msgs/Clock.h
 geometry_msgs/WrenchStamped.h
 -
 ignition/math.hh
+-
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
+geometry_msgs/Wrench.h
+-
+boost/range/iterator_range.hpp
+-
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_propulsion.h
+hector_uav_msgs/Supply.h
+-
+hector_uav_msgs/MotorStatus.h
+-
+hector_uav_msgs/MotorCommand.h
+-
+hector_uav_msgs/MotorPWM.h
+-
+geometry_msgs/Twist.h
+-
+geometry_msgs/Wrench.h
+-
+ros/forwards.h
+-
+ros/node_handle.h
+-
+ros/time.h
+-
+queue
+-
+boost/thread/mutex.hpp
+-
+boost/thread/condition.hpp
 -
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h

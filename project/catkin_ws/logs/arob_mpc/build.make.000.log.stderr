@@ -1,99 +1,88 @@
-In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
-                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:1[m[K:
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:254:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum(const M&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/publisher.h:117:38:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:321:51:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:125:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[K__getMD5Sum[m[K’
-  125 |     return [01;31m[Km.__getMD5Sum[m[K().c_str();
-      |            [01;31m[K~~^~~~~~~~~~~[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value(const M&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:263:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype(const M&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/publisher.h:119:11:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:321:51:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:142:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[K__getDataType[m[K’
-  142 |     return [01;31m[Km.__getDataType[m[K().c_str();
-      |            [01;31m[K~~^~~~~~~~~~~~~[m[K
-In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In constructor ‘[01m[Kmpc_custom::mpc_custom()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:297:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kvelocity_pub_[m[K’?
+  297 |         [01;31m[Kvelocity_sub_[m[K = nh_.subscribe("/base_pose_ground_truth", 1, &mpc_custom::velocity_update, this);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Kvelocity_pub_[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:299:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_sub_[m[K’ was not declared in this scope
+  299 |         [01;31m[Kaccel_sub_[m[K = nh_.subscribe("/base_pose_ground_truth", 1, &mpc_custom::accel_update, this);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::velocity_update(const Odometry&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:371:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  371 |         std::get<1>(current_state).linear.x = msg.[01;31m[Kvelocity[m[K.linear.x;
+      |                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:372:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  372 |   std::get<1>(current_state).linear.y = msg.[01;31m[Kvelocity[m[K.linear.y;
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:373:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  373 |   std::get<1>(current_state).linear.y = msg.[01;31m[Kvelocity[m[K.linear.z;
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:375:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  375 |         std::get<1>(current_state).angular.x = msg.[01;31m[Kvelocity[m[K.angular.x;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:376:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  376 |         std::get<1>(current_state).angular.y = msg.[01;31m[Kvelocity[m[K.angular.y;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:377:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  377 |         std::get<1>(current_state).angular.z = msg.[01;31m[Kvelocity[m[K.angular.z;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::accel_update(const Odometry&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:386:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  386 |         std::get<2>(current_state).linear.x = msg.[01;31m[Kvelocity[m[K.linear.x;
+      |                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:387:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  387 |   std::get<2>(current_state).linear.y = msg.[01;31m[Kvelocity[m[K.linear.y;
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:388:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  388 |   std::get<2>(current_state).linear.y = msg.[01;31m[Kvelocity[m[K.linear.z;
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:390:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  390 |         std::get<2>(current_state).angular.x = msg.[01;31m[Kvelocity[m[K.angular.x;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:391:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  391 |         std::get<2>(current_state).angular.y = msg.[01;31m[Kvelocity[m[K.angular.y;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:392:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Odometry[m[K’ {aka ‘[01m[Kconst struct nav_msgs::Odometry_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity[m[K’
+  392 |         std::get<2>(current_state).angular.z = msg.[01;31m[Kvelocity[m[K.angular.z;
+      |                                                    [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:29[m[K,
                  from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::goal_update(const std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:63:18:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
-   63 |         ROS_INFO([01;35m[K"The Custom MPC has received a new trajectory, with a lookahead of %d to follow"[m[K, [32m[Kmsg.size()[m[K);
-      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
-      |                                                                                                            [32m[K|[m[K
-      |                                                                                                            [32m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type {aka long unsigned int}[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
-  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
-      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
-  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
-      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
-  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
-      |                                   [01;36m[K^~~~~~~~~~~~[m[K
-[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
-  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
-      |                       [01;36m[K^~~~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:63:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
-   63 |         [01;36m[KROS_INFO[m[K("The Custom MPC has received a new trajectory, with a lookahead of %d to follow", msg.size());
-      |         [01;36m[K^~~~~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:63:86:[m[K [01;36m[Knote: [m[Kformat string is defined here
-   63 |         ROS_INFO("The Custom MPC has received a new trajectory, with a lookahead of [01;36m[K%d[m[K to follow", msg.size());
-      |                                                                                     [01;36m[K~^[m[K
-      |                                                                                      [01;36m[K|[m[K
-      |                                                                                      [01;36m[Kint[m[K
-      |                                                                                     [32m[K%ld[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:227:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/advertise_options.h:92:39:[m[K   required from ‘[01m[Kvoid ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>][m[K’
-[01m[K/opt/ros/noetic/include/ros/node_handle.h:252:7:[m[K   required from ‘[01m[Kros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:64:100:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:120:28:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMD5Sum[m[K’ is not a member of ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’
-  120 |     return [01;31m[KM::__s_getMD5Sum()[m[K.c_str();
-      |            [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:236:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/advertise_options.h:93:43:[m[K   required from ‘[01m[Kvoid ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>][m[K’
-[01m[K/opt/ros/noetic/include/ros/node_handle.h:252:7:[m[K   required from ‘[01m[Kros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:64:100:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:137:30:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getDataType[m[K’ is not a member of ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’
-  137 |     return [01;31m[KM::__s_getDataType()[m[K.c_str();
-      |            [01;31m[K~~~~~~~~~~~~~~~~~~^~[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::Definition<M>::value() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:245:106:[m[K   required from ‘[01m[Kconst char* ros::message_traits::definition() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/advertise_options.h:94:55:[m[K   required from ‘[01m[Kvoid ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>][m[K’
-[01m[K/opt/ros/noetic/include/ros/node_handle.h:252:7:[m[K   required from ‘[01m[Kros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:64:100:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:154:39:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMessageDefinition[m[K’ is not a member of ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’
-  154 |     return [01;31m[KM::__s_getMessageDefinition()[m[K.c_str();
-      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
-In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
-                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
-                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:227:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:89:49:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::initByFullCallbackType(const string&, uint32_t, const boost::function<void(P)>&, const boost::function<boost::shared_ptr<typename ros::ParameterAdapter<P>::Message>()>&) [with P = const std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; typename ros::ParameterAdapter<P>::Message = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/node_handle.h:406:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&) [with M = const std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&; T = mpc_custom; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:47:74:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:120:28:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMD5Sum[m[K’ is not a member of ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’
-  120 |     return [01;31m[KM::__s_getMD5Sum()[m[K.c_str();
-      |            [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
-/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’:
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:236:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype() [with M = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:90:53:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::initByFullCallbackType(const string&, uint32_t, const boost::function<void(P)>&, const boost::function<boost::shared_ptr<typename ros::ParameterAdapter<P>::Message>()>&) [with P = const std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; typename ros::ParameterAdapter<P>::Message = std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >][m[K’
-[01m[K/opt/ros/noetic/include/ros/node_handle.h:406:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&) [with M = const std::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >&; T = mpc_custom; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:47:74:[m[K   required from here
-[01m[K/opt/ros/noetic/include/ros/message_traits.h:137:30:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getDataType[m[K’ is not a member of ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >[m[K’
-  137 |     return [01;31m[KM::__s_getDataType()[m[K.c_str();
-      |            [01;31m[K~~~~~~~~~~~~~~~~~~^~[m[K
+/usr/include/cppad/ipopt/solve.hpp: In instantiation of ‘[01m[Kvoid CppAD::ipopt::solve(const string&, const Dvector&, const Dvector&, const Dvector&, const Dvector&, const Dvector&, FG_eval&, CppAD::ipopt::solve_result<Dvector>&) [with Dvector = CppAD::vector<double>; FG_eval = FG_eval; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:433:21:[m[K   required from here
+[01m[K/usr/include/cppad/ipopt/solve.hpp:481:40:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KADvector[m[K’ in ‘[01m[Kclass FG_eval[m[K’
+  481 |     typedef typename FG_eval::ADvector [01;31m[KADvector[m[K;
+      |                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/cppad/ipopt/solve.hpp:620:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KADvector[m[K’ in ‘[01m[Kclass FG_eval[m[K’
+  620 |     [01;31m[Knew CppAD::ipopt::solve_callback<Dvector, ADvector, FG_eval>([m[K
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  621 | [01;31m[K        nf,[m[K
+      |         [01;31m[K~~~[m[K
+  622 | [01;31m[K        nx,[m[K
+      |         [01;31m[K~~~[m[K
+  623 | [01;31m[K        ng,[m[K
+      |         [01;31m[K~~~[m[K
+  624 | [01;31m[K        xi,[m[K
+      |         [01;31m[K~~~[m[K
+  625 | [01;31m[K        xl,[m[K
+      |         [01;31m[K~~~[m[K
+  626 | [01;31m[K        xu,[m[K
+      |         [01;31m[K~~~[m[K
+  627 | [01;31m[K        gl,[m[K
+      |         [01;31m[K~~~[m[K
+  628 | [01;31m[K        gu,[m[K
+      |         [01;31m[K~~~[m[K
+  629 | [01;31m[K        fg_eval,[m[K
+      |         [01;31m[K~~~~~~~~[m[K
+  630 | [01;31m[K        retape,[m[K
+      |         [01;31m[K~~~~~~~[m[K
+  631 | [01;31m[K        sparse_forward,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~[m[K
+  632 | [01;31m[K        sparse_reverse,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~[m[K
+  633 | [01;31m[K        solution[m[K
+      |         [01;31m[K~~~~~~~~[m[K
+  634 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K
 make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:1682: CMakeFiles/mpc_custom.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
 make[1]: *** Waiting for unfinished jobs....
-make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/drone_race.dir/all] Error 2
 make: *** [Makefile:141: all] Error 2

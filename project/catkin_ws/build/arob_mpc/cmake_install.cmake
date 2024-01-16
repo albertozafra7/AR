@@ -191,7 +191,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom"
-         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_trajectory_generation_ros/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_trajectory_generation/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_visualization/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib:"
+         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation_ros/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom")

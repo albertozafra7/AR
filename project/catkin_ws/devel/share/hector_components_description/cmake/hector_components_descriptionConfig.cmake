@@ -1,1 +1,1 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_components_description/share/hector_components_description/cmake/hector_components_descriptionConfig.cmake
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_components_description/share/hector_components_description/cmake/hector_components_descriptionConfig.cmake

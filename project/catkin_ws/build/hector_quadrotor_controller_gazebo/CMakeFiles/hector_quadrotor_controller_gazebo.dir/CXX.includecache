@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/AttitudeCommand.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/AttitudeCommand.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
 string
 -
 vector
@@ -60,7 +60,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ThrustCommand.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ThrustCommand.h
 string
 -
 vector
@@ -78,7 +78,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/YawrateCommand.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/YawrateCommand.h
 string
 -
 vector
@@ -96,7 +96,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/handles.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/handles.h
 geometry_msgs/Pose.h
 -
 geometry_msgs/Twist.h
@@ -116,7 +116,7 @@ hector_uav_msgs/YawrateCommand.h
 hector_uav_msgs/ThrustCommand.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/quadrotor_interface.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/quadrotor_interface.h
 hardware_interface/internal/hardware_resource_manager.h
 -
 hector_quadrotor_controller/handles.h

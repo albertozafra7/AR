@@ -637,7 +637,7 @@ configure:12513: $? = 0
 configure:12522: result: yes
 configure:12536: checking for BSDgettimeofday
 configure:12536: g++ -o conftest -g -O2   conftest.c -lm  >&5
-/usr/bin/ld: /tmp/ccmmCx6v.o: in function `main':
+/usr/bin/ld: /tmp/ccNWVwZE.o: in function `main':
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src-build/conftest.c:68: undefined reference to `BSDgettimeofday'
 collect2: error: ld returned 1 exit status
 configure:12536: $? = 1

@@ -31,11 +31,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller_gazebo/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_uav_msgs/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_uav_msgs/include"
   "/usr/include/gazebo-11"
   "/usr/include/bullet"
   "/usr/include/sdformat-9.8"

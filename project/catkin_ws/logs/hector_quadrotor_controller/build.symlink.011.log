@@ -1,33 +1,7 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake
-Warning: Source hash: 44ae6a2962727b2ef8bd852a00e8b656
-Warning: Dest hash: c9c67323a51539466e4d845821b3d356
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_motor_controller.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_motor_controller.so
-Warning: Source hash: bd484dd47dc19a5ee338ed1b37f8d055
-Warning: Dest hash: 18fc075f5a5e7e5b9b06ea59b27669cc
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_controller.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_controller.so
-Warning: Source hash: 7ff1f87247cf90390eb50b2e972d5290
-Warning: Dest hash: 054433754b1499099209035a32914d92
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_pose_controller.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_pose_controller.so
-Warning: Source hash: 15b90dab32c83573e1c6a3dc63991e30
-Warning: Dest hash: b0743a53858851b7da669464e3259697
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_twist_controller.so to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_twist_controller.so
-Warning: Source hash: 80bccbc813a13ae63781447527915663
-Warning: Dest hash: 52cfafd5d953d1d86043b11d8333f87b
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_controller/lib/pkgconfig/hector_quadrotor_controller.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_controller.pc
-Warning: Source hash: 93a7c03636a847e5fad20bb159f7a151
-Warning: Dest hash: a5230ea9cd9458229bff5224047d2121
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_motor_controller.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_motor_controller.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_controller.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_controller.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_pose_controller.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_pose_controller.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_twist_controller.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_twist_controller.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_controller/lib/pkgconfig/hector_quadrotor_controller.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_controller.pc)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_motor_controller.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_controller.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_pose_controller.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libhector_quadrotor_twist_controller.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_controller.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_controller/cmake/hector_quadrotor_controllerConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_motor_controller.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_controller.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_pose_controller.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libhector_quadrotor_twist_controller.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_controller.pc

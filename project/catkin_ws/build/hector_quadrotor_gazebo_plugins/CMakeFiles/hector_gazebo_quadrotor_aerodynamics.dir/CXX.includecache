@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
-geometry_msgs/Wrench.h
--
-boost/range/iterator_range.hpp
--
-
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_aerodynamics.h
-geometry_msgs/Quaternion.h
--
-geometry_msgs/Twist.h
--
-geometry_msgs/Vector3.h
--
-geometry_msgs/Wrench.h
--
-ros/node_handle.h
--
-boost/thread/mutex.hpp
--
-
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/hector_quadrotor_gazebo_plugins/gazebo_quadrotor_aerodynamics.h
 gazebo/common/Plugin.hh
 -
@@ -56,6 +36,26 @@ gazebo/physics/physics.hh
 geometry_msgs/WrenchStamped.h
 -
 ignition/math.hh
+-
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/helpers.h
+geometry_msgs/Wrench.h
+-
+boost/range/iterator_range.hpp
+-
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_model/include/hector_quadrotor_model/quadrotor_aerodynamics.h
+geometry_msgs/Quaternion.h
+-
+geometry_msgs/Twist.h
+-
+geometry_msgs/Vector3.h
+-
+geometry_msgs/Wrench.h
+-
+ros/node_handle.h
+-
+boost/thread/mutex.hpp
 -
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h

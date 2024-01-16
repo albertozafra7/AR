@@ -1,6 +1,3 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_gazebo/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig.cmake
-Warning: Source hash: c129e02d8772eb51ad08716a4be467d3
-Warning: Dest hash: 622f6020f23f5757718571631abc9559
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_gazebo/lib/pkgconfig/hector_quadrotor_gazebo.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_gazebo.pc
-Warning: Source hash: 03c174334ca57208de66d6358dab8a26
-Warning: Dest hash: 48f0067ca5f7294630a1c3e6d2dc4994
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_gazebo/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig.cmake)
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_gazebo/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_gazebo/cmake/hector_quadrotor_gazeboConfig-version.cmake)
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_gazebo/lib/pkgconfig/hector_quadrotor_gazebo.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_gazebo.pc)

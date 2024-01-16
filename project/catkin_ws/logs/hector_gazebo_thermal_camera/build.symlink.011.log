@@ -1,17 +1,5 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake
-Warning: Source hash: f551ae0b754c2f3382a543dde89867fc
-Warning: Dest hash: 72c5eaac4c4afe94aad175fb85467602
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib/pkgconfig/hector_gazebo_thermal_camera.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_gazebo_thermal_camera.pc
-Warning: Source hash: 3040874fc30ea3d61c9039f476f97fc3
-Warning: Dest hash: e2583ef052dff902fc3e427bd6568a15
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib/libgazebo_ros_thermal_depth_camera.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libgazebo_ros_thermal_depth_camera.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib/libgazebo_ros_thermal_camera.so, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libgazebo_ros_thermal_camera.so)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_gazebo_thermal_camera/lib/pkgconfig/hector_gazebo_thermal_camera.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_gazebo_thermal_camera.pc)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libgazebo_ros_thermal_depth_camera.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/libgazebo_ros_thermal_camera.so
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_gazebo_thermal_camera.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_gazebo_thermal_camera/cmake/hector_gazebo_thermal_cameraConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libgazebo_ros_thermal_depth_camera.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/libgazebo_ros_thermal_camera.so
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_gazebo_thermal_camera.pc

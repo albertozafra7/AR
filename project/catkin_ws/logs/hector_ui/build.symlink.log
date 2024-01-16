@@ -1,6 +1,3 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/share/hector_ui/cmake/hector_uiConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_ui/cmake/hector_uiConfig.cmake
-Warning: Source hash: 9f416f61f3872630f52914e089f2e135
-Warning: Dest hash: be26f46c9198095b3e22a4876248a391
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/lib/pkgconfig/hector_ui.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_ui.pc
-Warning: Source hash: 5c82b84a66941423aff5464c41bdab07
-Warning: Dest hash: d5858d7d0cc12615faa9151d89361049
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/share/hector_ui/cmake/hector_uiConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_ui/cmake/hector_uiConfig-version.cmake)
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/share/hector_ui/cmake/hector_uiConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_ui/cmake/hector_uiConfig.cmake)
+Linked: (/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/lib/pkgconfig/hector_ui.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_ui.pc)

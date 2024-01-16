@@ -1,0 +1,11 @@
+prefix=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/Ipopt-3.12.7
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: Lapack
+Description: Linear algebra package
+URL: https://projects.coin-or.org/BuildTools
+Version: 1.5.6
+Libs: -L${libdir} -lcoinlapack -lblas   -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -lgfortran -lm -lquadmath
+Cflags:
+Requires: 

@@ -1,49 +1,18 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake
-Warning: Source hash: 1642aff27933fd86a916ad0525ad1297
-Warning: Dest hash: 1f2edb9c9c9a91907efeca7fe3279192
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake
-Warning: Source hash: 777e49b2052dcc6724d2a38e13bdc83e
-Warning: Dest hash: fc50123d77b4bed879c8540cd7e30dbb
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgsConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig.cmake
-Warning: Source hash: 970f73c86ac72de28c4010defecbf0ab
-Warning: Dest hash: e8a1ec44f8f33d81e570e137a456e9cc
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/uuid_msgs/lib/pkgconfig/uuid_msgs.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/uuid_msgs.pc
-Warning: Source hash: a1d35baa1789721347cd210df4fede42
-Warning: Dest hash: 884f260f91f978854541e61a885bb411
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgsConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/uuid_msgs/cmake/uuid_msgsConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/roseus/ros/uuid_msgs/manifest.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/uuid_msgs/manifest.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/roseus/ros/uuid_msgs/msg/UniqueID.l, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/uuid_msgs/msg/UniqueID.l)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/msg/_index.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/_index.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/_package.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/_package_UniqueID.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package_UniqueID.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/share/common-lisp/ros/uuid_msgs/msg/uuid_msgs-msg.asd, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/uuid_msgs-msg.asd)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/pkgconfig/uuid_msgs.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/uuid_msgs.pc)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/__init__.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/__init__.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/uuid_msgs/include/uuid_msgs/UniqueID.h, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/uuid_msgs/UniqueID.h)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/uuid_msgs/manifest.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/roseus/ros/uuid_msgs/msg/UniqueID.l
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/_index.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package_UniqueID.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/uuid_msgs-msg.asd
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/uuid_msgs.pc
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/__init__.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/include/uuid_msgs/UniqueID.h
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-paths.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgs-msg-extras.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/uuid_msgs/cmake/uuid_msgsConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/uuid_msgs/manifest.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/roseus/ros/uuid_msgs/msg/UniqueID.l
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/_index.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/gennodejs/ros/uuid_msgs/msg/UniqueID.js
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/_package_UniqueID.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/UniqueID.lisp
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/common-lisp/ros/uuid_msgs/msg/uuid_msgs-msg.asd
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/uuid_msgs.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/__init__.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/python3/dist-packages/uuid_msgs/msg/_UniqueID.py
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/include/uuid_msgs/UniqueID.h

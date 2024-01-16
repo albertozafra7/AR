@@ -1,13 +1,3 @@
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_description/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake
-Warning: Source hash: c9b8866ab5c1d973863cc7f5a9ebd1ef
-Warning: Dest hash: 49fc1615806ca713d9466f7655e33c6e
-Warning: Cannot symlink from /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_quadrotor_description/lib/pkgconfig/hector_quadrotor_description.pc to existing file /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_description.pc
-Warning: Source hash: 92b5e677b844597f82538d67a96d0b66
-Warning: Dest hash: fb67fa926dcc2bfa57f754878d81f4b9
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_description/cmake.lock, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/./cmake.lock)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_description/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_description/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig-version.cmake, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig-version.cmake)
-Cleaning: (/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_quadrotor_description/lib/pkgconfig/hector_quadrotor_description.pc, /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_description.pc)
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig-version.cmake
-Unlinking: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_description.pc
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/hector_quadrotor_description/cmake/hector_quadrotor_descriptionConfig-version.cmake
+Symlinking /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/lib/pkgconfig/hector_quadrotor_description.pc

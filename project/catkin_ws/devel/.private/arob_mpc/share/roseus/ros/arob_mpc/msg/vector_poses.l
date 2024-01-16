@@ -16,15 +16,19 @@
 
 (defclass arob_mpc::vector_poses
   :super ros::object
-  :slots (_poses ))
+  :slots (_poses _velocities _accelerations ))
 
 (defmethod arob_mpc::vector_poses
   (:init
    (&key
     ((:poses __poses) ())
+    ((:velocities __velocities) ())
+    ((:accelerations __accelerations) ())
     )
    (send-super :init)
    (setq _poses __poses)
+   (setq _velocities __velocities)
+   (setq _accelerations __accelerations)
    self)
   (:poses
    (&rest __poses)
@@ -33,11 +37,29 @@
      (progn
        (if __poses (setq _poses (car __poses)))
        _poses)))
+  (:velocities
+   (&rest __velocities)
+   (if (keywordp (car __velocities))
+       (send* _velocities __velocities)
+     (progn
+       (if __velocities (setq _velocities (car __velocities)))
+       _velocities)))
+  (:accelerations
+   (&rest __accelerations)
+   (if (keywordp (car __accelerations))
+       (send* _accelerations __accelerations)
+     (progn
+       (if __accelerations (setq _accelerations (car __accelerations)))
+       _accelerations)))
   (:serialization-length
    ()
    (+
     ;; geometry_msgs/PoseStamped[] _poses
     (apply #'+ (send-all _poses :serialization-length)) 4
+    ;; geometry_msgs/Twist[] _velocities
+    (apply #'+ (send-all _velocities :serialization-length)) 4
+    ;; geometry_msgs/Accel[] _accelerations
+    (apply #'+ (send-all _accelerations :serialization-length)) 4
     ))
   (:serialize
    (&optional strm)
@@ -46,6 +68,16 @@
      ;; geometry_msgs/PoseStamped[] _poses
      (write-long (length _poses) s)
      (dolist (elem _poses)
+       (send elem :serialize s)
+       )
+     ;; geometry_msgs/Twist[] _velocities
+     (write-long (length _velocities) s)
+     (dolist (elem _velocities)
+       (send elem :serialize s)
+       )
+     ;; geometry_msgs/Accel[] _accelerations
+     (write-long (length _accelerations) s)
+     (dolist (elem _accelerations)
        (send elem :serialize s)
        )
      ;;
@@ -59,14 +91,30 @@
      (dolist (elem- _poses)
      (send elem- :deserialize buf ptr-) (incf ptr- (send elem- :serialization-length))
      ))
+   ;; geometry_msgs/Twist[] _velocities
+   (let (n)
+     (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
+     (setq _velocities (let (r) (dotimes (i n) (push (instance geometry_msgs::Twist :init) r)) r))
+     (dolist (elem- _velocities)
+     (send elem- :deserialize buf ptr-) (incf ptr- (send elem- :serialization-length))
+     ))
+   ;; geometry_msgs/Accel[] _accelerations
+   (let (n)
+     (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
+     (setq _accelerations (let (r) (dotimes (i n) (push (instance geometry_msgs::Accel :init) r)) r))
+     (dolist (elem- _accelerations)
+     (send elem- :deserialize buf ptr-) (incf ptr- (send elem- :serialization-length))
+     ))
    ;;
    self)
   )
 
-(setf (get arob_mpc::vector_poses :md5sum-) "f4bbbec105a3dc69d6c5974def547813")
+(setf (get arob_mpc::vector_poses :md5sum-) "3a567ccd4fbf69367c1154429c5150ea")
 (setf (get arob_mpc::vector_poses :datatype-) "arob_mpc/vector_poses")
 (setf (get arob_mpc::vector_poses :definition-)
       "geometry_msgs/PoseStamped[] poses
+geometry_msgs/Twist[] velocities
+geometry_msgs/Accel[] accelerations
 ================================================================================
 MSG: geometry_msgs/PoseStamped
 # A Pose with reference coordinate frame and timestamp
@@ -111,10 +159,34 @@ float64 y
 float64 z
 float64 w
 
+================================================================================
+MSG: geometry_msgs/Twist
+# This expresses velocity in free space broken into its linear and angular parts.
+Vector3  linear
+Vector3  angular
+
+================================================================================
+MSG: geometry_msgs/Vector3
+# This represents a vector in free space. 
+# It is only meant to represent a direction. Therefore, it does not
+# make sense to apply a translation to it (e.g., when applying a 
+# generic rigid transformation to a Vector3, tf2 will only apply the
+# rotation). If you want your data to be translatable too, use the
+# geometry_msgs/Point message instead.
+
+float64 x
+float64 y
+float64 z
+================================================================================
+MSG: geometry_msgs/Accel
+# This expresses acceleration in free space broken into its linear and angular parts.
+Vector3  linear
+Vector3  angular
+
 ")
 
 
 
-(provide :arob_mpc/vector_poses "f4bbbec105a3dc69d6c5974def547813")
+(provide :arob_mpc/vector_poses "3a567ccd4fbf69367c1154429c5150ea")
 
 

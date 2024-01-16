@@ -10,10 +10,12 @@ import geometry_msgs.msg
 import std_msgs.msg
 
 class vector_poses(genpy.Message):
-  _md5sum = "f4bbbec105a3dc69d6c5974def547813"
+  _md5sum = "3a567ccd4fbf69367c1154429c5150ea"
   _type = "arob_mpc/vector_poses"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """geometry_msgs/PoseStamped[] poses
+geometry_msgs/Twist[] velocities
+geometry_msgs/Accel[] accelerations
 ================================================================================
 MSG: geometry_msgs/PoseStamped
 # A Pose with reference coordinate frame and timestamp
@@ -57,9 +59,33 @@ float64 x
 float64 y
 float64 z
 float64 w
+
+================================================================================
+MSG: geometry_msgs/Twist
+# This expresses velocity in free space broken into its linear and angular parts.
+Vector3  linear
+Vector3  angular
+
+================================================================================
+MSG: geometry_msgs/Vector3
+# This represents a vector in free space. 
+# It is only meant to represent a direction. Therefore, it does not
+# make sense to apply a translation to it (e.g., when applying a 
+# generic rigid transformation to a Vector3, tf2 will only apply the
+# rotation). If you want your data to be translatable too, use the
+# geometry_msgs/Point message instead.
+
+float64 x
+float64 y
+float64 z
+================================================================================
+MSG: geometry_msgs/Accel
+# This expresses acceleration in free space broken into its linear and angular parts.
+Vector3  linear
+Vector3  angular
 """
-  __slots__ = ['poses']
-  _slot_types = ['geometry_msgs/PoseStamped[]']
+  __slots__ = ['poses','velocities','accelerations']
+  _slot_types = ['geometry_msgs/PoseStamped[]','geometry_msgs/Twist[]','geometry_msgs/Accel[]']
 
   def __init__(self, *args, **kwds):
     """
@@ -69,7 +95,7 @@ float64 w
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       poses
+       poses,velocities,accelerations
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -80,8 +106,14 @@ float64 w
       # message fields cannot be None, assign default values for those that are
       if self.poses is None:
         self.poses = []
+      if self.velocities is None:
+        self.velocities = []
+      if self.accelerations is None:
+        self.accelerations = []
     else:
       self.poses = []
+      self.velocities = []
+      self.accelerations = []
 
   def _get_types(self):
     """
@@ -117,6 +149,24 @@ float64 w
         _v5 = _v3.orientation
         _x = _v5
         buff.write(_get_struct_4d().pack(_x.x, _x.y, _x.z, _x.w))
+      length = len(self.velocities)
+      buff.write(_struct_I.pack(length))
+      for val1 in self.velocities:
+        _v6 = val1.linear
+        _x = _v6
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+        _v7 = val1.angular
+        _x = _v7
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+      length = len(self.accelerations)
+      buff.write(_struct_I.pack(length))
+      for val1 in self.accelerations:
+        _v8 = val1.linear
+        _x = _v8
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+        _v9 = val1.angular
+        _x = _v9
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -130,6 +180,10 @@ float64 w
     try:
       if self.poses is None:
         self.poses = None
+      if self.velocities is None:
+        self.velocities = None
+      if self.accelerations is None:
+        self.accelerations = None
       end = 0
       start = end
       end += 4
@@ -137,12 +191,12 @@ float64 w
       self.poses = []
       for i in range(0, length):
         val1 = geometry_msgs.msg.PoseStamped()
-        _v6 = val1.header
+        _v10 = val1.header
         start = end
         end += 4
-        (_v6.seq,) = _get_struct_I().unpack(str[start:end])
-        _v7 = _v6.stamp
-        _x = _v7
+        (_v10.seq,) = _get_struct_I().unpack(str[start:end])
+        _v11 = _v10.stamp
+        _x = _v11
         start = end
         end += 8
         (_x.secs, _x.nsecs,) = _get_struct_2I().unpack(str[start:end])
@@ -152,21 +206,55 @@ float64 w
         start = end
         end += length
         if python3:
-          _v6.frame_id = str[start:end].decode('utf-8', 'rosmsg')
+          _v10.frame_id = str[start:end].decode('utf-8', 'rosmsg')
         else:
-          _v6.frame_id = str[start:end]
-        _v8 = val1.pose
-        _v9 = _v8.position
-        _x = _v9
+          _v10.frame_id = str[start:end]
+        _v12 = val1.pose
+        _v13 = _v12.position
+        _x = _v13
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-        _v10 = _v8.orientation
-        _x = _v10
+        _v14 = _v12.orientation
+        _x = _v14
         start = end
         end += 32
         (_x.x, _x.y, _x.z, _x.w,) = _get_struct_4d().unpack(str[start:end])
         self.poses.append(val1)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      self.velocities = []
+      for i in range(0, length):
+        val1 = geometry_msgs.msg.Twist()
+        _v15 = val1.linear
+        _x = _v15
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        _v16 = val1.angular
+        _x = _v16
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        self.velocities.append(val1)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      self.accelerations = []
+      for i in range(0, length):
+        val1 = geometry_msgs.msg.Accel()
+        _v17 = val1.linear
+        _x = _v17
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        _v18 = val1.angular
+        _x = _v18
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        self.accelerations.append(val1)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -182,25 +270,43 @@ float64 w
       length = len(self.poses)
       buff.write(_struct_I.pack(length))
       for val1 in self.poses:
-        _v11 = val1.header
-        _x = _v11.seq
+        _v19 = val1.header
+        _x = _v19.seq
         buff.write(_get_struct_I().pack(_x))
-        _v12 = _v11.stamp
-        _x = _v12
+        _v20 = _v19.stamp
+        _x = _v20
         buff.write(_get_struct_2I().pack(_x.secs, _x.nsecs))
-        _x = _v11.frame_id
+        _x = _v19.frame_id
         length = len(_x)
         if python3 or type(_x) == unicode:
           _x = _x.encode('utf-8')
           length = len(_x)
         buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
-        _v13 = val1.pose
-        _v14 = _v13.position
-        _x = _v14
+        _v21 = val1.pose
+        _v22 = _v21.position
+        _x = _v22
         buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
-        _v15 = _v13.orientation
-        _x = _v15
+        _v23 = _v21.orientation
+        _x = _v23
         buff.write(_get_struct_4d().pack(_x.x, _x.y, _x.z, _x.w))
+      length = len(self.velocities)
+      buff.write(_struct_I.pack(length))
+      for val1 in self.velocities:
+        _v24 = val1.linear
+        _x = _v24
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+        _v25 = val1.angular
+        _x = _v25
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+      length = len(self.accelerations)
+      buff.write(_struct_I.pack(length))
+      for val1 in self.accelerations:
+        _v26 = val1.linear
+        _x = _v26
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
+        _v27 = val1.angular
+        _x = _v27
+        buff.write(_get_struct_3d().pack(_x.x, _x.y, _x.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -215,6 +321,10 @@ float64 w
     try:
       if self.poses is None:
         self.poses = None
+      if self.velocities is None:
+        self.velocities = None
+      if self.accelerations is None:
+        self.accelerations = None
       end = 0
       start = end
       end += 4
@@ -222,12 +332,12 @@ float64 w
       self.poses = []
       for i in range(0, length):
         val1 = geometry_msgs.msg.PoseStamped()
-        _v16 = val1.header
+        _v28 = val1.header
         start = end
         end += 4
-        (_v16.seq,) = _get_struct_I().unpack(str[start:end])
-        _v17 = _v16.stamp
-        _x = _v17
+        (_v28.seq,) = _get_struct_I().unpack(str[start:end])
+        _v29 = _v28.stamp
+        _x = _v29
         start = end
         end += 8
         (_x.secs, _x.nsecs,) = _get_struct_2I().unpack(str[start:end])
@@ -237,21 +347,55 @@ float64 w
         start = end
         end += length
         if python3:
-          _v16.frame_id = str[start:end].decode('utf-8', 'rosmsg')
+          _v28.frame_id = str[start:end].decode('utf-8', 'rosmsg')
         else:
-          _v16.frame_id = str[start:end]
-        _v18 = val1.pose
-        _v19 = _v18.position
-        _x = _v19
+          _v28.frame_id = str[start:end]
+        _v30 = val1.pose
+        _v31 = _v30.position
+        _x = _v31
         start = end
         end += 24
         (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
-        _v20 = _v18.orientation
-        _x = _v20
+        _v32 = _v30.orientation
+        _x = _v32
         start = end
         end += 32
         (_x.x, _x.y, _x.z, _x.w,) = _get_struct_4d().unpack(str[start:end])
         self.poses.append(val1)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      self.velocities = []
+      for i in range(0, length):
+        val1 = geometry_msgs.msg.Twist()
+        _v33 = val1.linear
+        _x = _v33
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        _v34 = val1.angular
+        _x = _v34
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        self.velocities.append(val1)
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      self.accelerations = []
+      for i in range(0, length):
+        val1 = geometry_msgs.msg.Accel()
+        _v35 = val1.linear
+        _x = _v35
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        _v36 = val1.angular
+        _x = _v36
+        start = end
+        end += 24
+        (_x.x, _x.y, _x.z,) = _get_struct_3d().unpack(str[start:end])
+        self.accelerations.append(val1)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill

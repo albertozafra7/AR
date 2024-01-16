@@ -1,8 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Karob_mpc/mpc_custom.h: No such file or directory
-    1 | #include [01;31m[K"arob_mpc/mpc_custom.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [Makefile:141: all] Error 2

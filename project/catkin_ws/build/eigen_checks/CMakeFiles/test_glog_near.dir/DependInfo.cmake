@@ -16,8 +16,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/eigen_checks/include"
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include"
   "/usr/include/eigen3"
-  "/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include"
   "/usr/src/googletest/googletest/include"
   "/usr/src/googletest/googletest"
   )

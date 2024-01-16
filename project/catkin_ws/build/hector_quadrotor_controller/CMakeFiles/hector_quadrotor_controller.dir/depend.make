@@ -53,11 +53,11 @@ CMakeFiles/hector_quadrotor_controller.dir/src/pid.cpp.o: /opt/ros/noetic/includ
 CMakeFiles/hector_quadrotor_controller.dir/src/pid.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/hector_quadrotor_controller.dir/src/pid.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 
-CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/AttitudeCommand.h
-CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
-CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
-CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ThrustCommand.h
-CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/YawrateCommand.h
+CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/AttitudeCommand.h
+CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorCommand.h
+CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/MotorStatus.h
+CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/ThrustCommand.h
+CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_uav_msgs/include/hector_uav_msgs/YawrateCommand.h
 CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/handles.h
 CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/include/hector_quadrotor_controller/quadrotor_interface.h
 CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_quadrotor/hector_quadrotor_controller/src/quadrotor_interface.cpp

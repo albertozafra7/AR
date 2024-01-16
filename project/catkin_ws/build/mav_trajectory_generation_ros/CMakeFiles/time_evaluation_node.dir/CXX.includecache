@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/log_severity.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/logging.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/logging.h
 errno.h
 -
 string.h
@@ -36,15 +36,15 @@ inttypes.h
 gflags/gflags.h
 -
 glog/log_severity.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
 glog/vlog_is_on.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/vlog_is_on.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/vlog_is_on.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/vlog_is_on.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/vlog_is_on.h
 glog/log_severity.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment4D.h
 string
 -
 vector
@@ -80,7 +80,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory.h
 string
 -
 vector
@@ -100,7 +100,7 @@ std_msgs/Header.h
 mav_planning_msgs/PolynomialSegment.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory4D.h
 string
 -
 vector
@@ -120,11 +120,11 @@ std_msgs/Header.h
 mav_planning_msgs/PolynomialSegment4D.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/include/nlopt.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/include/nlopt.h
 stddef.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/include/nlopt.hpp
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/include/nlopt.hpp
 nlopt.h
 -
 vector
@@ -140,7 +140,7 @@ cstring
 cmath
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/common.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/common.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -152,7 +152,7 @@ Eigen/Geometry
 boost/algorithm/clamp.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/eigen_mav_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/eigen_mav_msgs.h
 Eigen/Eigen
 -
 deque
@@ -160,9 +160,9 @@ deque
 iostream
 -
 mav_msgs/common.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -170,15 +170,15 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 mav_planning_msgs/PolynomialSegment.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment.h
 mav_planning_msgs/PolynomialTrajectory.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory.h
 mav_planning_msgs/eigen_planning_msgs.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
 mav_planning_msgs/conversions_deprecated.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/conversions_deprecated.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/conversions_deprecated.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions_deprecated.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions_deprecated.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -186,25 +186,25 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 mav_planning_msgs/PolynomialSegment4D.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment4D.h
 mav_planning_msgs/PolynomialTrajectory4D.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory4D.h
 mav_planning_msgs/eigen_planning_msgs.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/eigen_planning_msgs.h
 Eigen/Eigen
 -
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/convolution.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/convolution.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/extremum.h
 iostream
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/polynomial_optimization_linear_impl.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/polynomial_optimization_linear_impl.h
 glog/logging.h
 -
 Eigen/Sparse
@@ -218,23 +218,23 @@ algorithm
 numeric
 -
 mav_trajectory_generation/convolution.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/convolution.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/convolution.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/polynomial_optimization_nonlinear_impl.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/polynomial_optimization_nonlinear_impl.h
 chrono
 -
 numeric
 -
 mav_trajectory_generation/polynomial_optimization_linear.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/polynomial_optimization_linear.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/polynomial_optimization_linear.h
 mav_trajectory_generation/timing.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/timing.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/impl/mav_trajectory_generation/timing.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/motion_defines.h
 string
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial.h
 glog/logging.h
 -
 Eigen/Eigen
@@ -246,7 +246,7 @@ utility
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial_optimization_linear.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial_optimization_linear.h
 glog/logging.h
 -
 Eigen/Sparse
@@ -254,31 +254,31 @@ Eigen/Sparse
 tuple
 -
 mav_trajectory_generation/extremum.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
 mav_trajectory_generation/motion_defines.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
 mav_trajectory_generation/polynomial.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
 mav_trajectory_generation/segment.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
 mav_trajectory_generation/trajectory.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
 mav_trajectory_generation/vertex.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
 mav_trajectory_generation/impl/polynomial_optimization_linear_impl.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/impl/polynomial_optimization_linear_impl.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/impl/polynomial_optimization_linear_impl.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial_optimization_nonlinear.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial_optimization_nonlinear.h
 memory
 -
 nlopt.hpp
 -
 mav_trajectory_generation/polynomial_optimization_linear.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial_optimization_linear.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial_optimization_linear.h
 mav_trajectory_generation/impl/polynomial_optimization_nonlinear_impl.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/impl/polynomial_optimization_nonlinear_impl.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/impl/polynomial_optimization_nonlinear_impl.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/segment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/segment.h
 glog/logging.h
 -
 Eigen/Core
@@ -290,13 +290,13 @@ map
 vector
 -
 mav_trajectory_generation/extremum.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
 mav_trajectory_generation/motion_defines.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
 mav_trajectory_generation/polynomial.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/timing.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/timing.h
 algorithm
 -
 chrono
@@ -310,21 +310,21 @@ string
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory.h
 mav_trajectory_generation/extremum.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
 mav_trajectory_generation/segment.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
 mav_trajectory_generation/vertex.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory_sampling.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory_sampling.h
 mav_msgs/eigen_mav_msgs.h
 -
 mav_trajectory_generation/trajectory.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/vertex.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/vertex.h
 glog/logging.h
 -
 Eigen/Core
@@ -336,33 +336,9 @@ map
 vector
 -
 mav_trajectory_generation/motion_defines.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
 mav_trajectory_generation/polynomial.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
-
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/helpers.h
-Eigen/Eigenvalues
--
-eigen_conversions/eigen_msg.h
--
-std_msgs/ColorRGBA.h
--
-visualization_msgs/MarkerArray.h
--
-
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/marker_group.h
-ros/ros.h
--
-visualization_msgs/MarkerArray.h
--
-Eigen/Core
--
-Eigen/Geometry
--
-string
--
-vector
--
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
 
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation_ros/include/mav_trajectory_generation_ros/ros_conversions.h
 mav_planning_msgs/PolynomialTrajectory.h
@@ -407,6 +383,30 @@ mav_trajectory_generation_ros/ros_conversions.h
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation_ros/src/mav_trajectory_generation_ros/ros_conversions.h
 mav_trajectory_generation_ros/ros_visualization.h
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation_ros/src/mav_trajectory_generation_ros/ros_visualization.h
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/helpers.h
+Eigen/Eigenvalues
+-
+eigen_conversions/eigen_msg.h
+-
+std_msgs/ColorRGBA.h
+-
+visualization_msgs/MarkerArray.h
+-
+
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_visualization/include/mav_visualization/marker_group.h
+ros/ros.h
+-
+visualization_msgs/MarkerArray.h
+-
+Eigen/Core
+-
+Eigen/Geometry
+-
+string
+-
+vector
+-
 
 /opt/ros/noetic/include/eigen_conversions/eigen_msg.h
 std_msgs/Float64MultiArray.h

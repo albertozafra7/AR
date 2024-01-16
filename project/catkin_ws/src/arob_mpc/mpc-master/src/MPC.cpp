@@ -159,7 +159,7 @@ MPC::MPC() {
   this->g_lowerbound.resize(NG);
   this->g_upperbound.resize(NG);
 
-  // the first constraint for each state veriable
+  // the first constraint for each state variable
   // refer to the initial state conditions
   // this will be initialized when solve() is called
   // the succeeding constraints refer to the relationship

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/log_severity.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/logging.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/logging.h
 errno.h
 -
 string.h
@@ -36,15 +36,15 @@ inttypes.h
 gflags/gflags.h
 -
 glog/log_severity.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
 glog/vlog_is_on.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/vlog_is_on.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/vlog_is_on.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/vlog_is_on.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/vlog_is_on.h
 glog/log_severity.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/include/glog/glog/log_severity.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/Actuators.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/Actuators.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/AttitudeThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/AttitudeThrust.h
 string
 -
 vector
@@ -84,7 +84,7 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/RateThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/RateThrust.h
 string
 -
 vector
@@ -106,7 +106,7 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/RollPitchYawrateThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/RollPitchYawrateThrust.h
 string
 -
 vector
@@ -126,7 +126,7 @@ std_msgs/Header.h
 geometry_msgs/Vector3.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/TorqueThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_msgs/include/mav_msgs/TorqueThrust.h
 string
 -
 vector
@@ -148,7 +148,7 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialSegment4D.h
 string
 -
 vector
@@ -184,7 +184,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory.h
 string
 -
 vector
@@ -204,7 +204,7 @@ std_msgs/Header.h
 mav_planning_msgs/PolynomialSegment.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_planning_msgs/include/mav_planning_msgs/PolynomialTrajectory4D.h
 string
 -
 vector
@@ -224,7 +224,7 @@ std_msgs/Header.h
 mav_planning_msgs/PolynomialSegment4D.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/common.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/common.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -236,7 +236,7 @@ Eigen/Geometry
 boost/algorithm/clamp.hpp
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/conversions.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/conversions.h
 geometry_msgs/Point.h
 -
 geometry_msgs/PoseStamped.h
@@ -254,29 +254,29 @@ ros/ros.h
 trajectory_msgs/MultiDOFJointTrajectory.h
 -
 mav_msgs/Actuators.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/Actuators.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/Actuators.h
 mav_msgs/AttitudeThrust.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/AttitudeThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/AttitudeThrust.h
 mav_msgs/RateThrust.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/RateThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/RateThrust.h
 mav_msgs/RollPitchYawrateThrust.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/RollPitchYawrateThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/RollPitchYawrateThrust.h
 mav_msgs/TorqueThrust.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/TorqueThrust.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/TorqueThrust.h
 mav_msgs/common.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
 mav_msgs/default_values.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/default_values.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/default_values.h
 mav_msgs/eigen_mav_msgs.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/eigen_mav_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/eigen_mav_msgs.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/default_topics.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/default_topics.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/default_values.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/default_values.h
 mav_msgs/common.h
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/eigen_mav_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/eigen_mav_msgs.h
 Eigen/Eigen
 -
 deque
@@ -284,9 +284,9 @@ deque
 iostream
 -
 mav_msgs/common.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_msgs/include/mav_msgs/mav_msgs/common.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -294,15 +294,15 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 mav_planning_msgs/PolynomialSegment.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment.h
 mav_planning_msgs/PolynomialTrajectory.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory.h
 mav_planning_msgs/eigen_planning_msgs.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
 mav_planning_msgs/conversions_deprecated.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/conversions_deprecated.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/conversions_deprecated.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions_deprecated.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/conversions_deprecated.h
 geometry_msgs/Point.h
 -
 geometry_msgs/Quaternion.h
@@ -310,27 +310,27 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 mav_planning_msgs/PolynomialSegment4D.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialSegment4D.h
 mav_planning_msgs/PolynomialTrajectory4D.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory4D.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/PolynomialTrajectory4D.h
 mav_planning_msgs/eigen_planning_msgs.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/mav_planning_msgs/eigen_planning_msgs.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/eigen_planning_msgs.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_planning_msgs/include/mav_planning_msgs/eigen_planning_msgs.h
 Eigen/Eigen
 -
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/extremum.h
 iostream
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/motion_defines.h
 string
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/polynomial.h
 glog/logging.h
 -
 Eigen/Eigen
@@ -342,7 +342,7 @@ utility
 vector
 -
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/segment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/segment.h
 glog/logging.h
 -
 Eigen/Core
@@ -354,27 +354,27 @@ map
 vector
 -
 mav_trajectory_generation/extremum.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
 mav_trajectory_generation/motion_defines.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
 mav_trajectory_generation/polynomial.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory.h
 mav_trajectory_generation/extremum.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/extremum.h
 mav_trajectory_generation/segment.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/segment.h
 mav_trajectory_generation/vertex.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/vertex.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory_sampling.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/trajectory_sampling.h
 mav_msgs/eigen_mav_msgs.h
 -
 mav_trajectory_generation/trajectory.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/trajectory.h
 
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/vertex.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/vertex.h
 glog/logging.h
 -
 Eigen/Core
@@ -386,9 +386,9 @@ map
 vector
 -
 mav_trajectory_generation/motion_defines.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/motion_defines.h
 mav_trajectory_generation/polynomial.h
-/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
+/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation/include/mav_trajectory_generation/mav_trajectory_generation/polynomial.h
 
 /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation_ros/include/mav_trajectory_generation_ros/ros_conversions.h
 mav_planning_msgs/PolynomialTrajectory.h

@@ -1,0 +1,72 @@
+[  0%] Built target mav_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target mav_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target mav_planning_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target mav_planning_msgs_generate_messages_nodejs
+[  0%] Built target mav_planning_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target mav_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target mav_msgs_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target mav_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target visualization_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_py
+[  0%] Built target mav_planning_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_cpp
+[  0%] Built target mav_planning_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target drone_race[0m
+[  0%] Built target _arob_mpc_generate_messages_check_deps_vector_poses
+[ 18%] Built target mpc_custom
+[ 27%] Built target arob_mpc_generate_messages_cpp
+[ 45%] Built target arob_mpc_generate_messages_eus
+[ 63%] Built target arob_mpc_generate_messages_py
+[ 72%] Built target arob_mpc_generate_messages_lisp
+[ 81%] Built target arob_mpc_generate_messages_nodejs
+[ 90%] [32mBuilding CXX object CMakeFiles/drone_race.dir/src/drone_race.cpp.o[0m
+[ 90%] Built target arob_mpc_generate_messages
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:297:61:[m[K [01;31m[Kerror: [m[Kcannot resolve overloaded function ‘[01m[Kx[m[K’ based on conversion to type ‘[01m[Kgeometry_msgs::Vector3_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+  297 |             temp_accel.angular.x = states[i].acceleration_W.[01;31m[Kx[m[K;
+      |                                                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:347: CMakeFiles/drone_race.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,17 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::state_update(const Odometry&)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:421:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_header_type[m[K’ was not declared in this scope
+  421 |         [01;31m[K_header_type[m[K current_header = msg.header;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_header[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_state[m[K’?
+  422 |         float d_time = ([01;31m[Kcurrent_header[m[K.stamp.secs + current_header.stamp.nsecs/1e9) - (prev_header.stamp.secs + prev_header.stamp.nsecs/1e9);
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                         [32m[Kcurrent_state[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+  422 |         float d_time = (current_header.stamp.secs + current_header.stamp.nsecs/1e9) - (prev_header.[01;31m[Kstamp[m[K.secs + prev_header.stamp.nsecs/1e9);
+      |                                                                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:125:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+  422 |         float d_time = (current_header.stamp.secs + current_header.stamp.nsecs/1e9) - (prev_header.stamp.secs + prev_header.[01;31m[Kstamp[m[K.nsecs/1e9);
+      |                                                                                                                             [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

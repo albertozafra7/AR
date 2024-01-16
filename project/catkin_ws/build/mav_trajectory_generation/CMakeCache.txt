@@ -480,7 +480,7 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/lib/libnlopt_wrap.so
+lib:FILEPATH=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib/libnlopt_wrap.so
 
 //The directory containing a CMake configuration file for mav_msgs.
 mav_msgs_DIR:PATH=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/share/mav_msgs/cmake
@@ -489,7 +489,7 @@ mav_msgs_DIR:PATH=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catk
 mav_trajectory_generation_BINARY_DIR:STATIC=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_trajectory_generation
 
 //Dependencies for the target
-mav_trajectory_generation_LIB_DEPENDS:STATIC=general;/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so;general;/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/glog_catkin/lib/libglog.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/devel/.private/nlopt/lib/libnlopt_wrap.so;general;yaml-cpp;
+mav_trajectory_generation_LIB_DEPENDS:STATIC=general;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/libeigen_checks.so;general;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib/libglog.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib/libnlopt_wrap.so;general;yaml-cpp;
 
 //Value Computed by CMake
 mav_trajectory_generation_SOURCE_DIR:STATIC=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_trajectory_generation/mav_trajectory_generation

@@ -16,6 +16,8 @@
 #include <ros/message_operations.h>
 
 #include <geometry_msgs/PoseStamped.h>
+#include <geometry_msgs/Twist.h>
+#include <geometry_msgs/Accel.h>
 
 namespace arob_mpc
 {
@@ -25,10 +27,14 @@ struct vector_poses_
   typedef vector_poses_<ContainerAllocator> Type;
 
   vector_poses_()
-    : poses()  {
+    : poses()
+    , velocities()
+    , accelerations()  {
     }
   vector_poses_(const ContainerAllocator& _alloc)
-    : poses(_alloc)  {
+    : poses(_alloc)
+    , velocities(_alloc)
+    , accelerations(_alloc)  {
   (void)_alloc;
     }
 
@@ -36,6 +42,12 @@ struct vector_poses_
 
    typedef std::vector< ::geometry_msgs::PoseStamped_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::geometry_msgs::PoseStamped_<ContainerAllocator> >> _poses_type;
   _poses_type poses;
+
+   typedef std::vector< ::geometry_msgs::Twist_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::geometry_msgs::Twist_<ContainerAllocator> >> _velocities_type;
+  _velocities_type velocities;
+
+   typedef std::vector< ::geometry_msgs::Accel_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::geometry_msgs::Accel_<ContainerAllocator> >> _accelerations_type;
+  _accelerations_type accelerations;
 
 
 
@@ -66,7 +78,9 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::arob_mpc::vector_poses_<ContainerAllocator1> & lhs, const ::arob_mpc::vector_poses_<ContainerAllocator2> & rhs)
 {
-  return lhs.poses == rhs.poses;
+  return lhs.poses == rhs.poses &&
+    lhs.velocities == rhs.velocities &&
+    lhs.accelerations == rhs.accelerations;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -123,12 +137,12 @@ struct MD5Sum< ::arob_mpc::vector_poses_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "f4bbbec105a3dc69d6c5974def547813";
+    return "3a567ccd4fbf69367c1154429c5150ea";
   }
 
   static const char* value(const ::arob_mpc::vector_poses_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xf4bbbec105a3dc69ULL;
-  static const uint64_t static_value2 = 0xd6c5974def547813ULL;
+  static const uint64_t static_value1 = 0x3a567ccd4fbf6936ULL;
+  static const uint64_t static_value2 = 0x7c1154429c5150eaULL;
 };
 
 template<class ContainerAllocator>
@@ -148,6 +162,8 @@ struct Definition< ::arob_mpc::vector_poses_<ContainerAllocator> >
   static const char* value()
   {
     return "geometry_msgs/PoseStamped[] poses\n"
+"geometry_msgs/Twist[] velocities\n"
+"geometry_msgs/Accel[] accelerations\n"
 "================================================================================\n"
 "MSG: geometry_msgs/PoseStamped\n"
 "# A Pose with reference coordinate frame and timestamp\n"
@@ -191,6 +207,30 @@ struct Definition< ::arob_mpc::vector_poses_<ContainerAllocator> >
 "float64 y\n"
 "float64 z\n"
 "float64 w\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Twist\n"
+"# This expresses velocity in free space broken into its linear and angular parts.\n"
+"Vector3  linear\n"
+"Vector3  angular\n"
+"\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Vector3\n"
+"# This represents a vector in free space. \n"
+"# It is only meant to represent a direction. Therefore, it does not\n"
+"# make sense to apply a translation to it (e.g., when applying a \n"
+"# generic rigid transformation to a Vector3, tf2 will only apply the\n"
+"# rotation). If you want your data to be translatable too, use the\n"
+"# geometry_msgs/Point message instead.\n"
+"\n"
+"float64 x\n"
+"float64 y\n"
+"float64 z\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Accel\n"
+"# This expresses acceleration in free space broken into its linear and angular parts.\n"
+"Vector3  linear\n"
+"Vector3  angular\n"
 ;
   }
 
@@ -210,6 +250,8 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.poses);
+      stream.next(m.velocities);
+      stream.next(m.accelerations);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -235,6 +277,22 @@ struct Printer< ::arob_mpc::vector_poses_<ContainerAllocator> >
       s << std::endl;
       s << indent;
       Printer< ::geometry_msgs::PoseStamped_<ContainerAllocator> >::stream(s, indent + "    ", v.poses[i]);
+    }
+    s << indent << "velocities[]" << std::endl;
+    for (size_t i = 0; i < v.velocities.size(); ++i)
+    {
+      s << indent << "  velocities[" << i << "]: ";
+      s << std::endl;
+      s << indent;
+      Printer< ::geometry_msgs::Twist_<ContainerAllocator> >::stream(s, indent + "    ", v.velocities[i]);
+    }
+    s << indent << "accelerations[]" << std::endl;
+    for (size_t i = 0; i < v.accelerations.size(); ++i)
+    {
+      s << indent << "  accelerations[" << i << "]: ";
+      s << std::endl;
+      s << indent;
+      Printer< ::geometry_msgs::Accel_<ContainerAllocator> >::stream(s, indent + "    ", v.accelerations[i]);
     }
   }
 };
