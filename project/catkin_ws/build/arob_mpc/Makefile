@@ -350,6 +350,19 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named ipopt_custom
+
+# Build rule for target.
+ipopt_custom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ipopt_custom
+.PHONY : ipopt_custom
+
+# fast build rule for target.
+ipopt_custom/fast:
+	$(MAKE) -f CMakeFiles/ipopt_custom.dir/build.make CMakeFiles/ipopt_custom.dir/build
+.PHONY : ipopt_custom/fast
+
+#=============================================================================
 # Target rules for targets named mav_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -1208,6 +1221,33 @@ src/drone_race.cpp.s:
 	$(MAKE) -f CMakeFiles/drone_race.dir/build.make CMakeFiles/drone_race.dir/src/drone_race.cpp.s
 .PHONY : src/drone_race.cpp.s
 
+src/ipopt.o: src/ipopt.cpp.o
+
+.PHONY : src/ipopt.o
+
+# target to build an object file
+src/ipopt.cpp.o:
+	$(MAKE) -f CMakeFiles/ipopt_custom.dir/build.make CMakeFiles/ipopt_custom.dir/src/ipopt.cpp.o
+.PHONY : src/ipopt.cpp.o
+
+src/ipopt.i: src/ipopt.cpp.i
+
+.PHONY : src/ipopt.i
+
+# target to preprocess a source file
+src/ipopt.cpp.i:
+	$(MAKE) -f CMakeFiles/ipopt_custom.dir/build.make CMakeFiles/ipopt_custom.dir/src/ipopt.cpp.i
+.PHONY : src/ipopt.cpp.i
+
+src/ipopt.s: src/ipopt.cpp.s
+
+.PHONY : src/ipopt.s
+
+# target to generate assembly for a file
+src/ipopt.cpp.s:
+	$(MAKE) -f CMakeFiles/ipopt_custom.dir/build.make CMakeFiles/ipopt_custom.dir/src/ipopt.cpp.s
+.PHONY : src/ipopt.cpp.s
+
 src/mpc_custom.o: src/mpc_custom.cpp.o
 
 .PHONY : src/mpc_custom.o
@@ -1259,6 +1299,7 @@ help:
 	@echo "... arob_mpc_genpy"
 	@echo "... mav_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... ipopt_custom"
 	@echo "... mav_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... mav_planning_msgs_generate_messages_lisp"
@@ -1329,6 +1370,9 @@ help:
 	@echo "... src/drone_race.o"
 	@echo "... src/drone_race.i"
 	@echo "... src/drone_race.s"
+	@echo "... src/ipopt.o"
+	@echo "... src/ipopt.i"
+	@echo "... src/ipopt.s"
 	@echo "... src/mpc_custom.o"
 	@echo "... src/mpc_custom.i"
 	@echo "... src/mpc_custom.s"

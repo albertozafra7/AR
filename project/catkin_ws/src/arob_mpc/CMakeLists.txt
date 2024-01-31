@@ -33,10 +33,15 @@ add_executable(mpc_custom src/mpc_custom.cpp)
 add_dependencies(mpc_custom ${catkin_EXPORTED_TARGETS})
 target_link_libraries(mpc_custom ipopt ${catkin_LIBRARIES} Eigen3::Eigen)
 
+add_executable(ipopt_custom src/ipopt.cpp)
+add_dependencies(ipopt_custom ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ipopt_custom ipopt ${catkin_LIBRARIES} Eigen3::Eigen)
+
 
 install(TARGETS
     #list of nodes
     mpc_custom
+    ipopt_custom
     
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

@@ -43,15 +43,15 @@ using CppAD::AD;
 typedef CPPAD_TESTVECTOR(double) Dvector;
 typedef CPPAD_TESTVECTOR(AD<double>) ADvector;
 
-const int N = 10; // How many steps we "lookahead" in the future we will use
+const int N = 5; //10 How many steps we "lookahead" in the future we will use
 const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
 
 //const double Lf = 2.67; // this is the length from front of vehicle to Center-of-Gravity
 const double VELOCITY_MAX = 4.5; // this is what we ideally want our speed to always be --> also configured in drone_race.cpp
 const double ACCEL_MAX = 8.65;
 
-const int NUMBER_OF_STATES = 22; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
-const int NUMBER_OF_ACTUATIONS = 6; // ax, ay, az, alpha_x, alpha_y, alpha_z
+const int NUMBER_OF_STATES = 1;//22; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
+const int NUMBER_OF_ACTUATIONS = 1;//6; // ax, ay, az, alpha_x, alpha_y, alpha_z
 
 const int NX =  N * NUMBER_OF_STATES + (N - 1) * NUMBER_OF_ACTUATIONS; // number of state + actuation variables
 const int NG = N * NUMBER_OF_STATES; // number of constraints
@@ -63,7 +63,7 @@ const int ID_FIRST_pz = ID_FIRST_py + N;
 const int ID_FIRST_roll = ID_FIRST_pz + N;
 const int ID_FIRST_pitch = ID_FIRST_roll + N;
 const int ID_FIRST_yaw = ID_FIRST_pitch + N;
-const int ID_FIRST_vx = ID_FIRST_yaw + N;
+const int ID_FIRST_vx = ID_FIRST_px + N - 1;
 const int ID_FIRST_vy = ID_FIRST_vx + N;
 const int ID_FIRST_vz = ID_FIRST_vy + N;
 const int ID_FIRST_wx = ID_FIRST_vz + N;

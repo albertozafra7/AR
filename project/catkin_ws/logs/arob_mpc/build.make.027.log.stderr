@@ -1,0 +1,27 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:5[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:508:26:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char [6][m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to binary ‘[01m[Koperator<<[m[K’
+  508 |         ROS_INFO([32m[K"HELOO"[m[K [01;31m[K<<[m[K [34m[Ksolution.x.size()[m[K);
+      |                  [32m[K~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~~~~~[m[K
+      |                  [32m[K|[m[K                         [34m[K|[m[K
+      |                  [32m[Kconst char [6][m[K            [34m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:508:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+  508 |         [01;36m[KROS_INFO[m[K("HELOO" << solution.x.size());
+      |         [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -199,6 +199,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   endif()
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/ipopt_custom")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom"
+         OLD_RPATH "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation_ros/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/ipopt_custom")
+    endif()
+  endif()
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/arob_mpc/gtest/cmake_install.cmake")

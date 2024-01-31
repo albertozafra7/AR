@@ -22,7 +22,9 @@ public:
     void operator()(ADvector& fg, const ADvector& statesNactions) {
 
 
-        fg[0] = cost_function(statesNactions);
+        fg[0] =  CppAD::pow(statesNactions[ID_FIRST_px] - 3, 2);//cost_function(statesNactions);
+
+        std::cout << "Coste = " << statesNactions[ID_FIRST_px]  << std::endl;
 
         ROS_INFO("The costunction has been computed");
 
@@ -127,23 +129,23 @@ public:
     void constraints_statement(ADvector& fg, const ADvector& statesNactions){
         // This is done to ensure that the first position is the current position
         fg[ID_FIRST_px + 1] = statesNactions[ID_FIRST_px];
-        fg[ID_FIRST_py + 1] = statesNactions[ID_FIRST_py];
-        fg[ID_FIRST_pz + 1] = statesNactions[ID_FIRST_pz];
-        fg[ID_FIRST_roll + 1] = statesNactions[ID_FIRST_roll];
-        fg[ID_FIRST_pitch + 1] = statesNactions[ID_FIRST_pitch];
-        fg[ID_FIRST_yaw + 1] = statesNactions[ID_FIRST_yaw];
+        // fg[ID_FIRST_py + 1] = statesNactions[ID_FIRST_py];
+        // fg[ID_FIRST_pz + 1] = statesNactions[ID_FIRST_pz];
+        // fg[ID_FIRST_roll + 1] = statesNactions[ID_FIRST_roll];
+        // fg[ID_FIRST_pitch + 1] = statesNactions[ID_FIRST_pitch];
+        // fg[ID_FIRST_yaw + 1] = statesNactions[ID_FIRST_yaw];
         fg[ID_FIRST_vx + 1] = statesNactions[ID_FIRST_vx];
-        fg[ID_FIRST_vy + 1] = statesNactions[ID_FIRST_vy];
-        fg[ID_FIRST_vz + 1] = statesNactions[ID_FIRST_vz];
-        fg[ID_FIRST_wx + 1] = statesNactions[ID_FIRST_wx];
-        fg[ID_FIRST_wy + 1] = statesNactions[ID_FIRST_wy];
-        fg[ID_FIRST_wz + 1] = statesNactions[ID_FIRST_wz];
-        fg[ID_FIRST_ax + 1] = statesNactions[ID_FIRST_ax];
-        fg[ID_FIRST_ay + 1] = statesNactions[ID_FIRST_ay];
-        fg[ID_FIRST_az + 1] = statesNactions[ID_FIRST_az];
-        fg[ID_FIRST_alpha_x + 1] = statesNactions[ID_FIRST_alpha_x];
-        fg[ID_FIRST_alpha_y + 1] = statesNactions[ID_FIRST_alpha_y];
-        fg[ID_FIRST_alpha_z + 1] = statesNactions[ID_FIRST_alpha_z];
+        // fg[ID_FIRST_vy + 1] = statesNactions[ID_FIRST_vy];
+        // fg[ID_FIRST_vz + 1] = statesNactions[ID_FIRST_vz];
+        // fg[ID_FIRST_wx + 1] = statesNactions[ID_FIRST_wx];
+        // fg[ID_FIRST_wy + 1] = statesNactions[ID_FIRST_wy];
+        // fg[ID_FIRST_wz + 1] = statesNactions[ID_FIRST_wz];
+        // fg[ID_FIRST_ax + 1] = statesNactions[ID_FIRST_ax];
+        // fg[ID_FIRST_ay + 1] = statesNactions[ID_FIRST_ay];
+        // fg[ID_FIRST_az + 1] = statesNactions[ID_FIRST_az];
+        // fg[ID_FIRST_alpha_x + 1] = statesNactions[ID_FIRST_alpha_x];
+        // fg[ID_FIRST_alpha_y + 1] = statesNactions[ID_FIRST_alpha_y];
+        // fg[ID_FIRST_alpha_z + 1] = statesNactions[ID_FIRST_alpha_z];
 
         // constraints based on our kinematic model
         for (int i = 0; i < N - 1; ++i) {
@@ -151,100 +153,100 @@ public:
             // where the current state variables of interest are stored
             // stored for readability
             const int ID_CURRENT_px = ID_FIRST_px + i;
-            const int ID_CURRENT_py = ID_FIRST_py + i;
-            const int ID_CURRENT_pz = ID_FIRST_pz + i;
-            const int ID_CURRENT_roll = ID_FIRST_roll + i;
-            const int ID_CURRENT_pitch = ID_FIRST_roll + i;
-            const int ID_CURRENT_yaw = ID_FIRST_pitch + i;
+            // const int ID_CURRENT_py = ID_FIRST_py + i;
+            // const int ID_CURRENT_pz = ID_FIRST_pz + i;
+            // const int ID_CURRENT_roll = ID_FIRST_roll + i;
+            // const int ID_CURRENT_pitch = ID_FIRST_roll + i;
+            // const int ID_CURRENT_yaw = ID_FIRST_pitch + i;
             const int ID_CURRENT_vx = ID_FIRST_vx + i;
-            const int ID_CURRENT_vy = ID_FIRST_vy + i;
-            const int ID_CURRENT_vz = ID_FIRST_vz + i;
-            const int ID_CURRENT_wx = ID_FIRST_wx + i;
-            const int ID_CURRENT_wy = ID_FIRST_wy + i;
-            const int ID_CURRENT_wz = ID_FIRST_wz + i;
-            const int ID_CURRENT_ax = ID_FIRST_ax + i;
-            const int ID_CURRENT_ay = ID_FIRST_ay + i;
-            const int ID_CURRENT_az = ID_FIRST_az + i;
-            const int ID_CURRENT_alpha_x = ID_FIRST_alpha_x + i;
-            const int ID_CURRENT_alpha_y = ID_FIRST_alpha_y + i;
-            const int ID_CURRENT_alpha_z = ID_FIRST_alpha_z + i;
+            // const int ID_CURRENT_vy = ID_FIRST_vy + i;
+            // const int ID_CURRENT_vz = ID_FIRST_vz + i;
+            // const int ID_CURRENT_wx = ID_FIRST_wx + i;
+            // const int ID_CURRENT_wy = ID_FIRST_wy + i;
+            // const int ID_CURRENT_wz = ID_FIRST_wz + i;
+            // const int ID_CURRENT_ax = ID_FIRST_ax + i;
+            // const int ID_CURRENT_ay = ID_FIRST_ay + i;
+            // const int ID_CURRENT_az = ID_FIRST_az + i;
+            // const int ID_CURRENT_alpha_x = ID_FIRST_alpha_x + i;
+            // const int ID_CURRENT_alpha_y = ID_FIRST_alpha_y + i;
+            // const int ID_CURRENT_alpha_z = ID_FIRST_alpha_z + i;
 
             // current state and actuations
             const auto px0 = statesNactions[ID_CURRENT_px];
-            const auto py0 = statesNactions[ID_CURRENT_py];
-            const auto pz0 = statesNactions[ID_CURRENT_pz];
-            const auto roll0 = statesNactions[ID_CURRENT_roll];
-            const auto pitch0 = statesNactions[ID_CURRENT_pitch];
-            const auto yaw0 = statesNactions[ID_CURRENT_yaw];
+            // const auto py0 = statesNactions[ID_CURRENT_py];
+            // const auto pz0 = statesNactions[ID_CURRENT_pz];
+            // const auto roll0 = statesNactions[ID_CURRENT_roll];
+            // const auto pitch0 = statesNactions[ID_CURRENT_pitch];
+            // const auto yaw0 = statesNactions[ID_CURRENT_yaw];
             const auto vx0 = statesNactions[ID_CURRENT_vx];
-            const auto vy0 = statesNactions[ID_CURRENT_vy];
-            const auto vz0 = statesNactions[ID_CURRENT_vz];
-            const auto wx0 = statesNactions[ID_CURRENT_wx];
-            const auto wy0 = statesNactions[ID_CURRENT_wy];
-            const auto wz0 = statesNactions[ID_CURRENT_wz];
-            const auto ax0 = statesNactions[ID_CURRENT_ax];
-            const auto ay0 = statesNactions[ID_CURRENT_ay];
-            const auto az0 = statesNactions[ID_CURRENT_az];
-            const auto alpha_x0 = statesNactions[ID_CURRENT_alpha_x];
-            const auto alpha_y0 = statesNactions[ID_CURRENT_alpha_y];
-            const auto alpha_z0 = statesNactions[ID_CURRENT_alpha_z];
+            // const auto vy0 = statesNactions[ID_CURRENT_vy];
+            // const auto vz0 = statesNactions[ID_CURRENT_vz];
+            // const auto wx0 = statesNactions[ID_CURRENT_wx];
+            // const auto wy0 = statesNactions[ID_CURRENT_wy];
+            // const auto wz0 = statesNactions[ID_CURRENT_wz];
+            // const auto ax0 = statesNactions[ID_CURRENT_ax];
+            // const auto ay0 = statesNactions[ID_CURRENT_ay];
+            // const auto az0 = statesNactions[ID_CURRENT_az];
+            // const auto alpha_x0 = statesNactions[ID_CURRENT_alpha_x];
+            // const auto alpha_y0 = statesNactions[ID_CURRENT_alpha_y];
+            // const auto alpha_z0 = statesNactions[ID_CURRENT_alpha_z];
 
             // next states and actuations
             const auto px1 = statesNactions[ID_CURRENT_px + 1];
-            const auto py1 = statesNactions[ID_CURRENT_py + 1];
-            const auto pz1 = statesNactions[ID_CURRENT_pz + 1];
-            const auto roll1 = statesNactions[ID_CURRENT_roll + 1];
-            const auto pitch1 = statesNactions[ID_CURRENT_pitch + 1];
-            const auto yaw1 = statesNactions[ID_CURRENT_yaw + 1];
-            const auto vx1 = statesNactions[ID_CURRENT_vx + 1];
-            const auto vy1 = statesNactions[ID_CURRENT_vy + 1];
-            const auto vz1 = statesNactions[ID_CURRENT_vz + 1];
-            const auto wx1 = statesNactions[ID_CURRENT_wx + 1];
-            const auto wy1 = statesNactions[ID_CURRENT_wy + 1];
-            const auto wz1 = statesNactions[ID_CURRENT_wz + 1];
-            const auto ax1 = statesNactions[ID_CURRENT_ax + 1];
-            const auto ay1 = statesNactions[ID_CURRENT_ay + 1];
-            const auto az1 = statesNactions[ID_CURRENT_az + 1];
-            const auto alpha_x1 = statesNactions[ID_CURRENT_alpha_x + 1];
-            const auto alpha_y1 = statesNactions[ID_CURRENT_alpha_y + 1];
-            const auto alpha_z1 = statesNactions[ID_CURRENT_alpha_z + 1];
+            // const auto py1 = statesNactions[ID_CURRENT_py + 1];
+            // const auto pz1 = statesNactions[ID_CURRENT_pz + 1];
+            // const auto roll1 = statesNactions[ID_CURRENT_roll + 1];
+            // const auto pitch1 = statesNactions[ID_CURRENT_pitch + 1];
+            // const auto yaw1 = statesNactions[ID_CURRENT_yaw + 1];
+            // const auto vx1 = statesNactions[ID_CURRENT_vx + 1];
+            // const auto vy1 = statesNactions[ID_CURRENT_vy + 1];
+            // const auto vz1 = statesNactions[ID_CURRENT_vz + 1];
+            // const auto wx1 = statesNactions[ID_CURRENT_wx + 1];
+            // const auto wy1 = statesNactions[ID_CURRENT_wy + 1];
+            // const auto wz1 = statesNactions[ID_CURRENT_wz + 1];
+            // const auto ax1 = statesNactions[ID_CURRENT_ax + 1];
+            // const auto ay1 = statesNactions[ID_CURRENT_ay + 1];
+            // const auto az1 = statesNactions[ID_CURRENT_az + 1];
+            // const auto alpha_x1 = statesNactions[ID_CURRENT_alpha_x + 1];
+            // const auto alpha_y1 = statesNactions[ID_CURRENT_alpha_y + 1];
+            // const auto alpha_z1 = statesNactions[ID_CURRENT_alpha_z + 1];
             
             // relationship of current state + actuations and next state
             // based on our kinematic model
             const auto px1_predict = px0 + vx0 * dt;
-            const auto py1_predict = py0 + vy0 * dt;
-            const auto pz1_predict = py0 + vz0 * dt;
-            const auto roll1_predict = roll0 + wx0 * dt;
-            const auto pitch1_predict = pitch0 + wy0 * dt;
-            const auto yaw1_predict = yaw0 + wz0 * dt;
-            const auto vx1_predict = vx0 + ax0 * dt;
-            const auto vy1_predict = vy0 + ay0 * dt;
-            const auto vz1_predict = vz0 + az0 * dt;
-            const auto wx1_predict = wx0 + alpha_x0 * dt;
-            const auto wy1_predict = wy0 + alpha_y0 * dt;
-            const auto wz1_predict = wz0 + alpha_z0 * dt;
+            // const auto py1_predict = py0 + vy0 * dt;
+            // const auto pz1_predict = py0 + vz0 * dt;
+            // const auto roll1_predict = roll0 + wx0 * dt;
+            // const auto pitch1_predict = pitch0 + wy0 * dt;
+            // const auto yaw1_predict = yaw0 + wz0 * dt;
+            // const auto vx1_predict = vx0 + ax0 * dt;
+            // const auto vy1_predict = vy0 + ay0 * dt;
+            // const auto vz1_predict = vz0 + az0 * dt;
+            // const auto wx1_predict = wx0 + alpha_x0 * dt;
+            // const auto wy1_predict = wy0 + alpha_y0 * dt;
+            // const auto wz1_predict = wz0 + alpha_z0 * dt;
 
             // store the constraint expression of two consecutive states
             fg[ID_CURRENT_px + 2] = px1 - px1_predict;
-            fg[ID_CURRENT_py + 2] = py1 - py1_predict;
-            fg[ID_CURRENT_pz + 2] = pz1 - pz1_predict;
-            fg[ID_CURRENT_roll + 2] = roll1 - roll1_predict;
-            fg[ID_CURRENT_pitch + 2] = pitch1 - pitch1_predict;
-            fg[ID_CURRENT_yaw + 2] = yaw1 - yaw1_predict;
-            fg[ID_CURRENT_vx + 2] = vx1 - vx1_predict;
-            fg[ID_CURRENT_vy + 2] = vy1 - vy1_predict;
-            fg[ID_CURRENT_vz + 2] = vz1 - vz1_predict;
-            fg[ID_CURRENT_wx + 2] = wx1 - wx1_predict;
-            fg[ID_CURRENT_wy + 2] = wy1 - wy1_predict;
-            fg[ID_CURRENT_wz + 2] = wz1 - wz1_predict;
+            // fg[ID_CURRENT_py + 2] = py1 - py1_predict;
+            // fg[ID_CURRENT_pz + 2] = pz1 - pz1_predict;
+            // fg[ID_CURRENT_roll + 2] = roll1 - roll1_predict;
+            // fg[ID_CURRENT_pitch + 2] = pitch1 - pitch1_predict;
+            // fg[ID_CURRENT_yaw + 2] = yaw1 - yaw1_predict;
+            // fg[ID_CURRENT_vx + 2] = vx1 - vx1_predict;
+            // fg[ID_CURRENT_vy + 2] = vy1 - vy1_predict;
+            // fg[ID_CURRENT_vz + 2] = vz1 - vz1_predict;
+            // fg[ID_CURRENT_wx + 2] = wx1 - wx1_predict;
+            // fg[ID_CURRENT_wy + 2] = wy1 - wy1_predict;
+            // fg[ID_CURRENT_wz + 2] = wz1 - wz1_predict;
 
             // If we add v < vmax we have to add a new step
-            AD<double> v1_predict = sqrt(vx1_predict*vx1_predict + vy1_predict*vy1_predict + vz1_predict*vz1_predict);
-            AD<double> w1_predict = sqrt(wx1_predict*wx1_predict + wy1_predict*wy1_predict + wz1_predict*wz1_predict);
-            fg[ID_CURRENT_ax + 2] = v1_predict; // we overwrite the acceleration for the memory shake
-            fg[ID_CURRENT_ay + 2] = w1_predict;
-            fg[ID_CURRENT_az + 2] = (v1_predict - sqrt(vx0*vx0 + vy0*vy0 + vz0*vz0))/dt; // accel
-            fg[ID_CURRENT_alpha_x + 2] = (w1_predict - sqrt(wx0*wx0 + wy0*wy0 + wz0*wz0))/dt;
+            // AD<double> v1_predict = sqrt(vx1_predict*vx1_predict + vy1_predict*vy1_predict + vz1_predict*vz1_predict);
+            // AD<double> w1_predict = sqrt(wx1_predict*wx1_predict + wy1_predict*wy1_predict + wz1_predict*wz1_predict);
+            // fg[ID_CURRENT_ax + 2] = v1_predict; // we overwrite the acceleration for the memory shake
+            // fg[ID_CURRENT_ay + 2] = w1_predict;
+            // fg[ID_CURRENT_az + 2] = (v1_predict - sqrt(vx0*vx0 + vy0*vy0 + vz0*vz0))/dt; // accel
+            // fg[ID_CURRENT_alpha_x + 2] = (w1_predict - sqrt(wx0*wx0 + wy0*wy0 + wz0*wz0))/dt;
         }
 
     }
@@ -458,6 +460,9 @@ public:
 
         update_current_states();
 
+        initialize_bounds();
+
+
         // object that computes objective and constraints
         FG_eval fg_eval(Traj_ref);
 
@@ -505,6 +510,8 @@ public:
         }
         // place to return solution
 
+        std::cout << solution.x.size()<< std::endl;
+
         geometry_msgs::Twist vel_command;
         vel_command.linear.x = solution.x[ID_FIRST_vx];
         vel_command.linear.y = solution.x[ID_FIRST_vy];
@@ -513,6 +520,8 @@ public:
         vel_command.angular.x = solution.x[ID_FIRST_wx];
         vel_command.angular.y = solution.x[ID_FIRST_wy];
         vel_command.angular.z = solution.x[ID_FIRST_wz];
+
+        ROS_INFO("HELOO2");
 
         // publish the velocities
         velocity_pub_.publish(vel_command);
@@ -543,25 +552,25 @@ public:
             this->x_upperbound[i] = 1.0e10;
         }
 
-        // Errors initialization
-        for (int i = ID_FIRST_p_error; i < ID_FIRST_ax; ++i) {
-            this->x_lowerbound[i] = -1.0e10;
-            this->x_upperbound[i] = 1.0e10;
-        }
+        // // Errors initialization
+        // for (int i = ID_FIRST_p_error; i < ID_FIRST_ax; ++i) {
+        //     this->x_lowerbound[i] = -1.0e10;
+        //     this->x_upperbound[i] = 1.0e10;
+        // }
 
         // all actuation inputs (velocities, accelerations) should have values between [-1, 1] or its maximum otherwise
 
-        // Velocities initialization
-        for (int i = ID_FIRST_vx; i < ID_FIRST_p_error; ++i) {
-            this->x_lowerbound[i] = -VELOCITY_MAX;
-            this->x_upperbound[i] = VELOCITY_MAX;
-        }
+        // // Velocities initialization
+        // for (int i = ID_FIRST_vx; i < ID_FIRST_p_error; ++i) {
+        //     this->x_lowerbound[i] = -VELOCITY_MAX;
+        //     this->x_upperbound[i] = VELOCITY_MAX;
+        // }
 
-        // Accelerations initialization
-        for (int i = ID_FIRST_ax; i < NX; ++i) {
-            this->x_lowerbound[i] = -ACCEL_MAX;
-            this->x_upperbound[i] = ACCEL_MAX;
-        }
+        // // Accelerations initialization
+        // for (int i = ID_FIRST_ax; i < NX; ++i) {
+        //     this->x_lowerbound[i] = -ACCEL_MAX;
+        //     this->x_upperbound[i] = ACCEL_MAX;
+        // }
 
 
         //**************************************************************
@@ -594,40 +603,40 @@ public:
         const double px = current_pos.pose.position.x;
         const double py = current_pos.pose.position.y;
         const double pz = current_pos.pose.position.z;
-        const double roll = orientations[0];
-        const double pitch = orientations[1];
-        const double yaw = orientations[2];
-        const double vx = current_vel.linear.x;
-        const double vy = current_vel.linear.y;
-        const double vz = current_vel.linear.z;
-        const double wx = current_vel.angular.x;
-        const double wy = current_vel.angular.y;
-        const double wz = current_vel.angular.z;
-        const double ax = current_accel.linear.x;
-        const double ay = current_accel.linear.y;
-        const double az = current_accel.linear.z;
-        const double alpha_x = current_accel.angular.x;
-        const double alpha_y = current_accel.angular.y;
-        const double alpha_z = current_accel.angular.z;
+        // const double roll = orientations[0];
+        // const double pitch = orientations[1];
+        // const double yaw = orientations[2];
+        // const double vx = current_vel.linear.x;
+        // const double vy = current_vel.linear.y;
+        // const double vz = current_vel.linear.z;
+        // const double wx = current_vel.angular.x;
+        // const double wy = current_vel.angular.y;
+        // const double wz = current_vel.angular.z;
+        // const double ax = current_accel.linear.x;
+        // const double ay = current_accel.linear.y;
+        // const double az = current_accel.linear.z;
+        // const double alpha_x = current_accel.angular.x;
+        // const double alpha_y = current_accel.angular.y;
+        // const double alpha_z = current_accel.angular.z;
 
         this->statesNactions[ID_FIRST_px] = px;
-        this->statesNactions[ID_FIRST_py] = py;
-        this->statesNactions[ID_FIRST_pz] = pz;
-        this->statesNactions[ID_FIRST_roll] = roll;
-        this->statesNactions[ID_FIRST_pitch] = pitch;
-        this->statesNactions[ID_FIRST_yaw] = yaw;
-        this->statesNactions[ID_FIRST_vx] = vx;
-        this->statesNactions[ID_FIRST_vy] = vy;
-        this->statesNactions[ID_FIRST_vz] = vz;
-        this->statesNactions[ID_FIRST_wx] = wx;
-        this->statesNactions[ID_FIRST_wy] = wy;
-        this->statesNactions[ID_FIRST_wz] = wz;
-        this->statesNactions[ID_FIRST_ax] = vx;
-        this->statesNactions[ID_FIRST_ay] = ay;
-        this->statesNactions[ID_FIRST_az] = az;
-        this->statesNactions[ID_FIRST_alpha_x] = alpha_x;
-        this->statesNactions[ID_FIRST_alpha_y] = alpha_y;
-        this->statesNactions[ID_FIRST_alpha_z] = alpha_z;
+        // this->statesNactions[ID_FIRST_py] = py;
+        // this->statesNactions[ID_FIRST_pz] = pz;
+        // this->statesNactions[ID_FIRST_roll] = roll;
+        // this->statesNactions[ID_FIRST_pitch] = pitch;
+        // this->statesNactions[ID_FIRST_yaw] = yaw;
+        this->statesNactions[ID_FIRST_vx] = 0.0;//vx;
+        // this->statesNactions[ID_FIRST_vy] = vy;
+        // this->statesNactions[ID_FIRST_vz] = vz;
+        // this->statesNactions[ID_FIRST_wx] = wx;
+        // this->statesNactions[ID_FIRST_wy] = wy;
+        // this->statesNactions[ID_FIRST_wz] = wz;
+        // this->statesNactions[ID_FIRST_ax] = vx;
+        // this->statesNactions[ID_FIRST_ay] = ay;
+        // this->statesNactions[ID_FIRST_az] = az;
+        // this->statesNactions[ID_FIRST_alpha_x] = alpha_x;
+        // this->statesNactions[ID_FIRST_alpha_y] = alpha_y;
+        // this->statesNactions[ID_FIRST_alpha_z] = alpha_z;
     
     }
 
@@ -635,51 +644,51 @@ public:
     // The assignation is with its current state value for ensuring a smooth movement
     void update_current_constraint_bounds(){
 
-        this->g_lowerbound[ID_FIRST_px] = this->statesNactions[ID_FIRST_px];
-        this->g_lowerbound[ID_FIRST_py] = this->statesNactions[ID_FIRST_py];
-        this->g_lowerbound[ID_FIRST_pz] = this->statesNactions[ID_FIRST_pz];
-        this->g_lowerbound[ID_FIRST_roll] = this->statesNactions[ID_FIRST_roll];
-        this->g_lowerbound[ID_FIRST_pitch] = this->statesNactions[ID_FIRST_pitch];
-        this->g_lowerbound[ID_FIRST_yaw] = this->statesNactions[ID_FIRST_yaw];
+        this->g_lowerbound[ID_FIRST_px] = -10.0; //this->statesNactions[ID_FIRST_px];
+        // this->g_lowerbound[ID_FIRST_py] = -10.0; //this->statesNactions[ID_FIRST_py];
+        // this->g_lowerbound[ID_FIRST_pz] = -10.0; //this->statesNactions[ID_FIRST_pz];
+        // this->g_lowerbound[ID_FIRST_roll] = this->statesNactions[ID_FIRST_roll];
+        // this->g_lowerbound[ID_FIRST_pitch] = this->statesNactions[ID_FIRST_pitch];
+        // this->g_lowerbound[ID_FIRST_yaw] = this->statesNactions[ID_FIRST_yaw];
         this->g_lowerbound[ID_FIRST_vx] = this->statesNactions[ID_FIRST_vx];
-        this->g_lowerbound[ID_FIRST_vy] = this->statesNactions[ID_FIRST_vy];
-        this->g_lowerbound[ID_FIRST_vz] = this->statesNactions[ID_FIRST_vz];
-        this->g_lowerbound[ID_FIRST_wx] = this->statesNactions[ID_FIRST_wx];
-        this->g_lowerbound[ID_FIRST_wy] = this->statesNactions[ID_FIRST_wy];
-        this->g_lowerbound[ID_FIRST_wz] = this->statesNactions[ID_FIRST_wz];
-        this->g_lowerbound[ID_FIRST_p_error] = this->statesNactions[ID_FIRST_p_error];
-        this->g_lowerbound[ID_FIRST_roll_error] = this->statesNactions[ID_FIRST_roll_error];
-        this->g_lowerbound[ID_FIRST_pitch_error] = this->statesNactions[ID_FIRST_pitch_error];
-        this->g_lowerbound[ID_FIRST_yaw_error] = this->statesNactions[ID_FIRST_yaw_error];
-        this->g_lowerbound[ID_FIRST_ax] = this->statesNactions[ID_FIRST_ax];
-        this->g_lowerbound[ID_FIRST_ay] = this->statesNactions[ID_FIRST_ay];
-        this->g_lowerbound[ID_FIRST_az] = this->statesNactions[ID_FIRST_az];
-        this->g_lowerbound[ID_FIRST_alpha_x] = this->statesNactions[ID_FIRST_alpha_x];
-        this->g_lowerbound[ID_FIRST_alpha_y] = this->statesNactions[ID_FIRST_alpha_y];
-        this->g_lowerbound[ID_FIRST_alpha_z] = this->statesNactions[ID_FIRST_alpha_z];
+        // this->g_lowerbound[ID_FIRST_vy] = this->statesNactions[ID_FIRST_vy];
+        // this->g_lowerbound[ID_FIRST_vz] = this->statesNactions[ID_FIRST_vz];
+        // this->g_lowerbound[ID_FIRST_wx] = this->statesNactions[ID_FIRST_wx];
+        // this->g_lowerbound[ID_FIRST_wy] = this->statesNactions[ID_FIRST_wy];
+        // this->g_lowerbound[ID_FIRST_wz] = this->statesNactions[ID_FIRST_wz];
+        // this->g_lowerbound[ID_FIRST_p_error] = this->statesNactions[ID_FIRST_p_error];
+        // this->g_lowerbound[ID_FIRST_roll_error] = this->statesNactions[ID_FIRST_roll_error];
+        // this->g_lowerbound[ID_FIRST_pitch_error] = this->statesNactions[ID_FIRST_pitch_error];
+        // this->g_lowerbound[ID_FIRST_yaw_error] = this->statesNactions[ID_FIRST_yaw_error];
+        // this->g_lowerbound[ID_FIRST_ax] = this->statesNactions[ID_FIRST_ax];
+        // this->g_lowerbound[ID_FIRST_ay] = this->statesNactions[ID_FIRST_ay];
+        // this->g_lowerbound[ID_FIRST_az] = this->statesNactions[ID_FIRST_az];
+        // this->g_lowerbound[ID_FIRST_alpha_x] = this->statesNactions[ID_FIRST_alpha_x];
+        // this->g_lowerbound[ID_FIRST_alpha_y] = this->statesNactions[ID_FIRST_alpha_y];
+        // this->g_lowerbound[ID_FIRST_alpha_z] = this->statesNactions[ID_FIRST_alpha_z];
 
-        this->g_upperbound[ID_FIRST_px] = this->statesNactions[ID_FIRST_px];
-        this->g_upperbound[ID_FIRST_py] = this->statesNactions[ID_FIRST_py];
-        this->g_upperbound[ID_FIRST_pz] = this->statesNactions[ID_FIRST_pz];
-        this->g_upperbound[ID_FIRST_roll] = this->statesNactions[ID_FIRST_roll];
-        this->g_upperbound[ID_FIRST_pitch] = this->statesNactions[ID_FIRST_pitch];
-        this->g_upperbound[ID_FIRST_yaw] = this->statesNactions[ID_FIRST_yaw];
+        this->g_upperbound[ID_FIRST_px] = 10.0; //this->statesNactions[ID_FIRST_px];
+        // this->g_upperbound[ID_FIRST_py] = 10.0; //this->statesNactions[ID_FIRST_py];
+        // this->g_upperbound[ID_FIRST_pz] = 10.0; //this->statesNactions[ID_FIRST_pz];
+        // this->g_upperbound[ID_FIRST_roll] = this->statesNactions[ID_FIRST_roll];
+        // this->g_upperbound[ID_FIRST_pitch] = this->statesNactions[ID_FIRST_pitch];
+        // this->g_upperbound[ID_FIRST_yaw] = this->statesNactions[ID_FIRST_yaw];
         this->g_upperbound[ID_FIRST_vx] = this->statesNactions[ID_FIRST_vx];
-        this->g_upperbound[ID_FIRST_vy] = this->statesNactions[ID_FIRST_vy];
-        this->g_upperbound[ID_FIRST_vz] = this->statesNactions[ID_FIRST_vz];
-        this->g_upperbound[ID_FIRST_wx] = this->statesNactions[ID_FIRST_wx];
-        this->g_upperbound[ID_FIRST_wy] = this->statesNactions[ID_FIRST_wy];
-        this->g_upperbound[ID_FIRST_wz] = this->statesNactions[ID_FIRST_wz];
-        this->g_upperbound[ID_FIRST_p_error] = this->statesNactions[ID_FIRST_p_error];
-        this->g_upperbound[ID_FIRST_roll_error] = this->statesNactions[ID_FIRST_roll_error];
-        this->g_upperbound[ID_FIRST_pitch_error] = this->statesNactions[ID_FIRST_pitch_error];
-        this->g_upperbound[ID_FIRST_yaw_error] = this->statesNactions[ID_FIRST_yaw_error];
-        this->g_upperbound[ID_FIRST_ax] = this->statesNactions[ID_FIRST_ax];
-        this->g_upperbound[ID_FIRST_ay] = this->statesNactions[ID_FIRST_ay];
-        this->g_upperbound[ID_FIRST_az] = this->statesNactions[ID_FIRST_az];
-        this->g_upperbound[ID_FIRST_alpha_x] = this->statesNactions[ID_FIRST_alpha_x];
-        this->g_upperbound[ID_FIRST_alpha_y] = this->statesNactions[ID_FIRST_alpha_y];
-        this->g_upperbound[ID_FIRST_alpha_z] = this->statesNactions[ID_FIRST_alpha_z];
+        // this->g_upperbound[ID_FIRST_vy] = this->statesNactions[ID_FIRST_vy];
+        // this->g_upperbound[ID_FIRST_vz] = this->statesNactions[ID_FIRST_vz];
+        // this->g_upperbound[ID_FIRST_wx] = this->statesNactions[ID_FIRST_wx];
+        // this->g_upperbound[ID_FIRST_wy] = this->statesNactions[ID_FIRST_wy];
+        // this->g_upperbound[ID_FIRST_wz] = this->statesNactions[ID_FIRST_wz];
+        // this->g_upperbound[ID_FIRST_p_error] = this->statesNactions[ID_FIRST_p_error];
+        // this->g_upperbound[ID_FIRST_roll_error] = this->statesNactions[ID_FIRST_roll_error];
+        // this->g_upperbound[ID_FIRST_pitch_error] = this->statesNactions[ID_FIRST_pitch_error];
+        // this->g_upperbound[ID_FIRST_yaw_error] = this->statesNactions[ID_FIRST_yaw_error];
+        // this->g_upperbound[ID_FIRST_ax] = this->statesNactions[ID_FIRST_ax];
+        // this->g_upperbound[ID_FIRST_ay] = this->statesNactions[ID_FIRST_ay];
+        // this->g_upperbound[ID_FIRST_az] = this->statesNactions[ID_FIRST_az];
+        // this->g_upperbound[ID_FIRST_alpha_x] = this->statesNactions[ID_FIRST_alpha_x];
+        // this->g_upperbound[ID_FIRST_alpha_y] = this->statesNactions[ID_FIRST_alpha_y];
+        // this->g_upperbound[ID_FIRST_alpha_z] = this->statesNactions[ID_FIRST_alpha_z];
     }
 };
 
