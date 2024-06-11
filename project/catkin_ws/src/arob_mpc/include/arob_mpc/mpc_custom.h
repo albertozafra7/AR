@@ -25,8 +25,7 @@
 #include <eigen3/Eigen/Geometry>
 #include <eigen3/Eigen/QR>
 
-#include <cppad/cppad.hpp>
-#include <cppad/ipopt/solve.hpp>
+#include <casadi/casadi.hpp>
 
 #include <mav_trajectory_generation_ros/ros_visualization.h>
 #include <mav_trajectory_generation_ros/ros_conversions.h>

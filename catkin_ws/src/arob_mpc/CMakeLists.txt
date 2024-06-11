@@ -117,15 +117,15 @@ include_directories(
  include ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(mpc_node_custom src/mpc_node_custom.cpp)
-add_dependencies(mpc_node_custom ${catkin_EXPORTED_TARGETS})
-target_link_libraries(mpc_node_custom ${catkin_LIBRARIES} ${CASADI_LIBRARIES} ipopt Eigen3::Eigen)
+add_executable(casadi_car_race src/casadi_car_race.cpp)
+add_dependencies(casadi_car_race ${catkin_EXPORTED_TARGETS})
+target_link_libraries(casadi_car_race ${catkin_LIBRARIES} ${CASADI_LIBRARIES} ipopt Eigen3::Eigen)
 
 
 
 install(TARGETS
     #list of nodes
-    mpc_node_custom
+    casadi_car_race
     
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

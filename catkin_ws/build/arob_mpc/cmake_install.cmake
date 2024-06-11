@@ -78,26 +78,26 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/devel/lib/arob_mpc/mpc_node_custom")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/devel/lib/arob_mpc/casadi_car_race")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race"
          OLD_RPATH "/usr/local/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/casadi_car_race")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/mpc_node_custom.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/casadi_car_race.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
 endif()
 

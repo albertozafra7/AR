@@ -692,17 +692,17 @@ arob_mpc_genpy/fast:
 .PHONY : arob_mpc_genpy/fast
 
 #=============================================================================
-# Target rules for targets named mpc_node_custom
+# Target rules for targets named casadi_car_race
 
 # Build rule for target.
-mpc_node_custom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mpc_node_custom
-.PHONY : mpc_node_custom
+casadi_car_race: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 casadi_car_race
+.PHONY : casadi_car_race
 
 # fast build rule for target.
-mpc_node_custom/fast:
-	$(MAKE) $(MAKESILENT) -f arob_mpc/CMakeFiles/mpc_node_custom.dir/build.make arob_mpc/CMakeFiles/mpc_node_custom.dir/build
-.PHONY : mpc_node_custom/fast
+casadi_car_race/fast:
+	$(MAKE) $(MAKESILENT) -f arob_mpc/CMakeFiles/casadi_car_race.dir/build.make arob_mpc/CMakeFiles/casadi_car_race.dir/build
+.PHONY : casadi_car_race/fast
 
 # Help Target
 help:
@@ -753,11 +753,11 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
+	@echo "... casadi_car_race"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... mpc_node_custom"
 .PHONY : help
 
 

@@ -66,7 +66,7 @@
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/arob_mpc_gennodejs.dir
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/arob_mpc_generate_messages_py.dir
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/arob_mpc_genpy.dir
-/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/mpc_node_custom.dir
+/home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/casadi_car_race.dir
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/test.dir
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/edit_cache.dir
 /home/albertozafra7/Desktop/Universidad/Master/AR/catkin_ws/build/arob_mpc/CMakeFiles/rebuild_cache.dir
