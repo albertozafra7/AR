@@ -1,0 +1,3 @@
+<launch>
+	<node name="mpc_node" pkg="arob_mpc" type="mpc_node_custom" output="screen"></node>
+</launch>

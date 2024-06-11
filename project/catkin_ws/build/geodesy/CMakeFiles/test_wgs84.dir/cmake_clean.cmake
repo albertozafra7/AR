@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geodesy/lib/geodesy/test_wgs84"
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geodesy/lib/geodesy/test_wgs84.pdb"
   "CMakeFiles/test_wgs84.dir/tests/test_wgs84.cpp.o"
+  "CMakeFiles/test_wgs84.dir/tests/test_wgs84.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

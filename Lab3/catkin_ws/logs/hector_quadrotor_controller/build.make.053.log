@@ -1,0 +1,17 @@
+[  0%] Built target hector_uav_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target hector_quadrotor_controller[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/hector_quadrotor_controller.dir/src/quadrotor_interface.cpp.o[0m
+[ 22%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_controller.so[0m
+[ 33%] Built target hector_quadrotor_controller
+[35m[1mScanning dependencies of target hector_quadrotor_pose_controller[0m
+[35m[1mScanning dependencies of target hector_quadrotor_motor_controller[0m
+[35m[1mScanning dependencies of target hector_quadrotor_twist_controller[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/hector_quadrotor_pose_controller.dir/src/pose_controller.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/hector_quadrotor_twist_controller.dir/src/twist_controller.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/hector_quadrotor_motor_controller.dir/src/motor_controller.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_motor_controller.so[0m
+[ 77%] Built target hector_quadrotor_motor_controller
+[ 88%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_pose_controller.so[0m
+[ 88%] Built target hector_quadrotor_pose_controller
+[100%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_controller/lib/libhector_quadrotor_twist_controller.so[0m
+[100%] Built target hector_quadrotor_twist_controller

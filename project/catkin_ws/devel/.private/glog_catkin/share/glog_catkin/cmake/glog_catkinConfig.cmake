@@ -116,7 +116,7 @@ if(NOT "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/deve
   endforeach()
 endif()
 
-set(libraries "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib/libglog.so")
+set(libraries "glog")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")

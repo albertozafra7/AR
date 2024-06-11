@@ -1,21 +1,38 @@
 Not searching for unused variables given on the command line.
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
 [36m--[0m The C compiler identification is GNU 9.4.0
 [36m--[0m The CXX compiler identification is GNU 9.4.0
-[36m--[0m Check for working C compiler: /usr/bin/cc
-[36m--[0m Check for working C compiler: /usr/bin/cc -- works
 [36m--[0m Detecting C compiler ABI info
 [36m--[0m Detecting C compiler ABI info - done
+[36m--[0m Check for working C compiler: /usr/bin/cc - skipped
 [36m--[0m Detecting C compile features
 [36m--[0m Detecting C compile features - done
-[36m--[0m Check for working CXX compiler: /usr/bin/c++
-[36m--[0m Check for working CXX compiler: /usr/bin/c++ -- works
 [36m--[0m Detecting CXX compiler ABI info
 [36m--[0m Detecting CXX compiler ABI info - done
+[36m--[0m Check for working CXX compiler: /usr/bin/c++ - skipped
 [36m--[0m Detecting CXX compile features
 [36m--[0m Detecting CXX compile features - done
 [36m--[0m Using CATKIN_DEVEL_PREFIX: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_gazebo_thermal_camera
 [36m--[0m Using CMAKE_PREFIX_PATH: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel;/home/albertozafra7/tb2_ws/devel_isolated/mltbot_pr1;/home/albertozafra7/catkin_ws/devel;/home/albertozafra7/tb2_ws/devel_isolated/yujin_ocs;/home/albertozafra7/tb2_ws/devel_isolated/yocs_waypoints_navi;/home/albertozafra7/tb2_ws/devel_isolated/yocs_waypoint_provider;/home/albertozafra7/tb2_ws/devel_isolated/yocs_virtual_sensor;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_qtestsuite;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_testsuite;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_node;/home/albertozafra7/tb2_ws/devel_isolated/yocs_velocity_smoother;/home/albertozafra7/tb2_ws/devel_isolated/yocs_safety_controller;/home/albertozafra7/tb2_ws/devel_isolated/yocs_rapps;/home/albertozafra7/tb2_ws/devel_isolated/yocs_navigator;/home/albertozafra7/tb2_ws/devel_isolated/yocs_navi_toolkit;/home/albertozafra7/tb2_ws/devel_isolated/yocs_joyop;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_pair_tracking;/home/albertozafra7/tb2_ws/devel_isolated/yocs_msgs;/home/albertozafra7/tb2_ws/devel_isolated/yocs_diff_drive_pose_controller;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_marker_tracking;/home/albertozafra7/tb2_ws/devel_isolated/yocs_math_toolkit;/home/albertozafra7/tb2_ws/devel_isolated/yocs_localization_manager;/home/albertozafra7/tb2_ws/devel_isolated/yocs_keyop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_safety_controller;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_random_walker;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_controller_tutorial;/home/albertozafra7/tb2_ws/devel_isolated/yocs_controllers;/home/albertozafra7/tb2_ws/devel_isolated/yocs_cmd_vel_mux;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_pair_approach;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_teleop;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_stdr;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_stage;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_simulator;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_rviz_launchers;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_rapps;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_navigation;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_follower;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_msgs;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_interactive_markers;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_interactions;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_gazebo;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_description;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_dashboard;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_capabilities;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_calibration;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_bringup;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_apps;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_actions;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_driver;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_auto_docking;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_dock_drive;/home/albertozafra7/tb2_ws/devel_isolated/ecl_statistics;/home/albertozafra7/tb2_ws/devel_isolated/ecl_mobile_robot;/home/albertozafra7/tb2_ws/devel_isolated/ecl_core_apps;/home/albertozafra7/tb2_ws/devel_isolated/ecl_geometry;/home/albertozafra7/tb2_ws/devel_isolated/ecl_linear_algebra;/home/albertozafra7/tb2_ws/devel_isolated/slam_gmapping;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_rviz_launchers;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_rapps;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_keyop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_gazebo_plugins;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_dashboard;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_bumper2pc;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_msgs;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_gazebo;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_ftdi;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_desktop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_description;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_core;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_capabilities;/home/albertozafra7/tb2_ws/devel_isolated/kobuki;/home/albertozafra7/tb2_ws/devel_isolated/gmapping;/home/albertozafra7/tb2_ws/devel_isolated/ecl_streams;/home/albertozafra7/tb2_ws/devel_isolated/ecl_sigslots;/home/albertozafra7/tb2_ws/devel_isolated/ecl_devices;/home/albertozafra7/tb2_ws/devel_isolated/ecl_threads;/home/albertozafra7/tb2_ws/devel_isolated/ecl_containers;/home/albertozafra7/tb2_ws/devel_isolated/ecl_utilities;/home/albertozafra7/tb2_ws/devel_isolated/ecl_math;/home/albertozafra7/tb2_ws/devel_isolated/ecl_formatters;/home/albertozafra7/tb2_ws/devel_isolated/ecl_converters;/home/albertozafra7/tb2_ws/devel_isolated/ecl_concepts;/home/albertozafra7/tb2_ws/devel_isolated/ecl_type_traits;/home/albertozafra7/tb2_ws/devel_isolated/ecl_tools;/home/albertozafra7/tb2_ws/devel_isolated/ecl_ipc;/home/albertozafra7/tb2_ws/devel_isolated/ecl_time;/home/albertozafra7/tb2_ws/devel_isolated/ecl_time_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_sigslots_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_navigation;/home/albertozafra7/tb2_ws/devel_isolated/ecl_mpl;/home/albertozafra7/tb2_ws/devel_isolated/ecl_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_io;/home/albertozafra7/tb2_ws/devel_isolated/ecl_filesystem;/home/albertozafra7/tb2_ws/devel_isolated/ecl_exceptions;/home/albertozafra7/tb2_ws/devel_isolated/ecl_errors;/home/albertozafra7/tb2_ws/devel_isolated/ecl_eigen;/home/albertozafra7/tb2_ws/devel_isolated/ecl_converters_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_console;/home/albertozafra7/tb2_ws/devel_isolated/ecl_config;/home/albertozafra7/tb2_ws/devel_isolated/ecl_command_line;/home/albertozafra7/tb2_ws/devel_isolated/ecl_build;/home/albertozafra7/tb2_ws/devel_isolated/ecl_license;/home/albertozafra7/tb2_ws/devel_isolated/ecl_core;/home/albertozafra7/tb2_ws/devel_isolated/depthimage_to_laserscan;/home/albertozafra7/tb2_ws/devel_isolated/ddynamic_reconfigure;/home/albertozafra7/tb2_ws/devel_isolated/ar_track_alvar_msgs;/opt/ros/noetic;/home/albertozafra7/tb2_ws/devel_isolated/sophus
 [36m--[0m This workspace overlays: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel;/home/albertozafra7/tb2_ws/devel_isolated/mltbot_pr1;/home/albertozafra7/catkin_ws/devel;/home/albertozafra7/tb2_ws/devel_isolated/yujin_ocs;/home/albertozafra7/tb2_ws/devel_isolated/yocs_waypoints_navi;/home/albertozafra7/tb2_ws/devel_isolated/yocs_waypoint_provider;/home/albertozafra7/tb2_ws/devel_isolated/yocs_virtual_sensor;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_qtestsuite;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_testsuite;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_node;/home/albertozafra7/tb2_ws/devel_isolated/yocs_velocity_smoother;/home/albertozafra7/tb2_ws/devel_isolated/yocs_safety_controller;/home/albertozafra7/tb2_ws/devel_isolated/yocs_rapps;/home/albertozafra7/tb2_ws/devel_isolated/yocs_navigator;/home/albertozafra7/tb2_ws/devel_isolated/yocs_navi_toolkit;/home/albertozafra7/tb2_ws/devel_isolated/yocs_joyop;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_pair_tracking;/home/albertozafra7/tb2_ws/devel_isolated/yocs_msgs;/home/albertozafra7/tb2_ws/devel_isolated/yocs_diff_drive_pose_controller;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_marker_tracking;/home/albertozafra7/tb2_ws/devel_isolated/yocs_math_toolkit;/home/albertozafra7/tb2_ws/devel_isolated/yocs_localization_manager;/home/albertozafra7/tb2_ws/devel_isolated/yocs_keyop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_safety_controller;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_random_walker;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_controller_tutorial;/home/albertozafra7/tb2_ws/devel_isolated/yocs_controllers;/home/albertozafra7/tb2_ws/devel_isolated/yocs_cmd_vel_mux;/home/albertozafra7/tb2_ws/devel_isolated/yocs_ar_pair_approach;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_teleop;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_stdr;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_stage;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_simulator;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_rviz_launchers;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_rapps;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_navigation;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_follower;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_msgs;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_interactive_markers;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_interactions;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_gazebo;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_description;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_dashboard;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_capabilities;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_calibration;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_bringup;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_apps;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot_actions;/home/albertozafra7/tb2_ws/devel_isolated/turtlebot;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_driver;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_auto_docking;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_dock_drive;/home/albertozafra7/tb2_ws/devel_isolated/ecl_statistics;/home/albertozafra7/tb2_ws/devel_isolated/ecl_mobile_robot;/home/albertozafra7/tb2_ws/devel_isolated/ecl_core_apps;/home/albertozafra7/tb2_ws/devel_isolated/ecl_geometry;/home/albertozafra7/tb2_ws/devel_isolated/ecl_linear_algebra;/home/albertozafra7/tb2_ws/devel_isolated/slam_gmapping;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_rviz_launchers;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_rapps;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_keyop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_gazebo_plugins;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_dashboard;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_bumper2pc;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_msgs;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_gazebo;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_ftdi;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_desktop;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_description;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_core;/home/albertozafra7/tb2_ws/devel_isolated/kobuki_capabilities;/home/albertozafra7/tb2_ws/devel_isolated/kobuki;/home/albertozafra7/tb2_ws/devel_isolated/gmapping;/home/albertozafra7/tb2_ws/devel_isolated/ecl_streams;/home/albertozafra7/tb2_ws/devel_isolated/ecl_sigslots;/home/albertozafra7/tb2_ws/devel_isolated/ecl_devices;/home/albertozafra7/tb2_ws/devel_isolated/ecl_threads;/home/albertozafra7/tb2_ws/devel_isolated/ecl_containers;/home/albertozafra7/tb2_ws/devel_isolated/ecl_utilities;/home/albertozafra7/tb2_ws/devel_isolated/ecl_math;/home/albertozafra7/tb2_ws/devel_isolated/ecl_formatters;/home/albertozafra7/tb2_ws/devel_isolated/ecl_converters;/home/albertozafra7/tb2_ws/devel_isolated/ecl_concepts;/home/albertozafra7/tb2_ws/devel_isolated/ecl_type_traits;/home/albertozafra7/tb2_ws/devel_isolated/ecl_tools;/home/albertozafra7/tb2_ws/devel_isolated/ecl_ipc;/home/albertozafra7/tb2_ws/devel_isolated/ecl_time;/home/albertozafra7/tb2_ws/devel_isolated/ecl_time_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_sigslots_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_navigation;/home/albertozafra7/tb2_ws/devel_isolated/ecl_mpl;/home/albertozafra7/tb2_ws/devel_isolated/ecl_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_io;/home/albertozafra7/tb2_ws/devel_isolated/ecl_filesystem;/home/albertozafra7/tb2_ws/devel_isolated/ecl_exceptions;/home/albertozafra7/tb2_ws/devel_isolated/ecl_errors;/home/albertozafra7/tb2_ws/devel_isolated/ecl_eigen;/home/albertozafra7/tb2_ws/devel_isolated/ecl_converters_lite;/home/albertozafra7/tb2_ws/devel_isolated/ecl_console;/home/albertozafra7/tb2_ws/devel_isolated/ecl_config;/home/albertozafra7/tb2_ws/devel_isolated/ecl_command_line;/home/albertozafra7/tb2_ws/devel_isolated/ecl_build;/home/albertozafra7/tb2_ws/devel_isolated/ecl_license;/home/albertozafra7/tb2_ws/devel_isolated/ecl_core;/home/albertozafra7/tb2_ws/devel_isolated/depthimage_to_laserscan;/home/albertozafra7/tb2_ws/devel_isolated/ddynamic_reconfigure;/home/albertozafra7/tb2_ws/devel_isolated/ar_track_alvar_msgs;/opt/ros/noetic
+[33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:7 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
 [36m--[0m Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
 [36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python3
 [36m--[0m Using Debian Python package layout
@@ -27,12 +44,56 @@ Not searching for unused variables given on the command line.
 [36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
 [36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
 [36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[33mCMake Warning (dev) at /usr/src/googletest/googletest/cmake/internal_utils.cmake:249 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /usr/src/googletest/googletest/CMakeLists.txt:91 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
 [36m--[0m Found PythonInterp: /usr/bin/python3 (found version "3.8.10")
 [36m--[0m Found Threads: TRUE
 [36m--[0m Using Python nosetests: /usr/bin/nosetests3
 [36m--[0m catkin 0.8.10
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[33mCMake Warning (dev) at /home/albertozafra7/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+[36mCall Stack (most recent call first):[0m
+  /home/albertozafra7/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.28/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
 [36m--[0m Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1")
 [36m--[0m Checking for module 'bullet>=2.82'
 [36m--[0m   Found bullet, version 2.88
@@ -42,7 +103,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m Found DART: /usr/include (Required is at least version "6.6") found components: dart
 [36m--[0m Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time
 [36m--[0m Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1")
-[36m--[0m Looking for ignition-math6 -- found version 6.15.0
+[36m--[0m Looking for ignition-math6 -- found version 6.15.1
 [36m--[0m Searching for dependencies of ignition-math6
 [36m--[0m Looking for OGRE...
 [36m--[0m OGRE_PREFIX_WATCH changed.
@@ -62,20 +123,20 @@ Not searching for unused variables given on the command line.
 [36m--[0m Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
 [36m--[0m Looking for OGRE_Overlay...
 [36m--[0m Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
-[36m--[0m Looking for ignition-math6 -- found version 6.15.0
+[36m--[0m Looking for ignition-math6 -- found version 6.15.1
 [36m--[0m Looking for ignition-transport8 -- found version 8.3.0
 [36m--[0m Searching for dependencies of ignition-transport8
 [36m--[0m Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3")
 [36m--[0m Config-file not installed for ZeroMQ -- checking for pkg-config
 [36m--[0m Checking for module 'libzmq >= 4'
-[36m--[0m   Found libzmq , version 4.3.2
+[36m--[0m   Found libzmq, version 4.3.2
 [36m--[0m Found ZeroMQ: TRUE (Required is at least version "4")
 [36m--[0m Checking for module 'uuid'
 [36m--[0m   Found uuid, version 2.34.0
 [36m--[0m Found UUID: TRUE
 [36m--[0m Looking for ignition-msgs5 -- found version 5.10.0
 [36m--[0m Searching for dependencies of ignition-msgs5
-[36m--[0m Looking for ignition-math6 -- found version 6.15.0
+[36m--[0m Looking for ignition-math6 -- found version 6.15.1
 [36m--[0m Checking for module 'tinyxml2'
 [36m--[0m   Found tinyxml2, version 6.2.0
 [36m--[0m Looking for ignition-msgs5 -- found version 5.10.0
@@ -87,7 +148,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m Searching for <ignition-common3> component [graphics]
 [36m--[0m Looking for ignition-common3-graphics -- found version 3.14.2
 [36m--[0m Searching for dependencies of ignition-common3-graphics
-[36m--[0m Looking for ignition-math6 -- found version 6.15.0
+[36m--[0m Looking for ignition-math6 -- found version 6.15.1
 [36m--[0m Looking for ignition-fuel_tools4 -- found version 4.6.0
 [36m--[0m Searching for dependencies of ignition-fuel_tools4
 [36m--[0m Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")
@@ -101,13 +162,13 @@ Not searching for unused variables given on the command line.
 [36m--[0m   Found libzip, version 1.5.1
 [36m--[0m Found ZIP: TRUE
 [36m--[0m Looking for ignition-common3 -- found version 3.14.2
-[36m--[0m Looking for ignition-math6 -- found version 6.15.0
+[36m--[0m Looking for ignition-math6 -- found version 6.15.1
 [36m--[0m Looking for ignition-msgs5 -- found version 5.10.0
 [36m--[0m Checking for module 'OGRE'
 [36m--[0m   Found OGRE, version 1.9.0
 [36m--[0m Checking for module 'OGRE-Paging'
 [36m--[0m   Found OGRE-Paging, version 1.9.0
 [36m--[0m Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread
-[36m--[0m Configuring done
-[36m--[0m Generating done
+[36m--[0m Configuring done (19.4s)
+[36m--[0m Generating done (8.5s)
 [36m--[0m Build files have been written to: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_gazebo_thermal_camera

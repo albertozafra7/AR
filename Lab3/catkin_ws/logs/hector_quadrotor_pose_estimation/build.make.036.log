@@ -1,0 +1,9 @@
+[  0%] Built target hector_uav_msgs_generate_messages_cpp
+[ 16%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_pose_estimation/lib/libhector_quadrotor_pose_estimation_node.so[0m
+[ 33%] Built target hector_quadrotor_pose_estimation_node
+[35m[1mScanning dependencies of target hector_quadrotor_pose_estimation_nodelet[0m
+[ 50%] [32m[1mLinking CXX executable /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_pose_estimation/lib/hector_quadrotor_pose_estimation/hector_quadrotor_pose_estimation[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/hector_quadrotor_pose_estimation_nodelet.dir/src/pose_estimation_nodelet.cpp.o[0m
+[ 83%] Built target hector_quadrotor_pose_estimation
+[100%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_pose_estimation/lib/libhector_quadrotor_pose_estimation_nodelet.so[0m
+[100%] Built target hector_quadrotor_pose_estimation_nodelet

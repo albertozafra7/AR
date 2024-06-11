@@ -15,8 +15,8 @@ let BoundingBox = require('./BoundingBox.js');
 let WayPoint = require('./WayPoint.js');
 let RouteSegment = require('./RouteSegment.js');
 let KeyValue = require('./KeyValue.js');
-let uuid_msgs = _finder('uuid_msgs');
 let std_msgs = _finder('std_msgs');
+let uuid_msgs = _finder('uuid_msgs');
 
 //-----------------------------------------------------------
 

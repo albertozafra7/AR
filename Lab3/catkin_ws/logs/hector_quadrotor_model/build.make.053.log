@@ -1,0 +1,5 @@
+[  0%] Built target hector_uav_msgs_generate_messages_cpp
+[ 25%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_model/lib/libhector_quadrotor_aerodynamics.so[0m
+[ 50%] Built target hector_quadrotor_aerodynamics
+[ 75%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_quadrotor_model/lib/libhector_quadrotor_propulsion.so[0m
+[100%] Built target hector_quadrotor_propulsion

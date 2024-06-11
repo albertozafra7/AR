@@ -1,8 +1,6 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_states(int)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_states[m[K’ was not declared in this scope; did you mean ‘[01m[Ksend_states[m[K’?
-  367 |             [01;31m[Ktemp_states[m[K.clear();
-      |             [01;31m[K^~~~~~~~~~~[m[K
-      |             [32m[Ksend_states[m[K
-make[2]: *** [CMakeFiles/drone_race.dir/build.make:63: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:347: CMakeFiles/drone_race.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2
+/usr/bin/ld: CMakeFiles/mpc_node_custom.dir/src/mpc_node_custom.cpp.o: in function `void CppAD::put_check_for_nan<double>(CppAD::vector<double> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+mpc_node_custom.cpp:(.text._ZN5CppAD17put_check_for_nanIdEEvRKNS_6vectorIT_EERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN5CppAD17put_check_for_nanIdEEvRKNS_6vectorIT_EERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x68): undefined reference to `CppAD::local::temp_file[abi:cxx11]()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/mpc_node_custom.dir/build.make:114: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/mpc_node_custom] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/mpc_node_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

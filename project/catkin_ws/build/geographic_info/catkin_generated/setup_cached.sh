@@ -10,4 +10,4 @@
 export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geographic_info:$CMAKE_PREFIX_PATH"
 export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/geographic_info'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/geographic_info/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/geographic_info/geographic_info:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/geographic_info/geographic_info:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/geographic_info/geographic_info:$ROS_PACKAGE_PATH"

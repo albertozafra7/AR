@@ -1,9 +1,0 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:253:16:[m[K [01;31m[Kerror: [m[Kinvalid declarator before ‘[01m[Keuclidean_distance[m[K’
-  253 |     AD<double> [01;31m[Keuclidean_distance[m[K(const AD<double> origin_x, const AD<double> origin_y, const AD<double> origin_z, geometry_msgs::Point dest){
-      |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:271:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
-  271 | [01;31m[K}[m[K;
-      | [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

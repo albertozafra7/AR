@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types"
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib/eigen_checks/test_glog-zero-sized-types.pdb"
   "CMakeFiles/test_glog-zero-sized-types.dir/test/test_glog-zero-sized-types.cc.o"
+  "CMakeFiles/test_glog-zero-sized-types.dir/test/test_glog-zero-sized-types.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

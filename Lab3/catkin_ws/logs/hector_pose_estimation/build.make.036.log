@@ -1,0 +1,8 @@
+[ 16%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_pose_estimation/lib/libhector_pose_estimation_node.so[0m
+[ 33%] Built target hector_pose_estimation_node
+[ 50%] [32m[1mLinking CXX executable /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_pose_estimation/lib/hector_pose_estimation/pose_estimation[0m
+[ 66%] Built target pose_estimation
+[35m[1mScanning dependencies of target hector_pose_estimation_nodelet[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/hector_pose_estimation_nodelet.dir/src/pose_estimation_nodelet.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/albertozafra7/Desktop/Universidad/Master/AR/Lab3/catkin_ws/devel/.private/hector_pose_estimation/lib/libhector_pose_estimation_nodelet.so[0m
+[100%] Built target hector_pose_estimation_nodelet

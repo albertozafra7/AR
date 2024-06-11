@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/home/albertozafra7/.local/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/glog_catkin/glog_src-prefix/src/glog_src-stamp/download-glog_src.cmake;COMMAND;/home/albertozafra7/.local/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/glog_catkin/glog_src-prefix/src/glog_src-stamp/verify-glog_src.cmake;COMMAND;/home/albertozafra7/.local/lib/python3.8/site-packages/cmake/data/bin/cmake;-P;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/glog_catkin/glog_src-prefix/src/glog_src-stamp/extract-glog_src.cmake
+source_dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/glog_catkin/glog_src-prefix/src/glog_src
+work_dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/glog_catkin/glog_src-prefix/src
+url(s)=https://github.com/google/glog/archive/v0.3.5.zip
+hash=
+no_extract=
+

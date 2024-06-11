@@ -1,18 +1,18 @@
---2023-12-01 10:22:32--  https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
-Resolving github.com (github.com)... 140.82.121.4
-Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+--2024-06-05 18:24:21--  https://github.com/ethz-asl/thirdparty_library_binaries/raw/master/nlopt-2.4.2.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz [following]
---2023-12-01 10:22:32--  https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+--2024-06-05 18:24:22--  https://raw.githubusercontent.com/ethz-asl/thirdparty_library_binaries/master/nlopt-2.4.2.tar.gz
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8002::154, 2606:50c0:8000::154, 2606:50c0:8001::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8002::154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 2361992 (2,3M) [application/octet-stream]
 Saving to: ‘nlopt-2.4.2.tar.gz’
 
-nlopt-2.4.2.tar.gz    0%[                    ]       0  --.-KB/s               nlopt-2.4.2.tar.gz   93%[=================>  ]   2,12M  10,6MB/s               nlopt-2.4.2.tar.gz  100%[===================>]   2,25M  10,6MB/s    in 0,2s    
+nlopt-2.4.2.tar.gz    0%[                    ]       0  --.-KB/s               nlopt-2.4.2.tar.gz  100%[===================>]   2,25M  --.-KB/s    in 0,08s   
 
-2023-12-01 10:22:33 (10,6 MB/s) - ‘nlopt-2.4.2.tar.gz’ saved [2361992/2361992]
+2024-06-05 18:24:22 (27,0 MB/s) - ‘nlopt-2.4.2.tar.gz’ saved [2361992/2361992]
 
 configure: WARNING: Python and Guile wrappers require --enable-shared; disabling
 configure: WARNING: can't find mkoctfile: won't be able to compile GNU Octave plugin
@@ -388,4 +388,4 @@ In file included from [01m[K../nlopt-2.4.2/test/testopt.cpp:44[m[K:
   329 | NLOPT_EXTERN(nlopt_result) [01;36m[Knlopt_minimize[m[K(
       |                            [01;36m[K^~~~~~~~~~~~~~[m[K
 make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
-libtool: install: warning: remember to run `libtool --finish /home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/install/lib'
+libtool: install: warning: remember to run `libtool --finish /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/install/lib'

@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/hector_ui'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/hector_ui/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/hector_quadrotor_noetic/hector_ui:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_ui:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/hector_quadrotor_noetic/hector_ui:$ROS_PACKAGE_PATH"

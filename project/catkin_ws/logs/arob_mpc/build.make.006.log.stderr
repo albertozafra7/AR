@@ -1,24 +1,6 @@
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In constructor ‘[01m[Kmpc_custom::mpc_custom()[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:310:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope; did you mean ‘[01m[Knh_[m[K’?
-  310 |         state_sub_ = [01;31m[Knh[m[K.subscribe("/ground_truth/state", 1, &mpc_custom::state_update, this);
-      |                      [01;31m[K^~[m[K
-      |                      [32m[Knh_[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::state_update(const Odometry&)[m[K’:
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:421:62:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kconst _header_type[m[K’ {aka ‘[01m[Kconst std_msgs::Header_<std::allocator<void> >[m[K’} to non-scalar type ‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} requested
-  421 |         geometry_msgs::TransformStamped current_header = [01;31m[Kmsg.header[m[K;
-      |                                                          [01;31m[K~~~~^~~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
-  422 |         float d_time = (current_header.[01;31m[Kstamp[m[K.secs + current_header.stamp.nsecs/1e9) - (prev_header.stamp.secs + prev_header.stamp.nsecs/1e9);
-      |                                        [01;31m[K^~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
-  422 |         float d_time = (current_header.stamp.secs + current_header.[01;31m[Kstamp[m[K.nsecs/1e9) - (prev_header.stamp.secs + prev_header.stamp.nsecs/1e9);
-      |                                                                    [01;31m[K^~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
-  422 |         float d_time = (current_header.stamp.secs + current_header.stamp.nsecs/1e9) - (prev_header.[01;31m[Kstamp[m[K.secs + prev_header.stamp.nsecs/1e9);
-      |                                                                                                    [01;31m[K^~~~~[m[K
-[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:422:125:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::TransformStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
-  422 |         float d_time = (current_header.stamp.secs + current_header.stamp.nsecs/1e9) - (prev_header.stamp.secs + prev_header.[01;31m[Kstamp[m[K.nsecs/1e9);
-      |                                                                                                                             [01;31m[K^~~~~[m[K
-make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:63: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:2001: CMakeFiles/mpc_custom.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2
+/usr/bin/ld: CMakeFiles/mpc_node_custom.dir/src/mpc_node_custom.cpp.o: in function `void CppAD::put_check_for_nan<double>(CppAD::vector<double> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)':
+mpc_node_custom.cpp:(.text._ZN5CppAD17put_check_for_nanIdEEvRKNS_6vectorIT_EERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN5CppAD17put_check_for_nanIdEEvRKNS_6vectorIT_EERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x68): undefined reference to `CppAD::local::temp_file[abi:cxx11]()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/mpc_node_custom.dir/build.make:114: /home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/mpc_node_custom] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1129: CMakeFiles/mpc_node_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

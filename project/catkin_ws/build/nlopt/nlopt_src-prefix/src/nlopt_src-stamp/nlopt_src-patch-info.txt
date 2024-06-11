@@ -1,0 +1,6 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The update step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command=tar;-xzf;../nlopt-2.4.2.tar.gz;&&;rm;-rf;../nlopt_src-build/nlopt-2.4.2;&&;mv;nlopt-2.4.2;../nlopt_src-build/
+work_dir=/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/nlopt/nlopt_src-prefix/src/nlopt_src

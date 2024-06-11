@@ -1,1 +1,0 @@
-/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/share/arob_mpc/cmake/arob_mpcConfig-version.cmake

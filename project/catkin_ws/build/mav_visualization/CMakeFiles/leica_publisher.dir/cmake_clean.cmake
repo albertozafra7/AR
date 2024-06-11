@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib/mav_visualization/leica_publisher"
   "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib/mav_visualization/leica_publisher.pdb"
   "CMakeFiles/leica_publisher.dir/src/leica_publisher.cpp.o"
+  "CMakeFiles/leica_publisher.dir/src/leica_publisher.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

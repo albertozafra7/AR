@@ -10,4 +10,4 @@
 export CMAKE_PREFIX_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_comm:$CMAKE_PREFIX_PATH"
 export PWD='/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/mav_comm'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_comm/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/Lab6/catkin_ws/src/traj_gen/mav_comm/mav_comm:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_comm:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/traj_gen/mav_comm/mav_comm:$ROS_PACKAGE_PATH"
