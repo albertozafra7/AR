@@ -312,7 +312,8 @@ class drone_race {
 
         //send_command();
 
-        //send_goals(10);
+        
+        // send_goals(N); // Look ahead trajectory steps
 
         send_states(10);
         

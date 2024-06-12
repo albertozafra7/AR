@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(arob_mpc_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include " STREQUAL " ")
+if(NOT "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/include;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include " STREQUAL " ")
   set(arob_mpc_INCLUDE_DIRS "")
-  set(_include_dirs "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include")
+  set(_include_dirs "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/include;/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")

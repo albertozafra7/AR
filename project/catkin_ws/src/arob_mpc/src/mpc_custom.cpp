@@ -2,118 +2,6 @@
 
 using namespace std;
 
-// CONSTRAINTS: State predefined bounds (px_k+1 = px_k - px_max), given state does not vary
-
-// dx/dt = f(x,u)
-casadi::MX f(const casadi::MX& x, const casadi::MX& u) {
-  return vertcat(x(1), u(0), x(3), u(1), x(5), u(2));
-}
-
-int main() {
-  int N = 100; // number of control intervals
-
-  casadi::Opti opti = casadi::Opti(); // Optimization problem
-
-  casadi::Slice all;
-  // ---- decision variables ---------
-  casadi::MX X = opti.variable(6, N + 1); // state trajectory [pos_x, vel_x, pos_y, vel_y, pos_z, vel_z]
-  pos_x = X(0, all);
-  vel_x = X(1, all);
-  pos_y = X(2, all);
-  vel_y = X(3, all);
-  pos_z = X(4, all);
-  vel_z = X(5, all);
-
-  casadi::MX U = opti.variable(3, N); // control trajectory (accelerations)
-  casadi::MX T = opti.variable(); // final time
-
-  // ---- objective ---------
-  
-  // Define the cost function expression
-  casadi::MX cost_function = opti.variable();
-
-  // Tracking error to desired final position TODO: AQUÍ LA TRAYECTORIA
-  double desired_pos_x = 0.0; // desired final position x
-  double desired_pos_y = 2.0; // desired final position y
-  double desired_pos_z = 2.0; // desired final position z
-
-  for (int k = 0; k < N + 1; ++k) {
-    cost_function += sumsqr(pos_x(k) - desired_pos_x) + sumsqr(pos_y(k) - desired_pos_y) + sumsqr(pos_z(k) - desired_pos_z);
-  }
-
-  // Control effort
-  for (int k = 0; k < N; ++k) {
-    control_effort += sumsqr(U(0, k)) + sumsqr(U(1, k)) + sumsqr(U(2, k));
-  }
-
-  // Smoothness of control inputs
-  casadi::MX control_diff = 0;
-  for (int k = 0; k < N-1; ++k) {
-    control_diff += sumsqr(U(0, k+1) - U(0, k)) + sumsqr(U(1, k+1) - U(1, k)) + sumsqr(U(2, k+1) - U(2, k));
-  }
-
-  // Adjust weight factors as needed
-  double w_tracking = 1.0;
-  double w_control_effort = 0.1;
-  double w_control_smoothness = 0.1;
-
-  // Combine the cost terms with their respective weights
-  opti.minimize(w_tracking * cost_function + w_control_effort * control_effort + w_control_smoothness * control_diff + T); 
-
-  // ---- dynamic constraints --------
-  casadi::MX dt = T / N;
-  for (int k = 0; k < N; ++k) {
-    casadi::MX k1 = f(X(all,k),         U(all,k));
-    casadi::MX k2 = f(X(all,k)+dt/2*k1, U(all,k));
-    casadi::MX k3 = f(X(all,k)+dt/2*k2, U(all,k));
-    casadi::MX k4 = f(X(all,k)+dt*k3,   U(all,k));
-    casadi::MX x_next = X(all,k) + dt/6*(k1+2*k2+2*k3+k4);
-    opti.subject_to(X(all,k+1)==x_next); // close the gaps 
-  }
-
-  // ---- path constraints -----------
-  opti.subject_to(-1 <= U <= 1); // control limits (accelerations) (backwards to forward)
-
-  // ---- boundary conditions --------
-  opti.subject_to(pos_x(0) == 0); // start position
-  opti.subject_to(vel_x(0) == 0); // start with zero velocity
-  opti.subject_to(pos_y(0) == 0);
-  opti.subject_to(vel_y(0) == 0);
-  opti.subject_to(pos_z(0) == 0);
-  opti.subject_to(vel_z(0) == 0);
-
-  // ---- Gates positions conditions --------
-  opti.subject_to(pos_x(N) == 0); // end position
-  opti.subject_to(pos_y(N) == 2);
-  opti.subject_to(pos_z(N) == 2);
-
-  // ---- misc. constraints ----------
-  opti.subject_to(T >= 0); // Time must be positive
-
-  // ---- initial values for solver ---
-  opti.set_initial(T, 1); // Is it for computing the state at t+1?
-  opti.set_initial(X, 0); // initial guess for state trajectory
-
-  // ---- solve NLP ------
-  opti.solver("ipopt"); // set numerical backend
-  casadi::OptiSol sol = opti.solve(); // actual solve
-
-  // Retrieve and print the results
-  std::vector<double> x_sol = std::vector<double>(sol.value(pos_x));
-  std::vector<double> y_sol = std::vector<double>(sol.value(pos_y));
-  std::vector<double> z_sol = std::vector<double>(sol.value(pos_z));
-
-  std::cout << "Optimal state trajectory:" << std::endl;
-  for (size_t i = 0; i < x_sol.size(); ++i) {
-    std::cout << "Step " << i << ": x = " << x_sol[i] << ", y = " << y_sol[i] << ", z = " << z_sol[i] << std::endl;
-  }
-
-  double T_sol = static_cast<double>(sol.value(T));
-  std::cout << "Optimal final time: " << T_sol << std::endl;
-
-  return 0;
-}
-
 // +++++++++++++++++++++++++++ MPC (ROS MANAGEMENT) +++++++++++++++++++++++++++
 
 class mpc_custom {
@@ -138,6 +26,13 @@ class mpc_custom {
     // This tuple contains the current 
     quadrotor_data current_state;
 
+
+    // CONSTRAINTS: State predefined bounds (px_k+1 = px_k - px_max), given state does not vary
+    // dx/dt = f(x,u)
+    casadi::MX f(const casadi::MX& x, const casadi::MX& u) {
+    return vertcat(x(1), u(0), x(3), u(1), x(5), u(2));
+    }
+
 public:
 	mpc_custom() {
 
@@ -161,9 +56,9 @@ public:
         Traj_ref.resize(N);
 
         // --- Optimization ---
-        reset_all_states();
+        // reset_all_states();
 
-        initialize_bounds();
+        // initialize_bounds();
 
 	}
 
@@ -291,7 +186,7 @@ public:
     
     void mpc(){
 
-        update_current_states();
+        /*update_current_states();
 
         initialize_bounds();
 
@@ -310,66 +205,163 @@ public:
         ROS_INFO("HELOO2");
 
         // publish the velocities
-        velocity_pub_.publish(vel_command);
+        velocity_pub_.publish(vel_command);*/
 
+        // int N = 10; // number of control intervals
+
+        ROS_INFO("The MPC is executing");
+
+        casadi::Opti opti = casadi::Opti(); // Optimization problem
+
+        casadi::Slice all;
+        // ---- decision variables ---------
+        casadi::MX X = opti.variable(6, N + 1); // state trajectory [pos_x, vel_x, pos_y, vel_y, pos_z, vel_z]
+        
+        auto pos_x = X(0, all);
+        auto vel_x = X(1, all);
+        auto pos_y = X(2, all);
+        auto vel_y = X(3, all);
+        auto pos_z = X(4, all);
+        auto vel_z = X(5, all);
+
+        std::cout << "The variables have been set" << std::endl;
+
+        casadi::MX U = opti.variable(3, N); // control trajectory (accelerations)
+        casadi::MX T = opti.variable(); // final time
+
+        // ---- objective ---------
+        casadi::MX cost_function = 0; // Initialize cost function
+
+        // Tracking error to desired final position TODO: AQUÍ LA TRAYECTORIA
+        double desired_pos_x = 0.0; // desired final position x
+        double desired_pos_y = 2.0; // desired final position y
+        double desired_pos_z = 2.0; // desired final position z
+
+        for (int k = 0; k < N + 1; ++k) {
+            cost_function += sumsqr(pos_x(k) - std::get<0>(Traj_ref[k]).pose.position.x) +
+                            sumsqr(pos_y(k) - std::get<0>(Traj_ref[k]).pose.position.y) +
+                            sumsqr(pos_z(k) - std::get<0>(Traj_ref[k]).pose.position.z);
+        }
+
+        // Adjust weight factors as needed
+        double w_tracking = 1.0;
+
+        // Combine the cost terms with their respective weights
+        opti.minimize(w_tracking * cost_function + T); 
+
+        // ---- dynamic constraints --------
+        casadi::MX dt = T / N;
+        /*for (int k = 0; k < N; ++k) {
+            casadi::MX k1 = f(X(all,k), U(all,k));
+            casadi::MX k2 = f(X(all,k) + dt/2 * k1, U(all,k));
+            casadi::MX k3 = f(X(all,k) + dt/2 * k2, U(all,k));
+            casadi::MX k4 = f(X(all,k) + dt * k3, U(all,k));
+            casadi::MX x_next = X(all,k) + dt/6 * (k1 + 2*k2 + 2*k3 + k4);
+            opti.subject_to(X(all,k+1) == x_next); // close the gaps 
+        }*/
+        for (int k = 0; k < N; ++k) {
+            casadi::MX x_next = X(all, k) + dt * f(X(all, k), U(all, k));
+            opti.subject_to(X(all,k+1) == x_next); // close the gaps 
+        }
+
+        // ---- path constraints -----------
+        opti.subject_to(-1 <= U <= 1); // control limits (accelerations)
+
+        // ---- boundary conditions --------
+        opti.subject_to(pos_x(0) == std::get<0>(current_state).pose.position.x); // start position
+        opti.subject_to(vel_x(0) == std::get<1>(current_state).linear.x); // start with zero velocity
+        opti.subject_to(pos_y(0) == std::get<0>(current_state).pose.position.y);
+        opti.subject_to(vel_y(0) == std::get<1>(current_state).linear.y);
+        opti.subject_to(pos_z(0) == std::get<0>(current_state).pose.position.z);
+        opti.subject_to(vel_z(0) == std::get<1>(current_state).linear.z);
+
+        // ---- Gates positions conditions --------
+        opti.subject_to(pos_x(N) == std::get<0>(Traj_ref[N]).pose.position.x); // end position
+        opti.subject_to(pos_y(N) == std::get<0>(Traj_ref[N]).pose.position.y);
+        opti.subject_to(pos_z(N) == std::get<0>(Traj_ref[N]).pose.position.z);
+
+        // ---- misc. constraints ----------
+        opti.subject_to(T >= 0); // Time must be positive
+
+        // ---- initial values for solver ---
+        opti.set_initial(T, 1); // initial guess for final time
+        opti.set_initial(X, 0); // initial guess for state trajectory
+        opti.set_initial(U, 0); // initial guess for control trajectory
+
+        // ---- solve NLP ------
+        opti.solver("ipopt"); // set numerical backend
+        casadi::OptiSol sol = opti.solve(); // actual solve
+
+        // Retrieve and print the results
+        std::vector<double> x_sol = std::vector<double>(sol.value(pos_x));
+        std::vector<double> y_sol = std::vector<double>(sol.value(pos_y));
+        std::vector<double> z_sol = std::vector<double>(sol.value(pos_z));
+
+        std::cout << "Optimal state trajectory:" << std::endl;
+        for (size_t i = 0; i < x_sol.size(); ++i) {
+            std::cout << "Step " << i << ": x = " << x_sol[i] << ", y = " << y_sol[i] << ", z = " << z_sol[i] << std::endl;
+        }
+
+        double T_sol = static_cast<double>(sol.value(T));
+        std::cout << "Optimal final time: " << T_sol << std::endl;
     }
 
     // We initialize all states are set to zero
-    void reset_all_states(){
-        for (int i = 0; i < NX; ++i) {
-            this->statesNactions[i] = 0.0;
-        }
-    }
+    // void reset_all_states(){
+    //     for (int i = 0; i < NX; ++i) {
+    //         this->statesNactions[i] = 0.0;
+    //     }
+    // }
 
     // We set the upper and lower limits of the variables and constraints
-    void initialize_bounds(){
+    // void initialize_bounds(){
 
-        //**************************************************************
-        //* SET UPPER AND LOWER LIMITS OF VARIABLES
-        //**************************************************************
+    //     //**************************************************************
+    //     //* SET UPPER AND LOWER LIMITS OF VARIABLES
+    //     //**************************************************************
 
-        this->x_lowerbound.resize(NX);
-        this->x_upperbound.resize(NX);
+    //     this->x_lowerbound.resize(NX);
+    //     this->x_upperbound.resize(NX);
 
-        // all other values large values the computer can handle
-        // Postion + Orientation initialization
-        for (int i = 0; i < ID_FIRST_vx; ++i) {
-            this->x_lowerbound[i] = -1.0e10;
-            this->x_upperbound[i] = 1.0e10;
-        }
+    //     // all other values large values the computer can handle
+    //     // Postion + Orientation initialization
+    //     for (int i = 0; i < ID_FIRST_vx; ++i) {
+    //         this->x_lowerbound[i] = -1.0e10;
+    //         this->x_upperbound[i] = 1.0e10;
+    //     }
 
-        // // Errors initialization
-        // for (int i = ID_FIRST_p_error; i < ID_FIRST_ax; ++i) {
-        //     this->x_lowerbound[i] = -1.0e10;
-        //     this->x_upperbound[i] = 1.0e10;
-        // }
+    //     // // Errors initialization
+    //     // for (int i = ID_FIRST_p_error; i < ID_FIRST_ax; ++i) {
+    //     //     this->x_lowerbound[i] = -1.0e10;
+    //     //     this->x_upperbound[i] = 1.0e10;
+    //     // }
 
-        // all actuation inputs (velocities, accelerations) should have values between [-1, 1] or its maximum otherwise
+    //     // all actuation inputs (velocities, accelerations) should have values between [-1, 1] or its maximum otherwise
 
-        // // Velocities initialization
-        // for (int i = ID_FIRST_vx; i < ID_FIRST_p_error; ++i) {
-        //     this->x_lowerbound[i] = -VELOCITY_MAX;
-        //     this->x_upperbound[i] = VELOCITY_MAX;
-        // }
+    //     // // Velocities initialization
+    //     // for (int i = ID_FIRST_vx; i < ID_FIRST_p_error; ++i) {
+    //     //     this->x_lowerbound[i] = -VELOCITY_MAX;
+    //     //     this->x_upperbound[i] = VELOCITY_MAX;
+    //     // }
 
-        // // Accelerations initialization
-        // for (int i = ID_FIRST_ax; i < NX; ++i) {
-        //     this->x_lowerbound[i] = -ACCEL_MAX;
-        //     this->x_upperbound[i] = ACCEL_MAX;
-        // }
+    //     // // Accelerations initialization
+    //     // for (int i = ID_FIRST_ax; i < NX; ++i) {
+    //     //     this->x_lowerbound[i] = -ACCEL_MAX;
+    //     //     this->x_upperbound[i] = ACCEL_MAX;
+    //     // }
 
 
-        //**************************************************************
-        //* SET UPPER AND LOWER LIMITS OF CONSTRAINTS
-        //**************************************************************
+    //     //**************************************************************
+    //     //* SET UPPER AND LOWER LIMITS OF CONSTRAINTS
+    //     //**************************************************************
 
-        // the first constraint for each state variable
-        // refer to the initial state conditions
-        // this will be initialized when solve() is called
-        // the succeeding constraints refer to the relationship
-        // between succeeding states based on our kinematic model of the system
+    //     // the first constraint for each state variable
+    //     // refer to the initial state conditions
+    //     // this will be initialized when solve() is called
+    //     // the succeeding constraints refer to the relationship
+    //     // between succeeding states based on our kinematic model of the system
 
-    }
+    // }
 
     void update_current_states(){
 

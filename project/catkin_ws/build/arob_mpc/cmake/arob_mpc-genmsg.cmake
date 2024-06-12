@@ -1,8 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(WARNING "Invoking generate_messages() without having added any message or service file before.
-You should either add add_message_files() and/or add_service_files() calls or remove the invocation of generate_messages().")
-message(STATUS "arob_mpc: 0 messages, 0 services")
+message(STATUS "arob_mpc: 1 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iarob_mpc:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -19,12 +17,23 @@ add_custom_target(arob_mpc_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_custom_target(_arob_mpc_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arob_mpc" "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" "std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Accel:geometry_msgs/Twist:geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(arob_mpc
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arob_mpc
+)
 
 ### Generating Services
 
@@ -40,6 +49,8 @@ add_custom_target(arob_mpc_generate_messages_cpp
 add_dependencies(arob_mpc_generate_messages arob_mpc_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_dependencies(arob_mpc_generate_messages_cpp _arob_mpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(arob_mpc_gencpp)
@@ -50,6 +61,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arob_mpc_generate_messages_cpp)
 
 ### Section generating for lang: geneus
 ### Generating Messages
+_generate_msg_eus(arob_mpc
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arob_mpc
+)
 
 ### Generating Services
 
@@ -65,6 +82,8 @@ add_custom_target(arob_mpc_generate_messages_eus
 add_dependencies(arob_mpc_generate_messages arob_mpc_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_dependencies(arob_mpc_generate_messages_eus _arob_mpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(arob_mpc_geneus)
@@ -75,6 +94,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arob_mpc_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(arob_mpc
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arob_mpc
+)
 
 ### Generating Services
 
@@ -90,6 +115,8 @@ add_custom_target(arob_mpc_generate_messages_lisp
 add_dependencies(arob_mpc_generate_messages arob_mpc_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_dependencies(arob_mpc_generate_messages_lisp _arob_mpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(arob_mpc_genlisp)
@@ -100,6 +127,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arob_mpc_generate_messages_lisp)
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
+_generate_msg_nodejs(arob_mpc
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arob_mpc
+)
 
 ### Generating Services
 
@@ -115,6 +148,8 @@ add_custom_target(arob_mpc_generate_messages_nodejs
 add_dependencies(arob_mpc_generate_messages arob_mpc_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_dependencies(arob_mpc_generate_messages_nodejs _arob_mpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(arob_mpc_gennodejs)
@@ -125,6 +160,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arob_mpc_generate_messages_nodejs)
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(arob_mpc
+  "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arob_mpc
+)
 
 ### Generating Services
 
@@ -140,6 +181,8 @@ add_custom_target(arob_mpc_generate_messages_py
 add_dependencies(arob_mpc_generate_messages arob_mpc_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg" NAME_WE)
+add_dependencies(arob_mpc_generate_messages_py _arob_mpc_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(arob_mpc_genpy)

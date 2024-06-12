@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -134,11 +134,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arob_mpc/msg" TYPE FILE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arob_mpc/cmake" TYPE FILE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/arob_mpc/catkin_generated/installspace/arob_mpc-msg-paths.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/include/arob_mpc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/share/roseus/ros/arob_mpc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/share/common-lisp/ros/arob_mpc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/share/gennodejs/ros/arob_mpc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -169,27 +185,51 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/mpc_node_custom")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/drone_race")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom"
-         OLD_RPATH "/opt/ros/noetic/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race"
+         OLD_RPATH "/usr/local/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation_ros/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_node_custom")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/drone_race")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/arob_mpc/CMakeFiles/mpc_node_custom.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/arob_mpc/CMakeFiles/drone_race.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arob_mpc" TYPE EXECUTABLE FILES "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/arob_mpc/lib/arob_mpc/mpc_custom")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom"
+         OLD_RPATH "/usr/local/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation_ros/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_trajectory_generation/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/glog_catkin/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/nlopt/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/mav_visualization/lib:/opt/ros/noetic/lib:/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/devel/.private/eigen_checks/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/arob_mpc/mpc_custom")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/build/arob_mpc/CMakeFiles/mpc_custom.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

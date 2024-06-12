@@ -1,3 +1,7 @@
 <launch>
-	<node name="mpc_node" pkg="arob_mpc" type="mpc_node_custom" output="screen"></node>
+    <!-- Start the drone_race node -->
+    <node name="drone_race" pkg="arob_mpc" type="drone_race" output="screen"/>
+
+    <!-- Start the mpc_node -->
+    <node name="mpc_node" pkg="arob_mpc" type="mpc_custom" output="screen"/>
 </launch>

@@ -1,0 +1,28 @@
+In file included from [01m[K/usr/include/boost/signals2/connection.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/signals2/signal.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/signals2.hpp:19[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/tf.h:46[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_broadcaster.h:36[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:15[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+/usr/include/boost/signals2/detail/auto_buffer.hpp: In instantiation of ‘[01m[Kclass boost::signals2::detail::auto_buffer<boost::shared_ptr<void>, boost::signals2::detail::store_n_objects<10> >[m[K’:
+[01m[K/usr/include/boost/signals2/connection.hpp:53:61:[m[K   required from here
+[01m[K/usr/include/boost/signals2/detail/auto_buffer.hpp:145:58:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kpointer[m[K’ in ‘[01m[Kclass std::allocator<boost::shared_ptr<void> >[m[K’
+  145 |         typedef typename Allocator::pointer              [01;31m[Kallocator_pointer[m[K;
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+/usr/include/boost/signals2/detail/auto_buffer.hpp: In instantiation of ‘[01m[Kclass boost::signals2::detail::auto_buffer<boost::variant<boost::shared_ptr<void>, boost::signals2::detail::foreign_void_shared_ptr>, boost::signals2::detail::store_n_objects<10> >[m[K’:
+[01m[K/usr/include/boost/signals2/detail/slot_call_iterator.hpp:65:27:[m[K   required from here
+[01m[K/usr/include/boost/signals2/detail/auto_buffer.hpp:145:58:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kpointer[m[K’ in ‘[01m[Kclass std::allocator<boost::variant<boost::shared_ptr<void>, boost::signals2::detail::foreign_void_shared_ptr> >[m[K’
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::update_current_states()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:368:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  368 |         const double [01;35m[Kpx[m[K = current_pos.pose.position.x;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:369:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  369 |         const double [01;35m[Kpy[m[K = current_pos.pose.position.y;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:370:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  370 |         const double [01;35m[Kpz[m[K = current_pos.pose.position.z;
+      |                      [01;35m[K^~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:76: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2223: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

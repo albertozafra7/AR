@@ -12,7 +12,7 @@
 #include "tf2/LinearMath/Matrix3x3.h"
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <visualization_msgs/MarkerArray.h>
-#include <tf/transform_broadcaster.h>
+// #include <tf/transform_broadcaster.h>
 
 #include <iostream>
 #include <sstream>
@@ -35,18 +35,16 @@
 
 #include "arob_mpc/vector_poses.h"
 
-using CppAD::AD;
 
-
-const int N = 5; //10 How many steps we "lookahead" in the future we will use
-const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
+const int N = 100; //10 How many steps we "lookahead" in the future we will use
+// const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
 
 //const double Lf = 2.67; // this is the length from front of vehicle to Center-of-Gravity
 const double VELOCITY_MAX = 4.5; // this is what we ideally want our speed to always be --> also configured in drone_race.cpp
 const double ACCEL_MAX = 8.65;
 
-const int NUMBER_OF_STATES = 1;//22; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
-const int NUMBER_OF_ACTUATIONS = 1;//6; // ax, ay, az, alpha_x, alpha_y, alpha_z
+const int NUMBER_OF_STATES = 6;//22; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
+const int NUMBER_OF_ACTUATIONS = 3;//6; // ax, ay, az, alpha_x, alpha_y, alpha_z
 
 
 // weights for cost computations

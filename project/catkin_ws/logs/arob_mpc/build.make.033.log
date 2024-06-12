@@ -1,0 +1,87 @@
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _arob_mpc_generate_messages_check_deps_vector_poses
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target mav_msgs_generate_messages_eus
+[  0%] Built target mav_msgs_generate_messages_lisp
+[  0%] Built target mav_msgs_generate_messages_py
+[  0%] Built target mav_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target mav_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_cpp
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target visualization_msgs_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target visualization_msgs_generate_messages_py
+[  0%] Built target mav_planning_msgs_generate_messages_cpp
+[  0%] Built target mav_planning_msgs_generate_messages_eus
+[  0%] Built target mav_planning_msgs_generate_messages_lisp
+[  0%] Built target mav_planning_msgs_generate_messages_nodejs
+[  0%] Built target mav_planning_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[ 18%] Built target arob_mpc_generate_messages_py
+[ 27%] Built target arob_mpc_generate_messages_lisp
+[ 36%] Built target arob_mpc_generate_messages_cpp
+[ 54%] Built target arob_mpc_generate_messages_eus
+[ 63%] Built target arob_mpc_generate_messages_nodejs
+[ 81%] Built target drone_race
+[ 81%] Built target arob_mpc_generate_messages
+[ 90%] [32mBuilding CXX object CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o[0m
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:241:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ksumsqr[m[K’ is not a member of ‘[01m[Kcasadi[m[K’
+  241 |             cost_function += casadi::[01;31m[Ksumsqr[m[K(pos_x(k) - desired_pos_x) +
+      |                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:242:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ksumsqr[m[K’ is not a member of ‘[01m[Kcasadi[m[K’
+  242 |                             casadi::[01;31m[Ksumsqr[m[K(pos_y(k) - desired_pos_y) +
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:243:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ksumsqr[m[K’ is not a member of ‘[01m[Kcasadi[m[K’
+  243 |                             casadi::[01;31m[Ksumsqr[m[K(pos_z(k) - desired_pos_z);
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::update_current_states()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:370:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  370 |         const double [01;35m[Kpx[m[K = current_pos.pose.position.x;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:371:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  371 |         const double [01;35m[Kpy[m[K = current_pos.pose.position.y;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:372:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  372 |         const double [01;35m[Kpz[m[K = current_pos.pose.position.z;
+      |                      [01;35m[K^~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:76: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2223: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

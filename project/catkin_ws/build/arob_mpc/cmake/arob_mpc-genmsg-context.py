@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = ""
+messages_str = "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/msg/vector_poses.msg"
 services_str = ""
 pkg_name = "arob_mpc"
 dependencies_str = "geometry_msgs"
