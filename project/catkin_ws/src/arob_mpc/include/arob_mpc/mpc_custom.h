@@ -38,10 +38,6 @@
 using CppAD::AD;
 
 
-// Type of variables used for storing the optimization values
-typedef CPPAD_TESTVECTOR(double) Dvector;
-typedef CPPAD_TESTVECTOR(AD<double>) ADvector;
-
 const int N = 5; //10 How many steps we "lookahead" in the future we will use
 const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
 
@@ -52,32 +48,6 @@ const double ACCEL_MAX = 8.65;
 const int NUMBER_OF_STATES = 1;//22; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
 const int NUMBER_OF_ACTUATIONS = 1;//6; // ax, ay, az, alpha_x, alpha_y, alpha_z
 
-const int NX =  N * NUMBER_OF_STATES + (N - 1) * NUMBER_OF_ACTUATIONS; // number of state + actuation variables
-const int NG = N * NUMBER_OF_STATES; // number of constraints
-
-// where the first element of each state variable is stored in the vector to be feeded the optimization algorithm
-const int ID_FIRST_px = 0;
-const int ID_FIRST_py = ID_FIRST_px + N;
-const int ID_FIRST_pz = ID_FIRST_py + N;
-const int ID_FIRST_roll = ID_FIRST_pz + N;
-const int ID_FIRST_pitch = ID_FIRST_roll + N;
-const int ID_FIRST_yaw = ID_FIRST_pitch + N;
-const int ID_FIRST_vx = ID_FIRST_px + N - 1;
-const int ID_FIRST_vy = ID_FIRST_vx + N;
-const int ID_FIRST_vz = ID_FIRST_vy + N;
-const int ID_FIRST_wx = ID_FIRST_vz + N;
-const int ID_FIRST_wy = ID_FIRST_wx + N;
-const int ID_FIRST_wz = ID_FIRST_wy + N;
-const int ID_FIRST_p_error = ID_FIRST_wz + N;
-const int ID_FIRST_roll_error = ID_FIRST_p_error + N;
-const int ID_FIRST_pitch_error = ID_FIRST_roll_error + N;
-const int ID_FIRST_yaw_error = ID_FIRST_pitch_error + N;
-const int ID_FIRST_ax = ID_FIRST_yaw_error + N;
-const int ID_FIRST_ay = ID_FIRST_ax + N;
-const int ID_FIRST_az = ID_FIRST_ay + N;
-const int ID_FIRST_alpha_x = ID_FIRST_az + N;
-const int ID_FIRST_alpha_y = ID_FIRST_alpha_x + N;
-const int ID_FIRST_alpha_z = ID_FIRST_alpha_y + N - 1;
 
 // weights for cost computations
 const double W_p_error = 1500.0;
@@ -102,6 +72,27 @@ const double W_az = 1.0;
 const double W_alpha_x = 1.0;
 const double W_alpha_y = 1.0;
 const double W_alpha_z = 1.0;
+
+// Variables to store the values to optimize
+casadi::MX pos_x;
+casadi::MX pos_y;
+casadi::MX pos_z;
+casadi::MX roll;
+casadi::MX pitch;
+casadi::MX yaw;
+casadi::MX vel_x;
+casadi::MX vel_y;
+casadi::MX vel_z;
+casadi::MX wx;
+casadi::MX wy;
+casadi::MX wz;
+casadi::MX accel_x;
+casadi::MX accel_y;
+casadi::MX accel_z;
+casadi::MX alpha_x;
+casadi::MX alpha_y;
+casadi::MX alpha_z;
+
 
 // Type of the tuple used for storing the position, velocity and acceleration
 typedef std::tuple<geometry_msgs::PoseStamped,geometry_msgs::Twist,geometry_msgs::Accel> quadrotor_data;
