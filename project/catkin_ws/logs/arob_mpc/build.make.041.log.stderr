@@ -1,0 +1,84 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kint drone_race::drawGates()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:113:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  113 |         int [01;35m[Kid[m[K = 0;
+      |             [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory_example()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:167:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  167 |         bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:203:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::Pose_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  203 |         for(int i = 0; [01;35m[Ki < gates.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:227:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  227 |         for (int i=0; [01;35m[Ki< segment_times.size()[m[K ; i++) {
+      |                       [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:267:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mav_msgs::EigenTrajectoryPoint, Eigen::aligned_allocator<mav_msgs::EigenTrajectoryPoint> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  267 |         for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:248:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  248 |         bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_goals(int)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:337:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  337 |         for (int i = 0; [01;35m[Ki < drone_pose_list.size()[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_states(int)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:353:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  353 |         for (int i = 0; [01;35m[Ki < drone_pose_list.size()[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::draw_trajectory_markers()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:443:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mav_msgs::EigenTrajectoryPoint, Eigen::aligned_allocator<mav_msgs::EigenTrajectoryPoint> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  443 |             for(int i=0; [01;35m[Ki< states.size()[m[K; i++) {
+      |                          [01;35m[K~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kderivative_order[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  438 |             int [01;35m[Kderivative_order[m[K = mav_trajectory_generation::derivative_order::POSITION;
+      |                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:439:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksampling_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  439 |             double [01;35m[Ksampling_time[m[K = 0.1;
+      |                    [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:442:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  442 |             bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |                  [01;35m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:292:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDict[m[K’ was not declared in this scope; did you mean ‘[01m[Kcasadi::Dict[m[K’?
+  292 |         [01;31m[KDict[m[K opts_dict=Dict();
+      |         [01;31m[K^~~~[m[K
+      |         [32m[Kcasadi::Dict[m[K
+In file included from [01m[K/usr/local/include/casadi/core/slice.hpp:34[m[K,
+                 from [01m[K/usr/local/include/casadi/core/generic_matrix.hpp:29[m[K,
+                 from [01m[K/usr/local/include/casadi/core/matrix_decl.hpp:33[m[K,
+                 from [01m[K/usr/local/include/casadi/core/sx.hpp:29[m[K,
+                 from [01m[K/usr/local/include/casadi/core/core.hpp:39[m[K,
+                 from [01m[K/usr/local/include/casadi/casadi.hpp:29[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:28[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+[01m[K/usr/local/include/casadi/core/generic_type.hpp:258:29:[m[K [01;36m[Knote: [m[K‘[01m[Kcasadi::Dict[m[K’ declared here
+  258 |   typedef GenericType::Dict [01;36m[KDict[m[K;
+      |                             [01;36m[K^~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:293:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kopts_dict[m[K’ was not declared in this scope
+  293 |         [01;31m[Kopts_dict[m[K["ipopt.print_level"] = 0;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:236:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  236 |         double [01;35m[Kdesired_pos_x[m[K = 0.0; // desired final position x
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:237:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  237 |         double [01;35m[Kdesired_pos_y[m[K = 2.0; // desired final position y
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:238:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  238 |         double [01;35m[Kdesired_pos_z[m[K = 2.0; // desired final position z
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::update_current_states()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:389:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  389 |         const double [01;35m[Kpx[m[K = current_pos.pose.position.x;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:390:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  390 |         const double [01;35m[Kpy[m[K = current_pos.pose.position.y;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:391:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  391 |         const double [01;35m[Kpz[m[K = current_pos.pose.position.z;
+      |                      [01;35m[K^~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:76: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2223: CMakeFiles/mpc_custom.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:146: all] Error 2

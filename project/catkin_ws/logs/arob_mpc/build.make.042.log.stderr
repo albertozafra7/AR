@@ -1,0 +1,38 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:292:32:[m[K [01;31m[Kerror: [m[K‘[01m[KDict[m[K’ was not declared in this scope; did you mean ‘[01m[Kcasadi::Dict[m[K’?
+  292 |         casadi::Dict opts_dict=[01;31m[KDict[m[K();
+      |                                [01;31m[K^~~~[m[K
+      |                                [32m[Kcasadi::Dict[m[K
+In file included from [01m[K/usr/local/include/casadi/core/slice.hpp:34[m[K,
+                 from [01m[K/usr/local/include/casadi/core/generic_matrix.hpp:29[m[K,
+                 from [01m[K/usr/local/include/casadi/core/matrix_decl.hpp:33[m[K,
+                 from [01m[K/usr/local/include/casadi/core/sx.hpp:29[m[K,
+                 from [01m[K/usr/local/include/casadi/core/core.hpp:39[m[K,
+                 from [01m[K/usr/local/include/casadi/casadi.hpp:29[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/include/arob_mpc/mpc_custom.h:28[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:1[m[K:
+[01m[K/usr/local/include/casadi/core/generic_type.hpp:258:29:[m[K [01;36m[Knote: [m[K‘[01m[Kcasadi::Dict[m[K’ declared here
+  258 |   typedef GenericType::Dict [01;36m[KDict[m[K;
+      |                             [01;36m[K^~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:236:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  236 |         double [01;35m[Kdesired_pos_x[m[K = 0.0; // desired final position x
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:237:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  237 |         double [01;35m[Kdesired_pos_y[m[K = 2.0; // desired final position y
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:238:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  238 |         double [01;35m[Kdesired_pos_z[m[K = 2.0; // desired final position z
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::update_current_states()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:389:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  389 |         const double [01;35m[Kpx[m[K = current_pos.pose.position.x;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:390:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  390 |         const double [01;35m[Kpy[m[K = current_pos.pose.position.y;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:391:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  391 |         const double [01;35m[Kpz[m[K = current_pos.pose.position.z;
+      |                      [01;35m[K^~[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:76: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2223: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

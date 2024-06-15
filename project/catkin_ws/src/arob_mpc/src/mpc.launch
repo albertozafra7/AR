@@ -1,4 +1,10 @@
 <launch>
+    <!-- Group to start RViz first -->
+    <!-- <group> -->
+        <!-- Start RViz -->
+        <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arob_mpc)/src/arob6.rviz" output="screen" required="true"/>
+    </group> -->
+
     <!-- Start the drone_race node -->
     <node name="drone_race" pkg="arob_mpc" type="drone_race" output="screen"/>
 

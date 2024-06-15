@@ -196,7 +196,7 @@ class drone_race {
         
 
         // Start config
-        start_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
+        start_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,0), derivative_to_optimize);
         vertices.push_back(start_vertex);
 
         // Creation of the intermediate points
@@ -213,15 +213,15 @@ class drone_race {
         }
 
         // End config
-        end_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,1), derivative_to_optimize);
+        end_vertex.makeStartOrEnd(Eigen::Vector3d(0,0,0), derivative_to_optimize);
         vertices.push_back(end_vertex);
 
 
         // Provide the time constraints on the vertices
         //Automatic time computation
         std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
-        const double v_max = 4.5;
-        const double a_max = 8.65;
+        const double v_max = 2;// 4.5;
+        const double a_max = 2;// 8.65;
         segment_times = estimateSegmentTimes(vertices, v_max, a_max);
         cout << "Segment times = " << segment_times.size() << endl;
         for (int i=0; i< segment_times.size() ; i++) {
@@ -314,8 +314,9 @@ class drone_race {
 
         
         // send_goals(N); // Look ahead trajectory steps
+        const int lookahead = 10;
 
-        send_states(10);
+        send_states(lookahead);
         
 
     }
@@ -617,7 +618,7 @@ int main(int argc, char** argv) {
 
     while (ros::ok())
     {
-        race.send_command();
+        // race.send_command();
         ros::spinOnce();
         loop_rate.sleep();
     }

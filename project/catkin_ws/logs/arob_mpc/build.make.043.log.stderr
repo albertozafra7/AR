@@ -1,0 +1,26 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:236:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  236 |         double [01;35m[Kdesired_pos_x[m[K = 0.0; // desired final position x
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:237:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  237 |         double [01;35m[Kdesired_pos_y[m[K = 2.0; // desired final position y
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:238:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pos_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  238 |         double [01;35m[Kdesired_pos_z[m[K = 2.0; // desired final position z
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::update_current_states()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:384:30:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcurrent_vel[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  384 |         geometry_msgs::Twist [01;35m[Kcurrent_vel[m[K  = std::get<1>(current_state);
+      |                              [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:385:30:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcurrent_accel[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  385 |         geometry_msgs::Accel [01;35m[Kcurrent_accel[m[K = std::get<2>(current_state);
+      |                              [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:389:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  389 |         const double [01;35m[Kpx[m[K = current_pos.pose.position.x;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:390:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  390 |         const double [01;35m[Kpy[m[K = current_pos.pose.position.y;
+      |                      [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:391:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  391 |         const double [01;35m[Kpz[m[K = current_pos.pose.position.z;
+      |                      [01;35m[K^~[m[K
