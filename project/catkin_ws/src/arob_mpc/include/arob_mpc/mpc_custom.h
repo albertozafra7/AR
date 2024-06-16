@@ -36,17 +36,18 @@
 #include "arob_mpc/vector_poses.h"
 
 
-const int N = 10; //10 How many steps we "lookahead" in the future we will use
-const double dt = 0.1; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
-
-const double VELOCITY_MAX = 2; // this is what we ideally want our speed to always be --> also configured in drone_race.cpp
-const double ACCEL_MAX = 8.65;
+int N; //10 How many steps we "lookahead" in the future we will use
+double dt; // How much time we expect environment changes --> This has been configured to 0.1s in drone_race.cpp
+ 
+double VELOCITY_MAX; // this is what we ideally want our speed to always be --> also configured in drone_race.cpp
+double ACCEL_MAX;
 
 const int NUMBER_OF_STATES = 3; // px, py, pz, roll, pitch, yaw, vx, vy, vz, wx, wy, wz, p_error, roll_error, pitch_error, yaw_error, ax, ay, az, alpha_x, alpha_y, alpha_z
 const int NUMBER_OF_ACTUATIONS = 3; // ax, ay, az, alpha_x, alpha_y, alpha_z
 
-const double pos_error_w = 0.75;
-const double smooth_w = 1 - pos_error_w;
+double pos_error_w;
+double smooth_w;
+double orient_error_w;
 
 // Variables to store the values to optimize
 casadi::MX pos_x;

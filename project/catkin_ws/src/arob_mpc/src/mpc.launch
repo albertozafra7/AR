@@ -5,6 +5,12 @@
         <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arob_mpc)/src/arob6.rviz" output="screen" required="true"/>
     </group> -->
 
+    <!-- Start the quadrotor gazebo -->
+    <include file="$(find hector_quadrotor_gazebo)/launch/quadrotor_empty_world.launch"/>
+
+    <!-- Load the params file -->
+    <rosparam file="$(find arob_mpc)/src/params.yaml" command="load" />
+
     <!-- Start the drone_race node -->
     <node name="drone_race" pkg="arob_mpc" type="drone_race" output="screen"/>
 

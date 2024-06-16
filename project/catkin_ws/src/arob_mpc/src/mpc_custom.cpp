@@ -22,8 +22,18 @@ class mpc_custom {
     // This tuple contains the current 
     quadrotor_data current_state;
 
+    // File path for storing the trajectory
+    string file_path;
+    std::ofstream file;
+    int global_cont = 0;
+    // Evaluate and print the cost function and errors at each step
+    double total_costfunct = 0.0;
+
+
 public:
 	mpc_custom() {
+
+        loadParams();
 
         prev_header.stamp.sec = 0;
         prev_header.stamp.nsec = 0;
@@ -44,9 +54,16 @@ public:
 
         Traj_ref.resize(N);
 
+        // Open file to save poses
+        file.open(file_path);
+
 	}
 
 	~mpc_custom() {
+        file << "Total trajectory error = " << std::sqrt(total_costfunct) << std::endl;
+        file << "Mean step error = " << std::sqrt(total_costfunct)/global_cont << std::endl;
+        // Close file
+        file.close();
 	}
 
 
@@ -64,6 +81,18 @@ public:
         mpc();
     }
 
+
+    void loadParams() {
+        // yaml params loader
+        nh_.getParam("drone_params/lookahead", N);
+        nh_.getParam("drone_params/sampling_interval", dt);
+        nh_.getParam("drone_params/max_vel", VELOCITY_MAX);
+        nh_.getParam("drone_params/max_accel", ACCEL_MAX);
+        nh_.getParam("drone_params/pos_error_w", pos_error_w);
+        smooth_w = 1 - pos_error_w - orient_error_w;
+
+        nh_.getParam("drone_params/saving_file", file_path);
+    }
 
     // Update the pose based on the odometry
     void pose_update(const nav_msgs::Odometry& msg){
@@ -136,15 +165,18 @@ public:
     } 
 
 
-      // Cost function
-    casadi::MX costFunction(const casadi::MX& x, const casadi::MX& desired_traj, int N, const casadi::MX& u) { //, const casadi::MX& u
+    // Cost function
+    casadi::MX costFunction(const casadi::MX& x, const casadi::MX& desired_traj, int N, const casadi::MX& u) {
         casadi::MX cost = 0.0;
-        //double error_weight = ros::param::get("error_weight", error_weight);
         for (int i = 0; i < N; ++i) {
             std::cout << "iteration: " << i << std::endl;
             casadi::MX pose_error = x(casadi::Slice(), i) - desired_traj(casadi::Slice(),i);
 
+            // casadi::MX pose_error = x(casadi::Slice(0, 3), i) - desired_traj(casadi::Slice(0, 3),i);
+            // casadi::MX orientation_error = x(casadi::Slice(3, 6), i) - desired_traj(casadi::Slice(3, 6),i);
+
             cost += pos_error_w * dot(pose_error, pose_error) + smooth_w * dot(u(casadi::Slice(), i), u(casadi::Slice(), i));
+            //cost += pos_error_w * dot(pose_error, pose_error) + orient_error_w * dot(orientation_error, orientation_error) + smooth_w * dot(u(casadi::Slice(), i), u(casadi::Slice(), i));
         }
         return cost;
     }
@@ -161,17 +193,26 @@ public:
         pos_x = X(0, all);
         pos_y = X(1, all);
         pos_z = X(2, all);
+        // roll = X(3, all);
+        // pitch = X(4, all);
+        // yaw = X(5, all);
 
         casadi::MX desired_X = opti.variable(NUMBER_OF_STATES, N + 1); // desired state trajectory
         auto desired_x = desired_X(0,all);
         auto desired_y = desired_X(1,all);
         auto desired_z = desired_X(2,all);
+        // auto desired_roll = desired_X(3, all);
+        // auto desired_pitch = desired_X(4, all);
+        // auto desired_yaw = desired_X(5, all);
         std::cout << "The variables have been set" << std::endl;
 
         casadi::MX U = opti.variable(NUMBER_OF_ACTUATIONS, N); // control trajectory (velocities)
         vel_x = U(0, all);
         vel_y = U(1, all);
         vel_z = U(2, all);
+        // roll = U(3, all);
+        // pitch = U(4, all);
+        // yaw = U(5, all);
 
         // ---- objective ---------
         opti.minimize(costFunction(X(all, casadi::Slice(0, N)), desired_X(all, casadi::Slice(0,N)),N, U(all, casadi::Slice(0,N))));
@@ -180,15 +221,31 @@ public:
         for (int k = 0; k < N; ++k) {
             casadi::MX x_next = X(all, k) + dt * U(all, k);
             opti.subject_to(X(all,k+1) == x_next); // close the gaps
+            // casadi::MX x_next = X(casadi::Slice(0, 3), k) + dt * U(casadi::Slice(0, 3), k);
+            // casadi::MX orientation_next = X(casadi::Slice(3, 6), k) + dt * U(casadi::Slice(3, 6), k);
+
+            // opti.subject_to(X(casadi::Slice(0, 3), k+1) == x_next);
+            // opti.subject_to(X(casadi::Slice(3, 6), k+1) == orientation_next);
 
             // Force the desired poses to be the reference trajectory
             opti.subject_to(desired_x(k) == std::get<0>(Traj_ref[k]).pose.position.x);
             opti.subject_to(desired_y(k) == std::get<0>(Traj_ref[k]).pose.position.y);
             opti.subject_to(desired_z(k) == std::get<0>(Traj_ref[k]).pose.position.z);
+
+            // Calculate desired orientation based on the direction of motion
+            // casadi::MX desired_roll_k = 0; // Assuming roll is zero in this example, you can change it as needed
+            // casadi::MX desired_pitch_k = atan2(U(2, k), sqrt(pow(U(0, k), 2) + pow(U(1, k), 2))); // pitch based on velocity
+            // casadi::MX desired_yaw_k = atan2(U(1, k), U(0, k)); // yaw based on velocity
+
+            // opti.subject_to(desired_roll(k) == desired_roll_k);
+            // opti.subject_to(desired_pitch(k) == desired_pitch_k);
+            // opti.subject_to(desired_yaw(k) == desired_yaw_k);
         }
 
         // ---- path constraints -----------
         opti.subject_to(-VELOCITY_MAX <= U <= VELOCITY_MAX); // control limits (accelerations)
+        // opti.subject_to(-VELOCITY_MAX <= U(casadi::Slice(0, 3), all) <= VELOCITY_MAX); // control limits (velocities)
+        // opti.subject_to(-ANGULAR_RATE_MAX <= U(casadi::Slice(3, 6), all) <= ANGULAR_RATE_MAX); // control limits (angular rates)    
 
         ROS_INFO("Current State:");
         std::cout << "Poses : (" << std::get<0>(current_state).pose.position.x << "," << std::get<0>(current_state).pose.position.y << "," << std::get<0>(current_state).pose.position.z << ")" << std::endl;
@@ -202,6 +259,10 @@ public:
         opti.subject_to(pos_x(0) == std::get<0>(current_state).pose.position.x); // start position
         opti.subject_to(pos_y(0) == std::get<0>(current_state).pose.position.y);
         opti.subject_to(pos_z(0) == std::get<0>(current_state).pose.position.z);
+        // opti.subject_to(roll(0) == std::get<0>(current_state).pose.orientation.x); // start roll
+        // opti.subject_to(pitch(0) == std::get<0>(current_state).pose.orientation.y); // start pitch
+        // opti.subject_to(yaw(0) == std::get<0>(current_state).pose.orientation.z); // start yaw
+
 
         // ---- initial values for solver ---
         opti.set_initial(X, 0); // initial guess for state trajectory
@@ -219,38 +280,60 @@ public:
         std::vector<double> x_sol = std::vector<double>(sol.value(pos_x));
         std::vector<double> y_sol = std::vector<double>(sol.value(pos_y));
         std::vector<double> z_sol = std::vector<double>(sol.value(pos_z));
+        // std::vector<double> roll_sol = std::vector<double>(sol.value(roll));
+        // std::vector<double> pitch_sol = std::vector<double>(sol.value(pitch));
+        // std::vector<double> yaw_sol = std::vector<double>(sol.value(yaw));
 
-        // Evaluate and print the cost function and errors at each step
-        double total_costfunct = 0.0;
-        for (int k = 0; k < N; ++k) {
-            double ref_x = std::get<0>(Traj_ref[k]).pose.position.x;
-            double ref_y = std::get<0>(Traj_ref[k]).pose.position.y;
-            double ref_z = std::get<0>(Traj_ref[k]).pose.position.z;
+        
 
-            double x_error = x_sol[k] - ref_x;
-            double y_error = y_sol[k] - ref_y;
-            double z_error = z_sol[k] - ref_z;
-            double costfunct = pow(x_error,2) + pow(y_error,2) + pow(z_error,2);
+        if (file.is_open()) {
+            double ref_x = std::get<0>(Traj_ref[0]).pose.position.x;
+            double ref_y = std::get<0>(Traj_ref[0]).pose.position.y;
+            double ref_z = std::get<0>(Traj_ref[0]).pose.position.z;
+            // double ref_roll = 0; // Assuming desired roll is zero
+            // double ref_pitch = atan2(std::get<1>(Traj_ref[k]).linear.z, sqrt(pow(std::get<1>(Traj_ref[k]).linear.x, 2) + pow(std::get<1>(Traj_ref[k]).linear.y, 2)));
+            // double ref_yaw = atan2(std::get<1>(Traj_ref[k]).linear.y, std::get<1>(Traj_ref[k]).linear.x);
+
+            double x_error = std::get<0>(current_state).pose.position.x - ref_x;
+            double y_error = std::get<0>(current_state).pose.position.y - ref_y;
+            double z_error = std::get<0>(current_state).pose.position.z - ref_z;
+            // double roll_error = roll_sol[k] - ref_roll;
+            // double pitch_error = pitch_sol[k] - ref_pitch;
+            // double yaw_error = yaw_sol[k] - ref_yaw;
+            double costfunct = pow(x_error, 2) + pow(y_error, 2) + pow(z_error, 2);
+            // double costfunct = pow(x_error, 2) + pow(y_error, 2) + pow(z_error, 2) + pow(roll_error, 2) + pow(pitch_error, 2) + pow(yaw_error, 2);
             total_costfunct += costfunct;
 
-            std::cout << "Step " << k << ": X error = " << x_error 
-                        << ", Y error = " << y_error 
-                        << ", Z error = " << z_error << " costfunction = " << costfunct << std::endl;
-        }
+            // Write to the file
+            file << "Step " << global_cont << "; ";
+            file << "X error = " << x_error << ", Y error = " << y_error << ", Z error = " << z_error << ", ";
+            // file << "Roll error = " << roll_errorr << ", Pitch error = " << pitch_error << ", Yaw error = " << yaw_error << ", ";
+            file << "Step Global Error = " << std::sqrt(costfunct) << "\n";
 
-        std::cout << "Total cost function = " << total_costfunct << std::endl; 
+            global_cont++;
+
+        } else {
+            ROS_ERROR("Unable to open file for writing positions.");
+        }
 
         std::vector<double> x_vel_sol = std::vector<double>(sol.value(vel_x));
         std::vector<double> y_vel_sol = std::vector<double>(sol.value(vel_y));
         std::vector<double> z_vel_sol = std::vector<double>(sol.value(vel_z));
+        
+        // std::vector<double> roll_vel_sol = std::vector<double>(sol.value(roll));
+        // std::vector<double> pitch_vel_sol = std::vector<double>(sol.value(pitch));
+        // std::vector<double> yaw_vel_sol = std::vector<double>(sol.value(yaw));
 
         geometry_msgs::Twist vel_command; 
 
         vel_command.linear.x = x_vel_sol[0];
         vel_command.linear.y = y_vel_sol[0];
         vel_command.linear.z = z_vel_sol[0];
+        // vel_command.angular.x = roll_vel_sol[0];
+        // vel_command.angular.y = pitch_vel_sol[0];
+        // vel_command.angular.z = yaw_vel_sol[0];
         velocity_pub_.publish(vel_command);
-        ros::Duration(0.5).sleep(); 
+        ros::Duration(dt).sleep(); 
     }
 
 

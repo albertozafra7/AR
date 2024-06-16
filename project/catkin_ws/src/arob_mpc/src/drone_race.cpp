@@ -51,9 +51,17 @@ class drone_race {
     std::vector<geometry_msgs::Accel> drone_accel_list; // List of accelerations
     int global_it = 0;
 
+    // Control parameters
+    int lookahead = 10;
+    double sampling_interval = 0.1; //How much time between intermediate points
+    double v_max = 2;// 4.5;
+    double a_max = 2;// 8.65;
+
     public:
 
     drone_race() {
+
+        loadParams();
 
         // create publisher for RVIZ markers
         pub_traj_markers_ =
@@ -70,6 +78,15 @@ class drone_race {
 	}
 
     ~drone_race() {
+    }
+
+    void loadParams(){
+        // yaml params loader
+        nh_.getParam("drone_params/lookahead", lookahead);
+        nh_.getParam("drone_params/sampling_interval", sampling_interval);
+        nh_.getParam("drone_params/max_vel", v_max);
+        nh_.getParam("drone_params/max_accel", a_max);
+
     }
 
     void resetGlobalIt(){
@@ -220,8 +237,7 @@ class drone_race {
         // Provide the time constraints on the vertices
         //Automatic time computation
         std::vector<double> segment_times; //we'll need n - 1 segment times, n = points of the path
-        const double v_max = 2;// 4.5;
-        const double a_max = 2;// 8.65;
+
         segment_times = estimateSegmentTimes(vertices, v_max, a_max);
         cout << "Segment times = " << segment_times.size() << endl;
         for (int i=0; i< segment_times.size() ; i++) {
@@ -244,7 +260,6 @@ class drone_race {
         opt.getTrajectory(&trajectory);
         //Sample the trajectory (to obtain positions, velocities, etc.)
         mav_msgs::EigenTrajectoryPoint::Vector states;
-        double sampling_interval = 0.1; //How much time between intermediate points
         bool success = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
         // Example to access the data
         cout << "Trajectory time = " << trajectory.getMaxTime() << endl;
@@ -314,7 +329,6 @@ class drone_race {
 
         
         // send_goals(N); // Look ahead trajectory steps
-        const int lookahead = 10;
 
         send_states(lookahead);
         
