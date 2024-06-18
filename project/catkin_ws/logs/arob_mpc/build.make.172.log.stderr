@@ -1,0 +1,72 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kint drone_race::drawGates()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:130:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  130 |         int [01;35m[Kid[m[K = 0;
+      |             [01;35m[K^~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory_example()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:184:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  184 |         bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::generate_trajectory()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:220:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::Pose_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  220 |         for(int i = 0; [01;35m[Ki < gates.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:245:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  245 |         for (int i=0; [01;35m[Ki< segment_times.size()[m[K ; i++) {
+      |                       [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:284:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mav_msgs::EigenTrajectoryPoint, Eigen::aligned_allocator<mav_msgs::EigenTrajectoryPoint> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  284 |         for(int i = 0; [01;35m[Ki < states.size()[m[K; i++){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:265:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  265 |         bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_goals(int)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:365:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  365 |         for (int i = 0; [01;35m[Ki < drone_pose_list.size()[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::send_states(int)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:381:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::PoseStamped_<std::allocator<void> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  381 |         for (int i = 0; [01;35m[Ki < drone_pose_list.size()[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kstd::vector<double> drone_race::quat_to_RPY(geometry_msgs::Quaternion)[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:431:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2::Matrix3x3::Matrix3x3(geometry_msgs::Quaternion&)[m[K’
+  431 |             tf2::Matrix3x3(q[01;31m[K)[m[K.getRPY(roll, pitch, yaw);
+      |                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/tf2/LinearMath/Transform.h:21[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:37[m[K,
+                 from [01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:6[m[K:
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:63:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Matrix3x3::Matrix3x3(const tf2::Matrix3x3&)[m[K’
+   63 |         TF2SIMD_FORCE_INLINE [01;36m[KMatrix3x3[m[K (const Matrix3x3& other)
+      |                              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:63:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Quaternion[m[K’ {aka ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >[m[K’} to ‘[01m[Kconst tf2::Matrix3x3&[m[K’
+   63 |         TF2SIMD_FORCE_INLINE Matrix3x3 ([01;36m[Kconst Matrix3x3& other[m[K)
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:54:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Matrix3x3::Matrix3x3(const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&, const tf2Scalar&)[m[K’
+   54 |         [01;36m[KMatrix3x3[m[K(const tf2Scalar& xx, const tf2Scalar& xy, const tf2Scalar& xz,
+      |         [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:54:9:[m[K [01;36m[Knote: [m[K  candidate expects 9 arguments, 1 provided
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:45:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Matrix3x3::Matrix3x3(const tf2::Quaternion&)[m[K’
+   45 |         explicit [01;36m[KMatrix3x3[m[K(const Quaternion& q) { setRotation(q); }
+      |                  [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:45:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Quaternion[m[K’ {aka ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >[m[K’} to ‘[01m[Kconst tf2::Quaternion&[m[K’
+   45 |         explicit Matrix3x3([01;36m[Kconst Quaternion& q[m[K) { setRotation(q); }
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:40:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2::Matrix3x3::Matrix3x3()[m[K’
+   40 |         [01;36m[KMatrix3x3[m[K () {}
+      |         [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/tf2/LinearMath/Matrix3x3.h:40:9:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:[m[K In member function ‘[01m[Kvoid drone_race::draw_trajectory_markers()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:485:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mav_msgs::EigenTrajectoryPoint, Eigen::aligned_allocator<mav_msgs::EigenTrajectoryPoint> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  485 |             for(int i=0; [01;35m[Ki< states.size()[m[K; i++) {
+      |                          [01;35m[K~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:480:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kderivative_order[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  480 |             int [01;35m[Kderivative_order[m[K = mav_trajectory_generation::derivative_order::POSITION;
+      |                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:481:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksampling_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  481 |             double [01;35m[Ksampling_time[m[K = 0.1;
+      |                    [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/drone_race.cpp:484:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  484 |             bool [01;35m[Ksuccess[m[K = mav_trajectory_generation::sampleWholeTrajectory(trajectory, sampling_interval, &states);
+      |                  [01;35m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/drone_race.dir/build.make:76: CMakeFiles/drone_race.dir/src/drone_race.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2143: CMakeFiles/drone_race.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

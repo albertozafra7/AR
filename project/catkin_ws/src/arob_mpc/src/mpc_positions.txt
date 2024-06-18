@@ -1,183 +1,210 @@
-Step 0; X error = 3.34138e-06, Y error = 1.22943e-05, Z error = 0.182467, Step Global Error = 0.182467
-Step 1; X error = 3.6446e-06, Y error = 9.32204e-06, Z error = 0.182465, Step Global Error = 0.182465
-Step 2; X error = 5.64777e-06, Y error = 2.15483e-05, Z error = 0.182434, Step Global Error = 0.182434
-Step 3; X error = 6.28993e-05, Y error = 0.000428613, Z error = 0.181583, Step Global Error = 0.181583
-Step 4; X error = 0.000172279, Y error = 0.00118318, Z error = 0.179974, Step Global Error = 0.179978
-Step 5; X error = 0.000389894, Y error = 0.00266453, Z error = 0.176741, Step Global Error = 0.176762
-Step 6; X error = 0.000762328, Y error = 0.00519372, Z error = 0.171057, Step Global Error = 0.171137
-Step 7; X error = 0.00218983, Y error = 0.01469, Z error = 0.148528, Step Global Error = 0.149269
-Step 8; X error = 0.00333392, Y error = 0.0221651, Z error = 0.129696, Step Global Error = 0.131619
-Step 9; X error = 0.00481546, Y error = 0.0316631, Z error = 0.104551, Step Global Error = 0.109347
-Step 10; X error = 0.00660825, Y error = 0.0432648, Z error = 0.0757621, Step Global Error = 0.0874952
-Step 11; X error = 0.011315, Y error = 0.0713984, Z error = -0.0126979, Step Global Error = 0.0733962
-Step 12; X error = 0.012515, Y error = 0.084195, Z error = -0.0333388, Step Global Error = 0.0914161
-Step 13; X error = 0.0128527, Y error = 0.0934103, Z error = -0.0613936, Step Global Error = 0.112516
-Step 14; X error = 0.0115989, Y error = 0.0964321, Z error = -0.0837541, Step Global Error = 0.128251
-Step 15; X error = 0.0109259, Y error = 0.0996731, Z error = -0.178961, Step Global Error = 0.205137
-Step 16; X error = 0.00620897, Y error = 0.0830682, Z error = -0.191249, Step Global Error = 0.208603
-Step 17; X error = 0.00163992, Y error = 0.0632036, Z error = -0.201304, Step Global Error = 0.210999
-Step 18; X error = -0.00277074, Y error = 0.041192, Z error = -0.204681, Step Global Error = 0.208803
-Step 19; X error = 0.000322048, Y error = -0.000339858, Z error = -0.416541, Step Global Error = 0.416542
-Step 20; X error = -0.00914712, Y error = -0.0370196, Z error = -0.294239, Step Global Error = 0.2967
-Step 21; X error = -0.011629, Y error = -0.0644468, Z error = -0.274866, Step Global Error = 0.28256
-Step 22; X error = -0.013362, Y error = -0.0832491, Z error = -0.24097, Step Global Error = 0.255295
-Step 23; X error = -0.0175443, Y error = -0.255872, Z error = -0.425245, Step Global Error = 0.4966
-Step 24; X error = -0.0175621, Y error = -0.221345, Z error = -0.275828, Step Global Error = 0.354095
-Step 25; X error = -0.0172676, Y error = -0.23178, Z error = -0.228307, Step Global Error = 0.325798
-Step 26; X error = -0.0161393, Y error = -0.229056, Z error = -0.182959, Step Global Error = 0.293601
-Step 27; X error = -0.0187698, Y error = -0.386907, Z error = -0.191242, Step Global Error = 0.431999
-Step 28; X error = -0.0165672, Y error = -0.380667, Z error = -0.148465, Step Global Error = 0.40893
-Step 29; X error = -0.0145341, Y error = -0.384643, Z error = -0.115659, Step Global Error = 0.401918
-Step 30; X error = -0.0139626, Y error = -0.582224, Z error = -0.0950205, Step Global Error = 0.590092
-Step 31; X error = -0.0101915, Y error = -0.560412, Z error = -0.0593659, Step Global Error = 0.56364
-Step 32; X error = -0.00665335, Y error = -0.551799, Z error = -0.0313935, Step Global Error = 0.552731
-Step 33; X error = -0.00309346, Y error = -0.519947, Z error = -0.00680821, Step Global Error = 0.520001
-Step 34; X error = 0.00605466, Y error = -0.744164, Z error = 0.0292997, Step Global Error = 0.744765
-Step 35; X error = 0.0108984, Y error = -0.71011, Z error = 0.0464278, Step Global Error = 0.71171
-Step 36; X error = 0.0151333, Y error = -0.674818, Z error = 0.0568773, Step Global Error = 0.67738
-Step 37; X error = 0.0183028, Y error = -0.636087, Z error = 0.0617643, Step Global Error = 0.639341
-Step 38; X error = 0.03528, Y error = -0.789738, Z error = 0.080969, Step Global Error = 0.794662
-Step 39; X error = 0.0375288, Y error = -0.720581, Z error = 0.075715, Step Global Error = 0.725519
-Step 40; X error = 0.0386182, Y error = -0.636301, Z error = 0.0677772, Step Global Error = 0.641064
-Step 41; X error = 0.0570014, Y error = -0.696875, Z error = 0.0603746, Step Global Error = 0.701804
-Step 42; X error = 0.0562742, Y error = -0.589721, Z error = 0.0444099, Step Global Error = 0.594062
-Step 43; X error = 0.0493757, Y error = -0.426606, Z error = 0.0275897, Step Global Error = 0.430339
-Step 44; X error = 0.048381, Y error = -0.315484, Z error = -0.0119786, Step Global Error = 0.319397
-Step 45; X error = 0.0385067, Y error = -0.196958, Z error = -0.0331422, Step Global Error = 0.203405
-Step 46; X error = 0.0286736, Y error = -0.106838, Z error = -0.0532513, Step Global Error = 0.122769
-Step 47; X error = 0.00915027, Y error = -0.0317425, Z error = -0.126988, Step Global Error = 0.131215
-Step 48; X error = -0.00694998, Y error = 0.0346964, Z error = -0.145689, Step Global Error = 0.149925
-Step 49; X error = -0.0201442, Y error = 0.0717486, Z error = -0.155308, Step Global Error = 0.172262
-Step 50; X error = -0.0627844, Y error = 0.135152, Z error = -0.218594, Step Global Error = 0.264558
-Step 51; X error = -0.077454, Y error = 0.143658, Z error = -0.223284, Step Global Error = 0.276573
-Step 52; X error = -0.0904942, Y error = 0.144373, Z error = -0.220985, Step Global Error = 0.279047
-Step 53; X error = -0.100811, Y error = 0.139832, Z error = -0.21355, Step Global Error = 0.274444
-Step 54; X error = -0.197677, Y error = 0.232925, Z error = -0.291428, Step Global Error = 0.42221
-Step 55; X error = -0.214673, Y error = 0.230057, Z error = -0.280175, Step Global Error = 0.421318
-Step 56; X error = -0.219548, Y error = 0.215684, Z error = -0.254174, Step Global Error = 0.399156
-Step 57; X error = -0.227504, Y error = 0.207964, Z error = -0.234707, Step Global Error = 0.38742
-Step 58; X error = -0.374738, Y error = 0.301646, Z error = -0.298813, Step Global Error = 0.566311
-Step 59; X error = -0.384269, Y error = 0.284524, Z error = -0.276671, Step Global Error = 0.552416
-Step 60; X error = -0.373727, Y error = 0.252966, Z error = -0.242931, Step Global Error = 0.512522
-Step 61; X error = -0.352497, Y error = 0.217073, Z error = -0.208996, Step Global Error = 0.463739
-Step 62; X error = -0.762456, Y error = 0.401513, Z error = -0.354786, Step Global Error = 0.931893
-Step 63; X error = -0.502854, Y error = 0.218987, Z error = -0.209973, Step Global Error = 0.587287
-Step 64; X error = -0.492028, Y error = 0.178693, Z error = -0.175137, Step Global Error = 0.551993
-Step 65; X error = -0.696415, Y error = 0.178007, Z error = -0.177592, Step Global Error = 0.740418
-Step 66; X error = -0.671245, Y error = 0.117674, Z error = -0.136741, Step Global Error = 0.695065
-Step 67; X error = -0.667131, Y error = 0.0702498, Z error = -0.106194, Step Global Error = 0.679173
-Step 68; X error = -0.64322, Y error = 0.0256901, Z error = -0.0764525, Step Global Error = 0.648257
-Step 69; X error = -0.770937, Y error = -0.0125609, Z error = -0.0465935, Step Global Error = 0.772446
-Step 70; X error = -0.898834, Y error = -0.0510329, Z error = -0.00702756, Step Global Error = 0.900309
-Step 71; X error = -0.932934, Y error = -0.0928366, Z error = 0.0423648, Step Global Error = 0.938498
-Step 72; X error = -0.863042, Y error = -0.108275, Z error = 0.0627499, Step Global Error = 0.872068
-Step 73; X error = -0.779582, Y error = -0.117613, Z error = 0.0742917, Step Global Error = 0.791896
-Step 74; X error = -0.6813, Y error = -0.119893, Z error = 0.0789791, Step Global Error = 0.696263
-Step 75; X error = -0.961262, Y error = -0.193973, Z error = 0.169183, Step Global Error = 0.995125
-Step 76; X error = -0.523581, Y error = -0.136887, Z error = 0.11896, Step Global Error = 0.5541
-Step 77; X error = -0.422926, Y error = -0.148896, Z error = 0.157041, Step Global Error = 0.475077
-Step 78; X error = -0.244162, Y error = -0.12378, Z error = 0.14172, Step Global Error = 0.308255
-Step 79; X error = -0.109766, Y error = -0.117459, Z error = 0.180985, Step Global Error = 0.242076
-Step 80; X error = 0.0257429, Y error = -0.0869051, Z error = 0.161258, Step Global Error = 0.184984
-Step 81; X error = 0.131028, Y error = -0.0538555, Z error = 0.127918, Step Global Error = 0.190871
-Step 82; X error = 0.229435, Y error = -0.0196288, Z error = 0.15206, Step Global Error = 0.275949
-Step 83; X error = 0.252299, Y error = 0.0107949, Z error = 0.115519, Step Global Error = 0.277697
-Step 84; X error = 0.303771, Y error = 0.0635777, Z error = 0.126933, Step Global Error = 0.335307
-Step 85; X error = 0.273653, Y error = 0.086734, Z error = 0.10294, Step Global Error = 0.304967
-Step 86; X error = 0.2278, Y error = 0.103455, Z error = 0.082932, Step Global Error = 0.263578
-Step 87; X error = 0.285121, Y error = 0.177764, Z error = 0.11525, Step Global Error = 0.355213
-Step 88; X error = 0.179318, Y error = 0.164808, Z error = 0.0833663, Step Global Error = 0.257423
-Step 89; X error = 0.259975, Y error = 0.258545, Z error = 0.11581, Step Global Error = 0.384505
-Step 90; X error = 0.22169, Y error = 0.263259, Z error = 0.10468, Step Global Error = 0.359736
-Step 91; X error = 0.274873, Y error = 0.348635, Z error = 0.118231, Step Global Error = 0.459434
-Step 92; X error = 0.227088, Y error = 0.330777, Z error = 0.100809, Step Global Error = 0.413697
-Step 93; X error = 0.292187, Y error = 0.442709, Z error = 0.115621, Step Global Error = 0.542893
-Step 94; X error = 0.183739, Y error = 0.352717, Z error = 0.0829215, Step Global Error = 0.406258
-Step 95; X error = 0.204017, Y error = 0.450983, Z error = 0.0896874, Step Global Error = 0.503043
-Step 96; X error = 0.206483, Y error = 0.572691, Z error = 0.0976051, Step Global Error = 0.616552
-Step 97; X error = 0.14304, Y error = 0.541566, Z error = 0.0843007, Step Global Error = 0.566446
-Step 98; X error = 0.0538235, Y error = 0.429337, Z error = 0.0599884, Step Global Error = 0.436836
-Step 99; X error = 0.0247451, Y error = 0.544001, Z error = 0.063951, Step Global Error = 0.548306
-Step 100; X error = -0.0352799, Y error = 0.640053, Z error = 0.0638961, Step Global Error = 0.644201
-Step 101; X error = -0.0840723, Y error = 0.589048, Z error = 0.0528518, Step Global Error = 0.59736
-Step 102; X error = -0.121682, Y error = 0.539355, Z error = 0.0426099, Step Global Error = 0.55455
-Step 103; X error = -0.146055, Y error = 0.490357, Z error = 0.0333862, Step Global Error = 0.512734
-Step 104; X error = -0.261827, Y error = 0.917234, Z error = 0.0552426, Step Global Error = 0.95547
-Step 105; X error = -0.225024, Y error = 0.562354, Z error = 0.0255973, Step Global Error = 0.606245
-Step 106; X error = -0.301098, Y error = 0.656627, Z error = 0.0199541, Step Global Error = 0.722646
-Step 107; X error = -0.277794, Y error = 0.535402, Z error = 0.0109399, Step Global Error = 0.603278
-Step 108; X error = -0.36967, Y error = 0.653425, Z error = 0.00403478, Step Global Error = 0.750757
-Step 109; X error = -0.340288, Y error = 0.541877, Z error = -0.000190419, Step Global Error = 0.639865
-Step 110; X error = -0.436359, Y error = 0.658465, Z error = -0.0126377, Step Global Error = 0.790028
-Step 111; X error = -0.392832, Y error = 0.535511, Z error = -0.0143087, Step Global Error = 0.6643
-Step 112; X error = -0.444146, Y error = 0.586107, Z error = -0.0319971, Step Global Error = 0.736078
-Step 113; X error = -0.381094, Y error = 0.453482, Z error = -0.0309596, Step Global Error = 0.593158
-Step 114; X error = -0.3941, Y error = 0.481902, Z error = -0.0557159, Step Global Error = 0.625019
-Step 115; X error = -0.317989, Y error = 0.353518, Z error = -0.052407, Step Global Error = 0.47837
-Step 116; X error = -0.294472, Y error = 0.376025, Z error = -0.0852182, Step Global Error = 0.48515
-Step 117; X error = -0.23952, Y error = 0.314725, Z error = -0.0894745, Step Global Error = 0.405497
-Step 118; X error = -0.167348, Y error = 0.208144, Z error = -0.0763296, Step Global Error = 0.277769
-Step 119; X error = -0.116559, Y error = 0.251008, Z error = -0.120435, Step Global Error = 0.30182
-Step 120; X error = -0.0697593, Y error = 0.203568, Z error = -0.118578, Step Global Error = 0.245697
-Step 121; X error = -0.0337643, Y error = 0.158181, Z error = -0.10872, Step Global Error = 0.194888
-Step 122; X error = 0.0428545, Y error = 0.17911, Z error = -0.148896, Step Global Error = 0.236827
-Step 123; X error = 0.0665319, Y error = 0.153336, Z error = -0.142158, Step Global Error = 0.219425
-Step 124; X error = 0.180234, Y error = 0.167257, Z error = -0.195609, Step Global Error = 0.314201
-Step 125; X error = 0.175481, Y error = 0.129693, Z error = -0.164929, Step Global Error = 0.273524
-Step 126; X error = 0.313712, Y error = 0.115923, Z error = -0.214322, Step Global Error = 0.397225
-Step 127; X error = 0.320532, Y error = 0.0888198, Z error = -0.196565, Step Global Error = 0.386351
-Step 128; X error = 0.329287, Y error = 0.0669578, Z error = -0.183273, Step Global Error = 0.382756
-Step 129; X error = 0.447001, Y error = 0.0236661, Z error = -0.211225, Step Global Error = 0.494961
-Step 130; X error = 0.407058, Y error = 0.0109817, Z error = -0.181294, Step Global Error = 0.44574
-Step 131; X error = 0.540055, Y error = -0.0474561, Z error = -0.207818, Step Global Error = 0.580603
-Step 132; X error = 0.468557, Y error = -0.044663, Z error = -0.167718, Step Global Error = 0.499669
-Step 133; X error = 0.619924, Y error = -0.122055, Z error = -0.188676, Step Global Error = 0.659395
-Step 134; X error = 0.559499, Y error = -0.113781, Z error = -0.153204, Step Global Error = 0.591149
-Step 135; X error = 0.686777, Y error = -0.195407, Z error = -0.152857, Step Global Error = 0.730214
-Step 136; X error = 0.583123, Y error = -0.154873, Z error = -0.106861, Step Global Error = 0.61273
-Step 137; X error = 0.659508, Y error = -0.216842, Z error = -0.0828239, Step Global Error = 0.699164
-Step 138; X error = 0.568177, Y error = -0.170269, Z error = -0.0478165, Step Global Error = 0.595065
-Step 139; X error = 0.690935, Y error = -0.283016, Z error = -0.0214218, Step Global Error = 0.746959
-Step 140; X error = 0.582507, Y error = -0.231906, Z error = 0.00550762, Step Global Error = 0.626997
-Step 141; X error = 0.507007, Y error = -0.204535, Z error = 0.0235085, Step Global Error = 0.547214
-Step 142; X error = 0.557246, Y error = -0.308267, Z error = 0.0717969, Step Global Error = 0.640864
-Step 143; X error = 0.454853, Y error = -0.262068, Z error = 0.0849603, Step Global Error = 0.531779
-Step 144; X error = 0.477885, Y error = -0.363426, Z error = 0.152032, Step Global Error = 0.619327
-Step 145; X error = 0.371997, Y error = -0.297912, Z error = 0.150977, Step Global Error = 0.499928
-Step 146; X error = 0.305379, Y error = -0.257802, Z error = 0.150336, Step Global Error = 0.426989
-Step 147; X error = 0.312834, Y error = -0.342391, Z error = 0.231386, Step Global Error = 0.518301
-Step 148; X error = 0.249739, Y error = -0.282152, Z error = 0.219991, Step Global Error = 0.43632
-Step 149; X error = 0.242505, Y error = -0.358563, Z error = 0.313886, Step Global Error = 0.534697
-Step 150; X error = 0.193678, Y error = -0.301858, Z error = 0.291516, Step Global Error = 0.46218
-Step 151; X error = 0.153914, Y error = -0.248199, Z error = 0.258488, Step Global Error = 0.390011
-Step 152; X error = 0.128054, Y error = -0.311832, Z error = 0.35318, Step Global Error = 0.488235
-Step 153; X error = 0.0943371, Y error = -0.257493, Z error = 0.316592, Step Global Error = 0.418847
-Step 154; X error = 0.0515641, Y error = -0.308837, Z error = 0.41297, Step Global Error = 0.51825
-Step 155; X error = 0.0255096, Y error = -0.24817, Z error = 0.353107, Step Global Error = 0.432346
-Step 156; X error = -0.0203436, Y error = -0.26782, Z error = 0.409164, Step Global Error = 0.489445
-Step 157; X error = -0.026785, Y error = -0.201133, Z error = 0.322783, Step Global Error = 0.381263
-Step 158; X error = -0.0654672, Y error = -0.216839, Z error = 0.37855, Step Global Error = 0.441141
-Step 159; X error = -0.0617097, Y error = -0.171519, Z error = 0.317516, Step Global Error = 0.366119
-Step 160; X error = -0.0533168, Y error = -0.132518, Z error = 0.257427, Step Global Error = 0.294402
-Step 161; X error = -0.139199, Y error = -0.235306, Z error = 0.482493, Step Global Error = 0.554567
-Step 162; X error = -0.0637895, Y error = -0.109637, Z error = 0.231183, Step Global Error = 0.263695
-Step 163; X error = -0.143495, Y error = -0.185087, Z error = 0.416866, Step Global Error = 0.478147
-Step 164; X error = -0.0924242, Y error = -0.105595, Z error = 0.233507, Step Global Error = 0.27243
-Step 165; X error = -0.069952, Y error = -0.0746853, Z error = 0.162422, Step Global Error = 0.191969
-Step 166; X error = -0.0428524, Y error = -0.0428184, Z error = 0.0942608, Step Global Error = 0.112048
-Step 167; X error = -0.0922994, Y error = -0.0758911, Z error = 0.193779, Step Global Error = 0.227659
-Step 168; X error = -0.0269202, Y error = -0.0185504, Z error = 0.0581311, Step Global Error = 0.0666936
-Step 169; X error = -0.036614, Y error = -0.0118017, Z error = 0.100403, Step Global Error = 0.10752
-Step 170; X error = -0.0429441, Y error = 0.00952528, Z error = 0.135125, Step Global Error = 0.142104
-Step 171; X error = -0.058068, Y error = 0.0346221, Z error = 0.174186, Step Global Error = 0.186846
-Step 172; X error = -0.0569009, Y error = 0.0847324, Z error = 0.185171, Step Global Error = 0.211437
-Step 173; X error = -0.0459161, Y error = 0.159374, Z error = 0.191692, Step Global Error = 0.253485
-Step 174; X error = -0.0402816, Y error = 0.228856, Z error = 0.204733, Step Global Error = 0.309699
-Step 175; X error = -0.025803, Y error = 0.31129, Z error = 0.211535, Step Global Error = 0.377246
-Step 176; X error = -0.0107492, Y error = 0.379405, Z error = 0.215761, Step Global Error = 0.436596
-Step 177; X error = 0.00973655, Y error = 0.442183, Z error = 0.220238, Step Global Error = 0.494091
-Step 178; X error = 0.0401507, Y error = 0.487181, Z error = 0.223686, Step Global Error = 0.53758
-Step 179; X error = 0.0829858, Y error = 0.504758, Z error = 0.226614, Step Global Error = 0.559484
-Step 180; X error = 0.139097, Y error = 0.502463, Z error = 0.229295, Step Global Error = 0.569556
-Total trajectory error = 6.53477
-Mean step error = 0.0361037
+Step 0
+Pose error : X error = 5.01847e-06, Y error = -0.000410939, Z error = 0.182674, Step Global Error = 0.182675
+Vel error :X vel error = -0.00182037, Y vel error = 0.028112, Z vel error = -0.0117575, Step Global Vel Error = 0.030526
+Step 1
+Pose error : X error = 9.06962e-06, Y error = 1.34893e-05, Z error = 0.182461, Step Global Error = 0.182461
+Vel error :X vel error = -0.000590558, Y vel error = -0.258374, Z vel error = -0.00390813, Step Global Vel Error = 0.258405
+Step 2
+Pose error : X error = 1.01234e-05, Y error = 2.52033e-05, Z error = 0.18243, Step Global Error = 0.18243
+Vel error :X vel error = -0.000954596, Y vel error = -0.251246, Z vel error = -0.00463478, Step Global Vel Error = 0.251291
+Step 3
+Pose error : X error = 2.27531e-05, Y error = 0.00011705, Z error = 0.182236, Step Global Error = 0.182236
+Vel error :X vel error = -0.00136029, Y vel error = -0.240146, Z vel error = -0.00745498, Step Global Vel Error = 0.240266
+Step 4
+Pose error : X error = 6.75315e-05, Y error = 0.000430185, Z error = 0.181579, Step Global Error = 0.18158
+Vel error :X vel error = -0.00174956, Y vel error = -0.222912, Z vel error = -0.0142074, Step Global Vel Error = 0.223371
+Step 5
+Pose error : X error = 0.000394769, Y error = 0.00266949, Z error = 0.176737, Step Global Error = 0.176758
+Vel error :X vel error = 0.00774769, Y vel error = 0.0218892, Z vel error = -0.046956, Step Global Vel Error = 0.0523835
+Step 6
+Pose error : X error = 0.00075948, Y error = 0.00519504, Z error = 0.171053, Step Global Error = 0.171134
+Vel error :X vel error = -4.58426e-05, Y vel error = 0.0293901, Z vel error = -0.0760276, Step Global Vel Error = 0.0815106
+Step 7
+Pose error : X error = 0.00219407, Y error = 0.0146903, Z error = 0.148524, Step Global Error = 0.149265
+Vel error :X vel error = 0.0147574, Y vel error = 0.0673855, Z vel error = -0.163666, Step Global Vel Error = 0.17761
+Step 8
+Pose error : X error = 0.00333935, Y error = 0.0221693, Z error = 0.129692, Step Global Error = 0.131616
+Vel error :X vel error = 0.0179712, Y vel error = 0.0871712, Z vel error = -0.222255, Step Global Vel Error = 0.239414
+Step 9
+Pose error : X error = 0.00481994, Y error = 0.0316667, Z error = 0.104547, Step Global Error = 0.109344
+Vel error :X vel error = -0.00233723, Y vel error = 0.191109, Z vel error = -0.28974, Step Global Vel Error = 0.347099
+Step 10
+Pose error : X error = 0.00666775, Y error = 0.0430077, Z error = 0.0761401, Step Global Error = 0.0877008
+Vel error :X vel error = -0.00266114, Y vel error = 0.296563, Z vel error = -0.290224, Step Global Vel Error = 0.414954
+Step 11
+Pose error : X error = 0.0087957, Y error = 0.05563, Z error = 0.048599, Step Global Error = 0.0743904
+Vel error :X vel error = -0.00333608, Y vel error = 0.404954, Z vel error = -0.301358, Step Global Vel Error = 0.504793
+Step 12
+Pose error : X error = 0.0130656, Y error = 0.0814688, Z error = -0.0251513, Step Global Error = 0.0862581
+Vel error :X vel error = 0.0170674, Y vel error = 0.111456, Z vel error = -0.380108, Step Global Vel Error = 0.396479
+Step 13
+Pose error : X error = 0.0136464, Y error = 0.0883898, Z error = -0.0547943, Step Global Error = 0.104888
+Vel error :X vel error = 0.00519583, Y vel error = 0.0657133, Z vel error = -0.364838, Step Global Vel Error = 0.370745
+Step 14
+Pose error : X error = 0.0156562, Y error = 0.102072, Z error = -0.158629, Step Global Error = 0.18928
+Vel error :X vel error = -0.00954889, Y vel error = -0.0157711, Z vel error = -0.394208, Step Global Vel Error = 0.394638
+Step 15
+Pose error : X error = 0.0130158, Y error = 0.0940801, Z error = -0.184741, Step Global Error = 0.207725
+Vel error :X vel error = -0.0232923, Y vel error = -0.081264, Z vel error = -0.325993, Step Global Vel Error = 0.336776
+Step 16
+Pose error : X error = 0.00833397, Y error = 0.0781633, Z error = -0.192913, Step Global Error = 0.208313
+Vel error :X vel error = -0.00198362, Y vel error = 0.93701, Z vel error = -0.24104, Step Global Vel Error = 0.967518
+Step 17
+Pose error : X error = 0.00516048, Y error = 0.0518565, Z error = -0.293819, Step Global Error = 0.298405
+Vel error :X vel error = 7.32082e-05, Y vel error = 0.814098, Z vel error = -0.217973, Step Global Vel Error = 0.842774
+Step 18
+Pose error : X error = -0.000306983, Y error = 0.0240196, Z error = -0.295467, Step Global Error = 0.296442
+Vel error :X vel error = 0.00687445, Y vel error = 0.861513, Z vel error = -0.152923, Step Global Vel Error = 0.875008
+Step 19
+Pose error : X error = -0.00578418, Y error = -0.00369817, Z error = -0.278064, Step Global Error = 0.278148
+Vel error :X vel error = 0.0126716, Y vel error = 0.73969, Z vel error = -0.076234, Step Global Vel Error = 0.743716
+Step 20
+Pose error : X error = -0.0111116, Y error = -0.0705126, Z error = -0.325781, Step Global Error = 0.33351
+Vel error :X vel error = -0.031554, Y vel error = -0.352716, Z vel error = 1.49131e-05, Step Global Vel Error = 0.354124
+Step 21
+Pose error : X error = -0.0143548, Y error = -0.0967034, Z error = -0.293205, Step Global Error = 0.309074
+Vel error :X vel error = -0.0228021, Y vel error = -0.344695, Z vel error = 0.0409012, Step Global Vel Error = 0.347862
+Step 22
+Pose error : X error = -0.0162672, Y error = -0.121603, Z error = -0.266996, Step Global Error = 0.293835
+Vel error :X vel error = 0.019025, Y vel error = 0.0516823, Z vel error = 0.0730981, Step Global Vel Error = 0.0915224
+Step 23
+Pose error : X error = -0.0195913, Y error = -0.229107, Z error = -0.293004, Step Global Error = 0.372458
+Vel error :X vel error = -0.0108433, Y vel error = -0.426473, Z vel error = 0.151387, Step Global Vel Error = 0.452675
+Step 24
+Pose error : X error = -0.0197802, Y error = -0.254289, Z error = -0.258834, Step Global Error = 0.363386
+Vel error :X vel error = -0.00484974, Y vel error = -0.411971, Z vel error = 0.170017, Step Global Vel Error = 0.445701
+Step 25
+Pose error : X error = -0.0192338, Y error = -0.273327, Z error = -0.224272, Step Global Error = 0.354084
+Vel error :X vel error = 0.0101352, Y vel error = -0.836975, Z vel error = 0.183077, Step Global Vel Error = 0.856823
+Step 26
+Pose error : X error = -0.017633, Y error = -0.270743, Z error = -0.183608, Step Global Error = 0.327604
+Vel error :X vel error = 0.00599048, Y vel error = -1.09314, Z vel error = 0.177658, Step Global Vel Error = 1.1075
+Step 27
+Pose error : X error = -0.0197646, Y error = -0.441399, Z error = -0.185149, Step Global Error = 0.479066
+Vel error :X vel error = 0.00952876, Y vel error = -0.395052, Z vel error = 0.260797, Step Global Vel Error = 0.473469
+Step 28
+Pose error : X error = -0.0176703, Y error = -0.447787, Z error = -0.148244, Step Global Error = 0.472019
+Vel error :X vel error = 0.0129169, Y vel error = -0.371976, Z vel error = 0.25466, Step Global Vel Error = 0.450982
+Step 29
+Pose error : X error = -0.0153382, Y error = -0.448156, Z error = -0.113987, Step Global Error = 0.462679
+Vel error :X vel error = -0.000911587, Y vel error = -1.89842, Z vel error = 0.245263, Step Global Vel Error = 1.9142
+Step 30
+Pose error : X error = -0.0121842, Y error = -0.40147, Z error = -0.076414, Step Global Error = 0.408859
+Vel error :X vel error = -0.0025815, Y vel error = -2.0739, Z vel error = 0.220374, Step Global Vel Error = 2.08558
+Step 31
+Pose error : X error = -0.00902664, Y error = -0.596788, Z error = -0.045089, Step Global Error = 0.598557
+Vel error :X vel error = 0.034554, Y vel error = -0.279604, Z vel error = 0.268203, Step Global Vel Error = 0.388979
+Step 32
+Pose error : X error = -0.00499465, Y error = -0.582495, Z error = -0.0162443, Step Global Error = 0.582743
+Vel error :X vel error = 0.0398457, Y vel error = -0.27054, Z vel error = 0.237118, Step Global Vel Error = 0.361946
+Step 33
+Pose error : X error = -0.000773905, Y error = -0.567966, Z error = 0.00741778, Step Global Error = 0.568015
+Vel error :X vel error = 0.00306627, Y vel error = -2.45268, Z vel error = 0.201114, Step Global Vel Error = 2.46091
+Step 34
+Pose error : X error = 0.00315752, Y error = -0.534112, Z error = 0.0257469, Step Global Error = 0.534742
+Vel error :X vel error = 0.00535213, Y vel error = -2.47346, Z vel error = 0.160442, Step Global Vel Error = 2.47866
+Step 35
+Pose error : X error = 0.0167581, Y error = -0.749447, Z error = 0.0602695, Step Global Error = 0.752054
+Vel error :X vel error = 0.0645354, Y vel error = -0.220109, Z vel error = 0.136186, Step Global Vel Error = 0.266757
+Step 36
+Pose error : X error = 0.0215032, Y error = -0.709233, Z error = 0.0685013, Step Global Error = 0.712857
+Vel error :X vel error = 0.0624309, Y vel error = -0.170325, Z vel error = 0.0888715, Step Global Vel Error = 0.202006
+Step 37
+Pose error : X error = 0.0251943, Y error = -0.663126, Z error = 0.0710003, Step Global Error = 0.667392
+Vel error :X vel error = 0.0140811, Y vel error = -2.22676, Z vel error = 0.0461661, Step Global Vel Error = 2.22728
+Step 38
+Pose error : X error = 0.0284616, Y error = -0.62675, Z error = 0.0707968, Step Global Error = 0.631378
+Vel error :X vel error = 0.01943, Y vel error = -2.08425, Z vel error = 0.0134384, Step Global Vel Error = 2.08439
+Step 39
+Pose error : X error = 0.0463312, Y error = -0.7298, Z error = 0.0774648, Step Global Error = 0.73536
+Vel error :X vel error = 0.0459002, Y vel error = 0.320361, Z vel error = -0.0582393, Step Global Vel Error = 0.328831
+Step 40
+Pose error : X error = 0.0477362, Y error = -0.651674, Z error = 0.0673593, Step Global Error = 0.656883
+Vel error :X vel error = 0.0354891, Y vel error = 0.455632, Z vel error = -0.0855819, Step Global Vel Error = 0.464956
+Step 41
+Pose error : X error = 0.0478356, Y error = -0.562274, Z error = 0.0555958, Step Global Error = 0.567037
+Vel error :X vel error = 0.0210532, Y vel error = -1.31661, Z vel error = -0.106287, Step Global Vel Error = 1.32106
+Step 42
+Pose error : X error = 0.046534, Y error = -0.466236, Z error = 0.0424858, Step Global Error = 0.470474
+Vel error :X vel error = 0.0257523, Y vel error = -1.07837, Z vel error = -0.128794, Step Global Vel Error = 1.08634
+Step 43
+Pose error : X error = 0.0438762, Y error = -0.369625, Z error = 0.0279467, Step Global Error = 0.373268
+Vel error :X vel error = 0.030333, Y vel error = -0.831801, Z vel error = -0.152192, Step Global Vel Error = 0.846153
+Step 44
+Pose error : X error = 0.0668463, Y error = -0.52304, Z error = -0.0170722, Step Global Error = 0.52757
+Vel error :X vel error = -0.0270489, Y vel error = -0.459492, Z vel error = -0.29793, Step Global Vel Error = 0.548294
+Step 45
+Pose error : X error = 0.0405399, Y error = -0.236455, Z error = -0.0368315, Step Global Error = 0.242716
+Vel error :X vel error = -0.00712772, Y vel error = -0.053034, Z vel error = -0.244421, Step Global Vel Error = 0.25021
+Step 46
+Pose error : X error = 0.0245946, Y error = -0.131663, Z error = -0.096116, Step Global Error = 0.164858
+Vel error :X vel error = -0.132063, Y vel error = 0.744056, Z vel error = -0.273045, Step Global Vel Error = 0.803501
+Step 47
+Pose error : X error = 0.00935188, Y error = -0.046873, Z error = -0.116678, Step Global Error = 0.126089
+Vel error :X vel error = -0.151714, Y vel error = 0.676904, Z vel error = -0.247771, Step Global Vel Error = 0.736618
+Step 48
+Pose error : X error = -0.00554666, Y error = 0.0254323, Z error = -0.127359, Step Global Error = 0.129992
+Vel error :X vel error = 0.0222332, Y vel error = 0.937844, Z vel error = -0.207175, Step Global Vel Error = 0.960712
+Step 49
+Pose error : X error = -0.0184072, Y error = 0.0723046, Z error = -0.137234, Step Global Error = 0.156205
+Vel error :X vel error = 0.0215942, Y vel error = 1.1355, Z vel error = -0.188934, Step Global Vel Error = 1.15132
+Step 50
+Pose error : X error = -0.0604075, Y error = 0.148273, Z error = -0.200624, Step Global Error = 0.256679
+Vel error :X vel error = -0.202626, Y vel error = 0.291114, Z vel error = -0.213293, Step Global Vel Error = 0.413882
+Step 51
+Pose error : X error = -0.0714909, Y error = 0.155865, Z error = -0.20076, Step Global Error = 0.264025
+Vel error :X vel error = -0.205777, Y vel error = 0.186694, Z vel error = -0.172888, Step Global Vel Error = 0.327245
+Step 52
+Pose error : X error = -0.147471, Y error = 0.236893, Z error = -0.278008, Step Global Error = 0.393896
+Vel error :X vel error = -0.303533, Y vel error = 0.186065, Z vel error = -0.152612, Step Global Vel Error = 0.387354
+Step 53
+Pose error : X error = -0.161264, Y error = 0.226355, Z error = -0.26635, Step Global Error = 0.384948
+Vel error :X vel error = -0.297077, Y vel error = 0.134924, Z vel error = -0.099945, Step Global Vel Error = 0.341245
+Step 54
+Pose error : X error = -0.169198, Y error = 0.208164, Z error = -0.24642, Step Global Error = 0.364256
+Vel error :X vel error = -0.00112479, Y vel error = 2.11012, Z vel error = -0.0476208, Step Global Vel Error = 2.11066
+Step 55
+Pose error : X error = -0.168663, Y error = 0.184006, Z error = -0.221652, Step Global Error = 0.333819
+Vel error :X vel error = -0.0364259, Y vel error = 2.10977, Z vel error = -0.0286421, Step Global Vel Error = 2.11028
+Step 56
+Pose error : X error = -0.293248, Y error = 0.27497, Z error = -0.292995, Step Global Error = 0.497442
+Vel error :X vel error = -0.329785, Y vel error = 0.0666708, Z vel error = -0.017785, Step Global Vel Error = 0.336926
+Step 57
+Pose error : X error = -0.292517, Y error = 0.248332, Z error = -0.26584, Step Global Error = 0.466803
+Vel error :X vel error = -0.329187, Y vel error = 0.0671723, Z vel error = 0.00245725, Step Global Vel Error = 0.33598
+Step 58
+Pose error : X error = -0.286822, Y error = 0.221672, Z error = -0.235613, Step Global Error = 0.432341
+Vel error :X vel error = -0.0583007, Y vel error = 2.05103, Z vel error = 0.0272053, Step Global Vel Error = 2.05204
+Step 59
+Pose error : X error = -0.408918, Y error = 0.269456, Z error = -0.262707, Step Global Error = 0.55573
+Vel error :X vel error = -0.351341, Y vel error = -0.0159128, Z vel error = 0.0722134, Step Global Vel Error = 0.359039
+Step 60
+Pose error : X error = -0.396372, Y error = 0.234537, Z error = -0.22841, Step Global Error = 0.514091
+Vel error :X vel error = -0.337926, Y vel error = -0.0467428, Z vel error = 0.0816701, Step Global Vel Error = 0.350783
+Step 61
+Pose error : X error = -0.570418, Y error = 0.27619, Z error = -0.256196, Step Global Error = 0.683589
+Vel error :X vel error = -0.383897, Y vel error = -0.152582, Z vel error = 0.14398, Step Global Vel Error = 0.437479
+Step 62
+Pose error : X error = -0.533013, Y error = 0.221066, Z error = -0.210548, Step Global Error = 0.61425
+Vel error :X vel error = -0.326812, Y vel error = -0.176136, Z vel error = 0.146706, Step Global Vel Error = 0.399189
+Step 63
+Pose error : X error = -0.505829, Y error = 0.175419, Z error = -0.173978, Step Global Error = 0.562941
+Vel error :X vel error = -0.273581, Y vel error = 1.2135, Z vel error = 0.149662, Step Global Vel Error = 1.25292
+Step 64
+Pose error : X error = -0.72921, Y error = 0.190262, Z error = -0.188131, Step Global Error = 0.77675
+Vel error :X vel error = -0.330073, Y vel error = -0.310471, Z vel error = 0.221758, Step Global Vel Error = 0.504497
+Step 65
+Pose error : X error = -0.700897, Y error = 0.137857, Z error = -0.149629, Step Global Error = 0.729829
+Vel error :X vel error = -0.331561, Y vel error = -0.300069, Z vel error = 0.212299, Step Global Vel Error = 0.49502
+Step 66
+Pose error : X error = -0.673269, Y error = 0.0907385, Z error = -0.114718, Step Global Error = 0.688974
+Vel error :X vel error = -0.384731, Y vel error = 0.545739, Z vel error = 0.199352, Step Global Vel Error = 0.696843
+Step 67
+Pose error : X error = -0.647325, Y error = 0.0504123, Z error = -0.0842239, Step Global Error = 0.654725
+Vel error :X vel error = -0.373581, Y vel error = 0.354625, Z vel error = 0.180935, Step Global Vel Error = 0.545948
+
+Total trajectory error = 3.56739
+Mean step error = 0.0524616
+
+Total trajectory velocity error = 7.90473
+Mean step velocity error = 0.116246

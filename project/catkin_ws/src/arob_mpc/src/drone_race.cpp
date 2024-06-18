@@ -24,6 +24,9 @@
 
 #include "arob_mpc/vector_poses.h"
 
+// For measuring time
+#include <sys/time.h>
+
 using namespace std;
 
 class drone_race {
@@ -57,6 +60,12 @@ class drone_race {
     double v_max = 2;// 4.5;
     double a_max = 2;// 8.65;
 
+    // Time measurement
+    struct timeval timestamp;
+    double initial_time;
+    double planification_time;
+    double race_time;
+
     public:
 
     drone_race() {
@@ -78,6 +87,7 @@ class drone_race {
 	}
 
     ~drone_race() {
+        save_times();
     }
 
     void loadParams(){
@@ -200,6 +210,10 @@ class drone_race {
     }
 
     void generate_trajectory() {
+        // We measure the starting time
+        gettimeofday(&timestamp, NULL);
+        initial_time = (double)timestamp.tv_sec*1.0e6 + (double)timestamp.tv_usec;
+
         //constants
         const int dimension = 3; //we only compute the trajectory in x, y and z
         const int derivative_to_optimize = mav_trajectory_generation::derivative_order::SNAP; //POSITION, VELOCITY, ACCELERATION, JERK, SNAP
@@ -325,14 +339,21 @@ class drone_race {
 
         }
 
+        // We get the planification time measurement
+        gettimeofday(&timestamp, NULL);
+        planification_time = (double)timestamp.tv_sec*1.0e6 + (double)timestamp.tv_usec - initial_time;
+
         //send_command();
 
         
         // send_goals(N); // Look ahead trajectory steps
 
         send_states(lookahead);
-        
 
+        // We get the racing time
+        gettimeofday(&timestamp, NULL);
+        race_time = (double)timestamp.tv_sec*1.0e6 + (double)timestamp.tv_usec - (planification_time + initial_time);
+        
     }
 
     void send_command() {
@@ -341,7 +362,7 @@ class drone_race {
         for (const auto& vel_command : drone_vel_list) {
             //std::cout << vel_command << std::endl;
             pub_drone_vel_.publish(vel_command);
-            ros::Duration(0.1).sleep(); 
+            ros::Duration(sampling_interval).sleep(); 
         }
     }
 
@@ -356,7 +377,7 @@ class drone_race {
             //std::cout << vel_command << std::endl;
             lookahead_poses.poses = temp_poses;
             pub_drone_pos_.publish(lookahead_poses);
-            ros::Duration(0.1).sleep(); 
+            ros::Duration(sampling_interval).sleep(); 
             temp_poses.clear();
         }
     }
@@ -379,7 +400,7 @@ class drone_race {
             lookahead_states.velocities = temp_velocities;
             lookahead_states.accelerations = temp_accels;
             pub_drone_pos_.publish(lookahead_states);
-            ros::Duration(0.1).sleep(); 
+            ros::Duration(sampling_interval).sleep(); 
             temp_poses.clear();
             temp_velocities.clear();
             temp_accels.clear();
@@ -592,6 +613,26 @@ class drone_race {
             line_marker.points.push_back(marker_left.pose.position);
             marker_array.markers.push_back(line_marker);
             pub_gate_markers_.publish(marker_array);
+        }
+
+        void save_times(){
+            // We save the measured times in the measurement file
+            std::string file_path;
+            std::ofstream file;
+
+            nh_.getParam("drone_params/saving_file", file_path);
+            file.open(file_path, std::ios::app);
+
+            if (file.is_open()) {
+                std::cout << "Saving Times" << std::endl;
+                file << "\nPlannification time = " << planification_time/1.0e6 << " (s)";
+                file << ", Racing time = " << race_time/1.0e6 << " (s)";
+                file << ", Total time = " << (planification_time + race_time)/1.0e6 << " (s)";
+            } else
+                ROS_ERROR("Unable to open file for writing times.");
+
+            // Close file
+            file.close();
         }
 
 };

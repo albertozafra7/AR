@@ -1,0 +1,11 @@
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:[m[K In member function ‘[01m[Kvoid mpc_custom::mpc()[m[K’:
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:289:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+  289 |         [01;31m[Kstd[m[K::vector<double> x_vel_sol = std::vector<double>(sol.value(vel_x));
+      |         [01;31m[K^~~[m[K
+[01m[K/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_custom.cpp:299:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_vel_sol[m[K’ was not declared in this scope; did you mean ‘[01m[Kz_vel_sol[m[K’?
+  299 |         vel_command.linear.x = [01;31m[Kx_vel_sol[m[K[0];
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Kz_vel_sol[m[K
+make[2]: *** [CMakeFiles/mpc_custom.dir/build.make:76: CMakeFiles/mpc_custom.dir/src/mpc_custom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2223: CMakeFiles/mpc_custom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
