@@ -94,7 +94,7 @@ public:
         nh_.getParam("drone_params/max_vel", VELOCITY_MAX);
         nh_.getParam("drone_params/max_accel", ACCEL_MAX);
         nh_.getParam("drone_params/pos_error_w", pos_error_w);
-        smooth_w = 1 - pos_error_w - orient_error_w;
+        smooth_w = 1 - pos_error_w;
 
         nh_.getParam("drone_params/saving_file", file_path);
     }
@@ -188,6 +188,7 @@ public:
 
     
     void mpc(){
+        
         ROS_INFO("The MPC is executing");
 
         casadi::Opti opti = casadi::Opti(); // Optimization problem
@@ -281,6 +282,8 @@ public:
         opti.solver("ipopt", opts_dict); // set numerical backend
         casadi::OptiSol sol = opti.solve(); // actual solve
 
+        
+
         // Retrieve and store the results
         save_errors();
         
@@ -294,11 +297,22 @@ public:
         // std::vector<double> pitch_vel_sol = std::vector<double>(sol.value(pitch));
         // std::vector<double> yaw_vel_sol = std::vector<double>(sol.value(yaw));
 
+        
+
         geometry_msgs::Twist vel_command; 
+
+        
 
         vel_command.linear.x = x_vel_sol[0];
         vel_command.linear.y = y_vel_sol[0];
         vel_command.linear.z = z_vel_sol[0];
+        
+        
+
+        // vel_command.linear.x = std::get<1>(Traj_ref[0]).linear.x;
+        // vel_command.linear.y = std::get<1>(Traj_ref[0]).linear.y;
+        // vel_command.linear.z = std::get<1>(Traj_ref[0]).linear.z;
+        
         // vel_command.angular.x = roll_vel_sol[0];
         // vel_command.angular.y = pitch_vel_sol[0];
         // vel_command.angular.z = yaw_vel_sol[0];

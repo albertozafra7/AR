@@ -405,6 +405,20 @@ class drone_race {
             temp_velocities.clear();
             temp_accels.clear();
         }
+
+    }
+
+    void end_simulation(){
+        geometry_msgs::Twist end_vel;
+        end_vel.linear.x = 0;
+        end_vel.linear.y = 0;
+        end_vel.linear.z = 0;
+        pub_drone_vel_.publish(end_vel);
+        ros::Duration(sampling_interval).sleep(); 
+        pub_drone_vel_.publish(end_vel);
+        ros::Duration(sampling_interval).sleep(); 
+
+        std::cout << "Trajectory finished" << std::endl;
     }
 
     private: 
@@ -625,6 +639,11 @@ class drone_race {
 
             if (file.is_open()) {
                 std::cout << "Saving Times" << std::endl;
+
+                std::cout << "\nPlannification time = " << planification_time/1.0e6 << " (s)";
+                std::cout << ", Racing time = " << race_time/1.0e6 << " (s)";
+                std::cout << ", Total time = " << (planification_time + race_time)/1.0e6 << " (s)";
+
                 file << "\nPlannification time = " << planification_time/1.0e6 << " (s)";
                 file << ", Racing time = " << race_time/1.0e6 << " (s)";
                 file << ", Total time = " << (planification_time + race_time)/1.0e6 << " (s)";
@@ -670,6 +689,7 @@ int main(int argc, char** argv) {
 
     //race.generate_trajectory_example();
     race.generate_trajectory();
+    race.end_simulation();
 
     while (ros::ok())
     {

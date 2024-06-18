@@ -1,12 +1,30 @@
 drone_params:
-  lookahead: 10
+  # lookahead: 1
+  # lookahead: 5
+  # lookahead: 10
+  # lookahead: 20
+  # lookahead: 30
+  # lookahead: 40
+  lookahead: 50
+  # lookahead: 60
+  # lookahead: 70
+  # lookahead: 80
+  # lookahead: 90
+  # lookahead: 100
+
   sampling_interval: 0.1 # our dt
+
+  # max_vel: 1
+  # max_vel: 1.5
   max_vel: 2  # max vel of the drone
+  # max_vel: 2.5
+
   max_accel: 2 #8.65 # max accel of the drone
 
   # Weights of the cost function
+  # pos_error_w: 0.25
+  # pos_error_w: 0.5
   pos_error_w: 0.75 
-  orient_error_w: 0
 
   # Saving file path
   saving_file: "/home/albertozafra7/Desktop/Universidad/Master/AR/project/catkin_ws/src/arob_mpc/src/mpc_positions.txt"

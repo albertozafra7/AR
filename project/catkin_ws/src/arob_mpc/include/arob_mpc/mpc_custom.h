@@ -47,7 +47,6 @@ const int NUMBER_OF_ACTUATIONS = 3; // ax, ay, az, alpha_x, alpha_y, alpha_z
 
 double pos_error_w;
 double smooth_w;
-double orient_error_w;
 
 // Variables to store the values to optimize
 casadi::MX pos_x;
