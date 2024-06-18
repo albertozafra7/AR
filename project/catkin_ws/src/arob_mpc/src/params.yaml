@@ -5,12 +5,12 @@ drone_params:
   # lookahead: 20
   # lookahead: 30
   # lookahead: 40
-  lookahead: 50
+  # lookahead: 50
   # lookahead: 60
   # lookahead: 70
   # lookahead: 80
   # lookahead: 90
-  # lookahead: 100
+  lookahead: 100
 
   sampling_interval: 0.1 # our dt
 
