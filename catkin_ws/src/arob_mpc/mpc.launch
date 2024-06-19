@@ -1,3 +1,0 @@
-<launch>
-	<node name="casadi_car" pkg="arob_mpc" type="casadi_car_race" output="screen"></node>
-</launch>
